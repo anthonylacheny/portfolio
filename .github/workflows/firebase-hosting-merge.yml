@@ -15,9 +15,9 @@ jobs:
             # Git Secret
             - name: Install Git secret
               run: |
-                  sh -c "echo 'deb https://gitsecret.jfrog.io/artifactory/git-secret-deb git-secret main' >> /etc/apt/sources.list"
-                  wget -qO - 'https://gitsecret.jfrog.io/artifactory/api/gpg/key/public' | apt-key add -
-                  apt-get update && apt-get install -y git-secret
+                  sudo sh -c "echo 'deb https://gitsecret.jfrog.io/artifactory/git-secret-deb git-secret main' >> /etc/apt/sources.list"
+                  wget -qO - 'https://gitsecret.jfrog.io/artifactory/api/gpg/key/public' | sudo apt-key add -
+                  sudo apt-get update && sudo apt-get install -y git-secret
             - name: Git secret import key
               run: |
                   echo $GPG_SECRET | tr ',' '\n' > ./private_key.gpg
