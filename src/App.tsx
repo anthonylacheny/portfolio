@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
     BrowserRouter,
     Route,
@@ -34,11 +35,11 @@ function App() {
           of them to render at a time
         */}
                 <Routes>
-                    <Route path="/" element={<Home/>} />
-                        
-                    <Route path="/about" element={<About/>}/>
-                      
-                    <Route path="/dashboard"element={<Dashboard/>}/>
+                    <Route path="/" element={<Home />} />
+
+                    <Route path="/about" element={<About />} />
+
+                    <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="*" element={<NoMatch />} />
                 </Routes>
             </div>
@@ -55,7 +56,7 @@ function App() {
 // You can think of these components as "pages"
 // in your app.
 
-const Home = ()  => {
+const Home = () => {
     return (
         <main>
             <h2>Home</h2>
@@ -73,22 +74,36 @@ const About = () => {
 }
 
 const Dashboard = () => {
+    const { i18n, t } = useTranslation();
+
     return (
         <main>
-            <h2>Dashboard</h2>
+            <div className="select">
+                <select
+                    value={i18n.language}
+                    onChange={(e) =>
+                        i18n.changeLanguage(e.target.value)
+                    }
+                >
+                    <option value="en">English</option>
+                    <option value="fr">Francais</option>
+                    <option value="es">Espanol</option>
+                </select>
+            </div>
+            <div>{t("hello")}</div>
         </main>
     );
 }
 
 function NoMatch() {
     return (
-      <div>
-        <h2>Nothing to see here!</h2>
-        <p>
-          <Link to="/">Go to the home page</Link>
-        </p>
-      </div>
+        <div>
+            <h2>Nothing to see here!</h2>
+            <p>
+                <Link to="/">Go to the home page</Link>
+            </p>
+        </div>
     );
-  }
+}
 
 export default App;

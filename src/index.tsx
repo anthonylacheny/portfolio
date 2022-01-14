@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './providers/intl'
 
 import './index.css';
 import App from './App';
 import reportWebVitals from './utils/reportWebVitals';
 
-console.log(process.env)
-
-
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <React.Suspense fallback="Loading...">
+            <App />
+        </React.Suspense>
     </React.StrictMode>,
     document.getElementById('root')
 );
