@@ -59,7 +59,7 @@ const Home = ()  => {
     return (
         <main>
             <h2>Home</h2>
-            <div>learn react</div>
+            <div>learn react 2</div>
         </main>
     );
 }
