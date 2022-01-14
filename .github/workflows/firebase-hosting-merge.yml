@@ -22,7 +22,7 @@ jobs:
               env:
                   GPG_SECRET: "${{ secrets.GPG_SECRET }}"
               run: |
-                  echo $GPG_SECRET | tr ',' '\n' > ./private_key.gpg
+                  echo $GPG_SECRET > ./private_key.gpg
                   gpg --batch --import ./private_key.gpg
             - name: Git secret reveal
               env:
