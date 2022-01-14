@@ -12,8 +12,9 @@ jobs:
             - name: Set up Node
               run: |
                   npm install -g react-scripts
-                  npm install -g typescript
                   npm install -g yarn
+            - name: Install Yarn Dependencies
+              run: yarn install
             - run: yarn run test --watchAll=false && yarn run build
             - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
