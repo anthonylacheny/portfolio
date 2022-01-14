@@ -59,7 +59,7 @@ const Home = ()  => {
     return (
         <main>
             <h2>Home</h2>
-            <div>learn react 2</div>
+            <div>learn react 2 {process.env.REACT_APP_FIREBASE_PROJECT}</div>
         </main>
     );
 }
@@ -67,7 +67,7 @@ const Home = ()  => {
 const About = () => {
     return (
         <main>
-            <h2>About</h2>
+            <h2>About </h2>
         </main>
     );
 }
