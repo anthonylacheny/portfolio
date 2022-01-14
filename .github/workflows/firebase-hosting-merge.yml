@@ -19,13 +19,13 @@ jobs:
                   wget -qO - 'https://gitsecret.jfrog.io/artifactory/api/gpg/key/public' | sudo apt-key add -
                   sudo apt-get update && sudo apt-get install -y git-secret
             - name: Git secret import key
-              with:
+              env:
                   GPG_SECRET: "${{ secrets.GPG_SECRET }}"
               run: |
                   echo $GPG_SECRET | tr ',' '\n' > ./private_key.gpg
                   gpg --batch --import ./private_key.gpg
             - name: Git secret reveal
-              with:
+              env:
                   GIT_SECRET: "${{ secrets.GIT_SECRET }}"
               run: |
                   git secret reveal -p $GIT_SECRET
