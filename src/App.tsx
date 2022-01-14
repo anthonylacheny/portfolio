@@ -1,11 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-    BrowserRouter,
-    Route,
-    Routes,
-    Link
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -45,27 +40,21 @@ function App() {
             </div>
         </BrowserRouter>
     );
-
-
-
-
-
 }
-
 
 // You can think of these components as "pages"
 // in your app.
 
-const Home = () => {
+function Home() {
     return (
         <main>
             <h2>Home</h2>
-            <div>learn react 2 {process.env.REACT_APP_FIREBASE_PROJECT}</div>
+            <div>learn react 2{process.env.REACT_APP_FIREBASE_PROJECT}</div>
         </main>
     );
 }
 
-const About = () => {
+function About() {
     return (
         <main>
             <h2>About </h2>
@@ -73,24 +62,19 @@ const About = () => {
     );
 }
 
-const Dashboard = () => {
+function Dashboard() {
     const { i18n, t } = useTranslation();
 
     return (
         <main>
             <div className="select">
-                <select
-                    value={i18n.language}
-                    onChange={(e) =>
-                        i18n.changeLanguage(e.target.value)
-                    }
-                >
+                <select value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)}>
                     <option value="en">English</option>
                     <option value="fr">Francais</option>
                     <option value="es">Espanol</option>
                 </select>
             </div>
-            <div>{t("hello")}</div>
+            <div>{t('hello')}</div>
         </main>
     );
 }
