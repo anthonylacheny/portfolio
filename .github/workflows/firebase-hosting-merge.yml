@@ -22,8 +22,7 @@ jobs:
               env:
                   GPG_SECRET: "${{ secrets.GPG_SECRET }}"
               run: |
-                  echo $GPG_SECRET > ./private_key.gpg
-                  gpg --batch --import ./private_key.gpg
+                  gpg --batch --import <(echo "$GPG_SECRET")
             - name: Git secret reveal
               env:
                   GIT_SECRET: "${{ secrets.GIT_SECRET }}"
