@@ -1,6 +1,14 @@
 {
     "hello": "Hello",
-    "frite": {
-        "patate": "potatoe"
+    "author": "Anthony Lacheny",
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/anthony-lacheny-704aa0b0/?locale=en_US",
+        "github": "https://github.com/anthonylacheny"
+    },
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }

@@ -1,0 +1,46 @@
+.DropDown {
+    display: inline-block;
+    position: relative;
+}
+
+.DropDown-header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    padding: 6px 10px;
+}
+
+.DropDown-header-opened {
+    background-color: #efefef;
+    border-bottom: 1px solid #ccc;
+}
+
+.DropDown-header-title {
+    margin-right: 10px;
+}
+
+.DropDown-header-title,
+.DropDown-header-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.DropDown-list {
+    background-color: #eee;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.DropDown-list-item {
+    padding: 6px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.DropDown-list-item:last-child {
+    border-bottom: 1px solid transparent;
+}

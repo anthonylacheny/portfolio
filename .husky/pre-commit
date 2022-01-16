@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 
-npx eslint src/*.tsx && yarn run test --watchAll=false
+npx eslint src/*.tsx

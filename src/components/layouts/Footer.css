@@ -1,0 +1,32 @@
+.Footer {
+    border: 1px solid gray;
+}
+
+.Footer-social {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Footer-social-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.Footer-social-icon {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.Footer-social-icon:hover {
+    color: #999;
+}
+
+.Footer-copyright {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}

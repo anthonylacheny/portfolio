@@ -1,6 +1,14 @@
 {
     "hello": "Hola",
-    "frite": {
-        "patate": "patata"
+    "author": "Anthony Lacheny",
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/anthony-lacheny-704aa0b0/?locale=es_ES",
+        "github": "https://github.com/anthonylacheny"
+    },
+    "navigation": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "contact": "Contactarme"
     }
 }

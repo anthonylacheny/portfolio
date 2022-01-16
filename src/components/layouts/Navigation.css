@@ -1,0 +1,29 @@
+.Navigation {
+    display: inline-block;
+}
+
+.Navigation-list {
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    list-style-type: none;
+}
+
+.Navigation-item {
+    padding: 8px 5px;
+    display: inline-block;
+    line-height: 16px;
+}
+
+.Navigation-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Navigation-icon {
+    font-size: 12px;
+    margin-right: 4px;
+}
