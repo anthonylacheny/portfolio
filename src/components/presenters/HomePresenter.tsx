@@ -1,9 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
 
-interface PropsType {}
-
-const HomePresenter = ({}: PropsType) => {
+const HomePresenter = () => {
     return <HomePage />;
 };
 

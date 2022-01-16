@@ -1,9 +1,7 @@
 import React from 'react';
 import ContactPage from '../pages/ContactPage';
 
-interface PropsType {}
-
-const ContactPresenter = ({}: PropsType) => {
+const ContactPresenter = () => {
     return <ContactPage />;
 };
 

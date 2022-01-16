@@ -1,9 +1,7 @@
 import React from 'react';
 import NotFoundPage from '../pages/NotFoundPage';
 
-interface PropsType {}
-
-const NotFoundPresenter = ({}: PropsType) => {
+const NotFoundPresenter = () => {
     return <NotFoundPage />;
 };
 

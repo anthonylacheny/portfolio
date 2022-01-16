@@ -1,9 +1,7 @@
 import React from 'react';
 import AboutPage from '../pages/AboutPage';
 
-interface PropsType {}
-
-const AboutPresenter: React.FC = ({}: PropsType) => {
+const AboutPresenter: React.FC = () => {
     return <AboutPage />;
 };
 

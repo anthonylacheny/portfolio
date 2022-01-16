@@ -1,5 +1,4 @@
 import React from 'react';
-import DropDown from '../views/DropDown';
 
 const HomePage: React.FC = () => {
     return (
