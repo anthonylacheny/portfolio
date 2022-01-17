@@ -12,7 +12,7 @@ const Footer: React.FC<PropsType> = ({ translate }) => {
         <footer className="Footer">
             <div className="Footer-social">
                 <a
-                    href={translate('social.linkedin')}
+                    href={process.env.REACT_APP_LINKED_IN_LINK}
                     target="_blank"
                     rel="noreferrer"
                     className="Footer-social-link">
@@ -20,7 +20,7 @@ const Footer: React.FC<PropsType> = ({ translate }) => {
                 </a>
 
                 <a
-                    href={translate('social.github')}
+                    href={process.env.REACT_APP_GITHUB_LINK}
                     target="_blank"
                     rel="noreferrer"
                     className="Footer-social-link">
@@ -28,7 +28,7 @@ const Footer: React.FC<PropsType> = ({ translate }) => {
                 </a>
             </div>
             <div className="Footer-copyright">
-                © {new Date().getFullYear()} {translate('author')}
+                © {new Date().getFullYear()} {process.env.REACT_APP_AUTHOR}
             </div>
         </footer>
     );

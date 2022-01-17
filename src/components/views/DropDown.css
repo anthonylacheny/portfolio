@@ -7,12 +7,11 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 6px 10px 0 10px;
 }
 
 .DropDown-header-opened {
     background-color: #efefef;
-    border-bottom: 1px solid #ccc;
 }
 
 .DropDown-header-title {
@@ -22,7 +21,10 @@
 .DropDown-header-title,
 .DropDown-header-icon {
     display: inline-block;
-    vertical-align: middle;
+}
+
+.DropDown-header-icon {
+    font-size: 16px;
 }
 
 .DropDown-list {
@@ -37,8 +39,17 @@
 }
 
 .DropDown-list-item {
-    padding: 6px 10px;
+    padding: 6px 10px 0 10px;
     border-bottom: 1px solid #ccc;
+}
+
+.DropDown-list-item:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.DropDown-list-item:first-child {
+    border-top: 1px solid #ccc;
 }
 
 .DropDown-list-item:last-child {

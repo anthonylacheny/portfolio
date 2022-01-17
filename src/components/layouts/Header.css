@@ -1,3 +1,76 @@
 .Header {
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Header-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 5px 20px;
+}
+
+.Header-profile-img {
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+}
+
+.Header-profile-img,
+.Header-profile-info {
+    margin-right: 10px;
+}
+
+.Header-profile-info-name,
+.Header-profile-info-title {
+    font-weight: bold;
+    display: block;
+    padding: 1px 5px;
+}
+
+.Header-profile-info-name {
+    color: #555;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.Header-profile-info-title {
+    color: #aaa;
+    line-height: 14px;
+    font-size: 20px;
+}
+
+.Header-navigation {
+    margin-left: auto;
+}
+
+.Header-language {
+    margin-right: 10px;
+}
+
+@media all and (max-width: 761px) {
+    .Header :nth-child(1) {
+        order: 2;
+    }
+
+    .Header :nth-child(2) {
+        order: 1;
+    }
+
+    .Header :nth-child(3) {
+        order: 3;
+    }
+
+    .Header-profile {
+        flex-direction: row-reverse;
+        flex: 1;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .Header-navigation {
+        margin-left: 0;
+    }
 }

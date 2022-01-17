@@ -4,6 +4,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './providers/intl';
 import './providers/icons';
 
+import './components/fonts/Dongle-Light.ttf';
+import './components/fonts/Dongle-Bold.ttf';
+
 import './index.css';
 //import App from './App';
 import reportWebVitals from './utils/reportWebVitals';

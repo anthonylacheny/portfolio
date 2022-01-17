@@ -1,29 +1,82 @@
 .Navigation {
-    display: inline-block;
+}
+
+.Navigation-btn,
+.Navigation-toogle {
+    display: none;
 }
 
 .Navigation-list {
     padding: 0;
     margin: 0;
-    border: 1px solid black;
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .Navigation-item {
-    padding: 8px 5px;
-    display: inline-block;
-    line-height: 16px;
+    padding: 0 10px;
 }
 
 .Navigation-link {
+    font-weight: bold;
     text-decoration: none;
-    color: inherit;
-    font-size: 14px;
+    color: #555;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .Navigation-icon {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 4px;
+    color: #555;
+}
+
+@media all and (max-width: 761px) {
+    .Navigation-btn {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .Navigation-icon-btn {
+        font-size: 32px;
+    }
+
+    .Navigation-list {
+        display: none;
+        flex-direction: column;
+        background: #eee;
+        align-items: flex-start;
+    }
+
+    .Navigation-item {
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
+
+    .Navigation-link {
+        flex: 1;
+        font-size: 24px;
+        padding: 6px 26px;
+    }
+
+    .Navigation-icon {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .Navigation-toogle:checked + .Navigation-list {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        margin-top: 5px;
+    }
 }

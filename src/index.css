@@ -1,7 +1,17 @@
+@font-face {
+    font-family: DongleLight;
+    src: local('DongleLight'), url('./components/fonts/Dongle-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: DongleBold;
+    src: local('DongleBold'), url('./components/fonts/Dongle-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'DongleLight', 'DongleBold';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
