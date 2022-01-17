@@ -51,26 +51,20 @@
 }
 
 @media all and (max-width: 761px) {
-    .Header :nth-child(1) {
-        order: 2;
-    }
-
-    .Header :nth-child(2) {
-        order: 1;
-    }
-
-    .Header :nth-child(3) {
-        order: 3;
-    }
-
     .Header-profile {
-        flex-direction: row-reverse;
+        order: 2;
+        flex-direction: row;
         flex: 1;
         align-self: center;
         justify-content: center;
     }
 
     .Header-navigation {
+        order: 1;
         margin-left: 0;
+    }
+
+    .Header-language {
+        order: 3;
     }
 }
