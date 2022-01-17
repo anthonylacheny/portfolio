@@ -67,4 +67,22 @@
     .Header-language {
         order: 3;
     }
+
+    .Header-profile-img {
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        margin-right: 2px;
+    }
+
+    .Header-profile-info-name {
+        color: #555;
+        font-size: 20px;
+        line-height: 14px;
+    }
+
+    .Header-profile-info-title {
+        line-height: 12px;
+        font-size: 16px;
+    }
 }
