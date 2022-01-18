@@ -7,6 +7,7 @@ import Header from './Header';
 interface PropsType {
     translate(key: string, config: any): string;
     changeLanguage(locale: Locale): void;
+    locale: Locale;
 }
 
 const Layout: React.FC<PropsType> = (props) => {
