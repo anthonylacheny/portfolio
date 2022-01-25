@@ -28,7 +28,7 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
                     <img src={devicesImg} alt="home" className="HomePage-img" />
 
                     <Link to="/projects" className="HomePage-button">
-                        Voir mes projets
+                        {translate('home.my_project')}
                     </Link>
                 </div>
             </section>
