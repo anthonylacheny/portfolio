@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Navigation.css';
@@ -9,33 +9,43 @@ interface PropsType {
 }
 
 const Navigation: React.FC<PropsType> = ({ translate }) => {
+    const [checked, setChecked] = useState(false);
+    const onCheck = () => setChecked(!checked);
+    const onNavClick = () => setChecked(false);
+
     return (
         <nav className="Navigation">
             <label htmlFor="toggle" className="Navigation-btn">
                 <FontAwesomeIcon icon="bars" className="Navigation-icon-btn" />
             </label>
-            <input type="checkbox" id="toggle" className="Navigation-toogle" />
+            <input
+                type="checkbox"
+                id="toggle"
+                className="Navigation-toogle"
+                onChange={onCheck}
+                checked={checked}
+            />
             <ul className="Navigation-list">
                 <li className="Navigation-item">
-                    <Link to="/" className="Navigation-link">
+                    <Link to="/" className="Navigation-link" onClick={onNavClick}>
                         <FontAwesomeIcon icon="home" className="Navigation-icon" />
                         {translate('navigation.home')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/about" className="Navigation-link">
+                    <Link to="/about" className="Navigation-link" onClick={onNavClick}>
                         <FontAwesomeIcon icon="address-card" className="Navigation-icon" />
                         {translate('navigation.about')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/projects" className="Navigation-link">
+                    <Link to="/projects" className="Navigation-link" onClick={onNavClick}>
                         <FontAwesomeIcon icon="folder-open" className="Navigation-icon" />
                         {translate('navigation.projects')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/contact" className="Navigation-link">
+                    <Link to="/contact" className="Navigation-link" onClick={onNavClick}>
                         <FontAwesomeIcon icon="envelope" className="Navigation-icon" />
                         {translate('navigation.contact')}
                     </Link>

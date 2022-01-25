@@ -1,5 +1,6 @@
 .Footer {
-    border: 1px solid gray;
+    background-color: #2c0055;
+    color: #fff;
 }
 
 .Footer-social {
@@ -19,14 +20,15 @@
 }
 
 .Footer-social-icon:hover {
-    color: #999;
+    color: #bbb;
+    font-size: 24px;
 }
 
 .Footer-copyright {
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    line-height: 16px;
+    font-size: 18px;
     text-align: center;
-    color: #666;
 }

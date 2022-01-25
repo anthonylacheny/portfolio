@@ -1,8 +1,8 @@
 .Header {
-    border-bottom: 1px solid gray;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #2c0055;
 }
 
 .Header-profile {
@@ -13,7 +13,7 @@
 }
 
 .Header-profile-img {
-    border-radius: 24px;
+    border-radius: 25px;
     width: 48px;
     height: 48px;
 }
@@ -31,13 +31,13 @@
 }
 
 .Header-profile-info-name {
-    color: #555;
+    color: #aaa;
     font-size: 24px;
     line-height: 18px;
 }
 
 .Header-profile-info-title {
-    color: #aaa;
+    color: #fff;
     line-height: 14px;
     font-size: 20px;
 }
@@ -48,9 +48,10 @@
 
 .Header-language {
     margin-right: 10px;
+    color: #fff;
 }
 
-@media all and (max-width: 761px) {
+@media all and (max-width: 781px) {
     .Header-profile {
         order: 2;
         flex-direction: row;

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const ContactPage = () => {
+import './ContactPage.css';
+
+const ContactPage: React.FC = () => {
     return (
-        <main>
-            <h2>Contact</h2>
+        <main className="ContactPage">
+            <h2>Contact - En construction</h2>
         </main>
     );
 };

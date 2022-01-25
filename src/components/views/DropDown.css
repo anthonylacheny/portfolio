@@ -11,7 +11,8 @@
 }
 
 .DropDown-header-opened {
-    background-color: #efefef;
+    background-color: #fff;
+    color: #777;
 }
 
 .DropDown-header-title {
@@ -25,10 +26,11 @@
 
 .DropDown-header-icon {
     font-size: 16px;
+    color: inherit;
 }
 
 .DropDown-list {
-    background-color: #eee;
+    background-color: #fff;
     z-index: 100;
     position: absolute;
     left: 0;
@@ -40,11 +42,13 @@
 
 .DropDown-list-item {
     padding: 6px 10px 0 10px;
-    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .DropDown-list-item:hover {
-    background-color: #ccc;
+    background-color: #ddd;
     cursor: pointer;
 }
 
@@ -53,5 +57,6 @@
 }
 
 .DropDown-list-item:last-child {
-    border-bottom: 1px solid transparent;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }

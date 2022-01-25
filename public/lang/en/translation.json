@@ -7,5 +7,12 @@
         "about": "About",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "home": {
+        "present": "Hey, I'm {{name}}",
+        "who_am_i_1": "I'm freelance web developper and IT Architect. I'm passionate and permanent watching about new technologies.",
+        "who_am_i_2": "My expertise is more focused on back-end technologies, however I'm open to front-end and mobile technologies.",
+        "who_am_i_3": "Are you looking for an expert to design a new project? Do you have a problem with an existing project? or maybe you just want a third party opinion?",
+        "who_am_i_4": "I can surely help you! In any case don't hesitate to write me, I will contact you as soon as possible."
     }
 }

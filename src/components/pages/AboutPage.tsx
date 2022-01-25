@@ -1,9 +1,11 @@
 import React from 'react';
 
-const AboutPage = () => {
+import './AboutPage.css';
+
+const AboutPage: React.FC = () => {
     return (
-        <main>
-            <h2>About</h2>
+        <main className="AboutPage">
+            <h2>About - En construction</h2>
         </main>
     );
 };

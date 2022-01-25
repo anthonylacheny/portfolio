@@ -1,9 +1,11 @@
 import React from 'react';
 
-const NotFoundPage = () => {
+import './NotFoundPage.css';
+
+const NotFoundPage: React.FC = () => {
     return (
-        <main>
-            <h2>Not Found</h2>
+        <main className="NotFoundPage">
+            <h2>Not Found - En construction</h2>
         </main>
     );
 };

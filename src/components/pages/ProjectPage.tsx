@@ -1,9 +1,11 @@
 import React from 'react';
 
-const ProjectPage = () => {
+import './ProjectPage.css';
+
+const ProjectPage: React.FC = () => {
     return (
-        <main>
-            <h2>Projetc</h2>
+        <main className="ProjectPage">
+            <h2>Projets - En construction</h2>
         </main>
     );
 };
