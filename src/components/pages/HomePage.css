@@ -113,7 +113,8 @@
     }
 
     .HomePage-title {
-        margin: 8px 0 22px;
+        line-height: 20px;
+        margin: 8px 0 18px;
         font-size: 28px;
         text-align: center;
     }
