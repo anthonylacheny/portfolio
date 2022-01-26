@@ -9,11 +9,12 @@
         "contact": "Me contacter"
     },
     "home": {
-        "present": "Salut, moi c'est {{name}}",
-        "who_am_i_1": "Je suis développeur web et architecte fonctionnel indépendant. En veille permanente je suis passionné par les nouvelles technologies.",
+        "title": "Mon offre? Trouver votre solution!",
+        "who_am_i_0": "Salut, moi c'est {{name}}, ",
+        "who_am_i_1": "Je suis développeur web et architecte fonctionnel indépendant installé à Madrid. En veille permanente je suis passionné par les nouvelles technologies.",
         "who_am_i_2": "Mon expertise est plutôt orientée sur les technologies back-end, néanmoins je suis ouvert aux technologies front-end et mobile.",
-        "who_am_i_3": "Vous cherchez un expert pour la conception d'un nouveau projet ? Vous avez une problèmatique sur un projet déjà existant ? ou peut-être vous voulez seulement l'opinion d'un tiers ?",
-        "who_am_i_4": "Je peux sûrement vous aider ! Dans tout les cas n'hésitez pas à me contacter, je reviendrai vers vous le plus rapidement possible.",
+        "who_am_i_3": "Vous cherchez un expert pour la conception d'un nouveau projet? Vous voulez faire évoluer un projet déjà existant? ou peut-être vous voulez seulement l'opinion ou le conseil d'un tiers?",
+        "who_am_i_4": "Je peux sûrement vous aider! Dans tout les cas n'hésitez pas à me contacter, je reviendrai vers vous le plus rapidement possible.",
         "my_project": "Voir mes projets"
     }
 }

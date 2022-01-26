@@ -12,8 +12,9 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
         <main className="HomePage">
             <section className="HomePage-left">
                 <div className="HomePage-left-content">
+                    <h3 className="HomePage-title">{translate('home.title')}</h3>
                     <p className="HomePage-left-first">
-                        {translate('home.present', { name: process.env.REACT_APP_AUTHOR_NAME })}
+                        {translate('home.who_am_i_0', { name: process.env.REACT_APP_AUTHOR_NAME })}
                     </p>
                     <div className="HomePage-left-desc">
                         <p>{translate('home.who_am_i_1')}</p>

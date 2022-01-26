@@ -28,6 +28,16 @@
     text-align: justify;
 }
 
+.HomePage-title {
+    line-height: 28px;
+    margin-top: 0;
+    font-size: 38px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 34px;
+    text-align: left;
+}
+
 .HomePage-right-content {
     display: flex;
     flex-direction: column;
@@ -37,9 +47,9 @@
 }
 
 .HomePage-left-first {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #999;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -102,9 +112,14 @@
         margin: 10px 0 20px 0;
     }
 
+    .HomePage-title {
+        margin: 8px 0 22px;
+        font-size: 28px;
+        text-align: center;
+    }
+
     .HomePage-left-first {
         font-size: 26px;
         margin: 8px 0;
-        text-align: center;
     }
 }
