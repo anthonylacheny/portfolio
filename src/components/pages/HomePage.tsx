@@ -11,9 +11,7 @@ interface PropsType {
 const HomePage: React.FC<PropsType> = ({ translate }) => {
     return (
         <main className="HomePage">
-            <div className="HomePage-arrow">
-                <FontAwesomeIcon icon="smile-beam" className="HomePage-arrow-icon" />
-            </div>
+            <div className="HomePage-arrow"></div>
             <div className="HomePage-title-main">
                 {translate('architect')}, {translate('developer')}
             </div>
