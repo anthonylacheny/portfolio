@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './HomePage.css';
 import devicesImg from '../images/devices.jpg';
 
@@ -10,6 +11,9 @@ interface PropsType {
 const HomePage: React.FC<PropsType> = ({ translate }) => {
     return (
         <main className="HomePage">
+            <div className="HomePage-arrow">
+                <FontAwesomeIcon icon="smile-beam" className="HomePage-arrow-icon" />
+            </div>
             <div className="HomePage-title-main">
                 {translate('architect')}, {translate('developer')}
             </div>

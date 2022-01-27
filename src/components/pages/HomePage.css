@@ -3,6 +3,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.HomePage-arrow {
+    background-color: #ddd;
+    box-shadow: 0 0 4px 3px rgba(44, 0, 85, 0.4);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -75px;
+    top: -75px;
+    transform: rotate(-45deg);
+}
+
+.HomePage-arrow-icon {
+    color: #fff;
+    font-size: 34px;
+    left: 54px;
+    top: 105px;
+    position: absolute;
 }
 
 .HomePage-title-main {
@@ -50,7 +70,7 @@
     cursor: pointer;
     font-size: 22px;
     font-weight: bold;
-    background-color: #2c0055;
+    background-color: rgb(44, 0, 85);
     padding: 2px 12px;
     border-radius: 6px;
 }
@@ -85,6 +105,19 @@
 }
 
 @media all and (max-width: 820px) {
+    .HomePage-arrow {
+        height: 70px;
+        width: 70px;
+        left: -35px;
+        top: -35px;
+    }
+
+    .HomePage-arrow-icon {
+        font-size: 20px;
+        left: 22px;
+        top: 46px;
+    }
+
     .HomePage-section {
         flex-direction: column;
         margin: 10px 0;
@@ -92,13 +125,13 @@
 
     .HomePage-title-main {
         line-height: 18px;
-        margin-top: 20px;
+        margin: 20px 40px 0 40px;
         font-size: 28px;
     }
 
     .HomePage-title-desc {
         line-height: 10px;
-        margin-top: 10px;
+        margin: 10px 30px 0 30px;
         font-size: 26px;
         margin-bottom: 5px;
     }
