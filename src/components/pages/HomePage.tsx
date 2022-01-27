@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './HomePage.css';
 import devicesImg from '../images/devices.jpg';
 
@@ -12,14 +12,11 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
     return (
         <main className="HomePage">
             <div className="HomePage-arrow"></div>
-            <div className="HomePage-title-main">
-                {translate('architect')}, {translate('developer')}
-            </div>
-            <h3 className="HomePage-title-desc">{translate('home.title')}</h3>
 
             <section className="HomePage-section">
                 <div className="HomePage-who">
                     <div className="HomePage-who-content">
+                        <h3 className="HomePage-title">{translate('home.title')}</h3>
                         <p>
                             {translate('home.who_am_i_0', {
                                 name: process.env.REACT_APP_AUTHOR_NAME,
