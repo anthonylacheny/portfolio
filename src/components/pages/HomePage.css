@@ -10,6 +10,7 @@
     margin-top: 30px;
     font-size: 38px;
     font-weight: bold;
+
     text-align: center;
 }
 
@@ -40,7 +41,7 @@
 
 .HomePage-img {
     width: 80%;
-    max-width: 320px;
+    max-width: 520px;
     object-fit: contain;
 }
 
@@ -123,5 +124,9 @@
     .HomePage-who-content > p:last-of-type {
         margin-top: 14px;
         line-height: 18px;
+    }
+
+    .HomePage-img {
+        max-width: 320px;
     }
 }
