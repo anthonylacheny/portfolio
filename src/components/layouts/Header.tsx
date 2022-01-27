@@ -52,7 +52,7 @@ const Header: React.FC<PropsType> = (props) => {
                 <div className="Header-profile-info">
                     <span className="Header-profile-info-name">{process.env.REACT_APP_AUTHOR}</span>
                     <span className="Header-profile-info-title">
-                        {props.translate('developer')}, {props.translate('architect')}
+                        {props.translate('architect')}, {props.translate('developer')}
                     </span>
                 </div>
             </div>
