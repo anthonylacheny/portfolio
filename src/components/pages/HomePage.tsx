@@ -41,7 +41,7 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
                             emulateTouch={true}
                             infiniteLoop={true}>
                             {carouselImgs.map((e) => (
-                                <div className="HomePage-carousel-img-wrapper">
+                                <div key={e.alt} className="HomePage-carousel-img-wrapper">
                                     <img
                                         src={e.img}
                                         className="HomePage-carousel-img"
