@@ -93,14 +93,14 @@
 
 .HomePage-desc-content > p {
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
-    margin-bottom: 8px;
-    line-height: 18px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .HomePage-desc-content > p:first-of-type {
-    font-size: 16px;
+    font-size: 18px;
     color: #999;
     font-weight: bold;
 }

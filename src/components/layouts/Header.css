@@ -10,13 +10,6 @@
     color: #fff;
 }
 
-.Header-profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 5px 0px 5px 20px;
-}
-
 .Header-profile-img {
     border-radius: 24px;
     width: 48px;
@@ -53,21 +46,13 @@
 }
 
 @media all and (max-width: 781px) {
-    .Header-profile {
-        order: 2;
-        flex-direction: row;
-        flex: 1;
-        align-self: center;
-        justify-content: center;
-    }
-
     .Header-navigation {
         order: 1;
         margin-left: 0;
     }
 
     .Header-language {
-        order: 3;
+        order: 2;
     }
 
     .Header-profile-img {
@@ -79,6 +64,8 @@
 
     .Header-language {
         align-self: center;
+        justify-self: end;
         margin: 0 auto;
+        width: 100px;
     }
 }
