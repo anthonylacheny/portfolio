@@ -23,7 +23,6 @@
     font-size: 24px;
     text-align: center;
     color: #333;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .HomePage-carousel {
@@ -89,7 +88,7 @@
 }
 
 .HomePage-desc-content {
-    padding-top: 4px;
+    padding-top: 12px;
 }
 
 .HomePage-desc-content > p {
