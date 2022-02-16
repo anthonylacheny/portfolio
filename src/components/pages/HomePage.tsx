@@ -9,6 +9,12 @@ import en from '../images/en.png';
 const img =
     'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
 
+const carouselImgs = [
+    { img: fr, alt: 'c1' },
+    { img: en, alt: 'c2' },
+    { img: devices, alt: 'c3' },
+];
+
 interface PropsType {
     translate: (key: string, config?: any) => string;
 }
@@ -34,19 +40,15 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
                             swipeable={true}
                             emulateTouch={true}
                             infiniteLoop={true}>
-                            <div className="HomePage-carousel-img-wrapper">
-                                <img src={fr} className="HomePage-carousel-img" alt="carousel1" />
-                            </div>
-                            <div className="HomePage-carousel-img-wrapper">
-                                <img src={en} className="HomePage-carousel-img" alt="carousel2" />
-                            </div>
-                            <div className="HomePage-carousel-img-wrapper">
-                                <img
-                                    src={devices}
-                                    className="HomePage-carousel-img"
-                                    alt="carousel3"
-                                />
-                            </div>
+                            {carouselImgs.map((e) => (
+                                <div className="HomePage-carousel-img-wrapper">
+                                    <img
+                                        src={e.img}
+                                        className="HomePage-carousel-img"
+                                        alt={e.alt}
+                                    />
+                                </div>
+                            ))}
                         </Carousel>
                     </div>
                     <p>
