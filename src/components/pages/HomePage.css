@@ -123,6 +123,14 @@
         margin: 0 0 20px 0;
     }
 
+    .HomePage-carousel {
+        max-width: 330px;
+    }
+
+    .HomePage-carousel-img-wrapper {
+        max-height: 200px;
+    }
+
     .HomePage-desc > p {
         font-size: 14px;
         margin-bottom: 10px;
