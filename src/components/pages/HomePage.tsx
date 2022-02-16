@@ -51,15 +51,17 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
                             ))}
                         </Carousel>
                     </div>
-                    <p>
-                        {translate('home.who_am_i_0', {
-                            name: process.env.REACT_APP_AUTHOR_NAME,
-                        })}
-                    </p>
-                    <p>{translate('home.who_am_i_1')}</p>
-                    <p>{translate('home.who_am_i_2')}</p>
-                    <p>{translate('home.who_am_i_3')}</p>
-                    <p>{translate('home.who_am_i_4')}</p>
+                    <div className="HomePage-desc-content">
+                        <p>
+                            {translate('home.who_am_i_0', {
+                                name: process.env.REACT_APP_AUTHOR_NAME,
+                            })}
+                        </p>
+                        <p>{translate('home.who_am_i_1')}</p>
+                        <p>{translate('home.who_am_i_2')}</p>
+                        <p>{translate('home.who_am_i_3')}</p>
+                        <p>{translate('home.who_am_i_4')}</p>
+                    </div>
                 </div>
             </section>
         </main>

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    background-color: #fff;
 }
 
 .HomePage-section {
@@ -12,28 +12,26 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     border-radius: 8px;
-    padding-top: 10px;
 }
 
 .HomePage-title {
     margin: 0 0 40px 0;
     font-size: 24px;
-    background-color: #fff;
     text-align: center;
+    color: #333;
 }
 
 .HomePage-carousel {
-    margin: 0 8px 30px 8px;
+    margin: 0 8px 20px 8px;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     align-self: center;
-    max-width: 550px;
+    max-width: 420px;
 }
 
 .HomePage-carousel-img-wrapper {
-    height: 250px;
+    height: 200px;
 }
 
 .HomePage-carousel-img {
@@ -75,7 +73,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .HomePage-desc-title {
@@ -83,21 +81,25 @@
     text-align: center;
 }
 
-.HomePage-desc > p {
+.HomePage-desc-content {
+    padding-top: 10px;
+}
+
+.HomePage-desc-content > p {
     padding: 0 10px;
     font-size: 16px;
     text-align: justify;
     margin-bottom: 10px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
-.HomePage-desc > p:first-of-type {
+.HomePage-desc-content > p:first-of-type {
     font-size: 18px;
     color: #999;
     font-weight: bold;
 }
 
-.HomePage-desc > p:last-of-type {
+.HomePage-desc-content > p:last-of-type {
     font-weight: bold;
 }
 
@@ -131,13 +133,18 @@
         max-height: 200px;
     }
 
-    .HomePage-desc > p {
+    .HomePage-desc-content {
+        padding-top: 0;
+    }
+
+    .HomePage-desc-content > p {
         font-size: 14px;
         margin-bottom: 10px;
         line-height: 20px;
     }
 
-    .HomePage-desc > p:first-of-type {
+    .HomePage-desc-content > p:first-of-type {
         font-size: 16px;
+        text-align: center;
     }
 }
