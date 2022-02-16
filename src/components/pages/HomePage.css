@@ -133,7 +133,7 @@
 
     .HomePage-title {
         font-size: 18px;
-        margin: 0;
+        margin: 0 20px 0 20px;
     }
 
     .HomePage-desc {
