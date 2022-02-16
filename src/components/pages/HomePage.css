@@ -120,17 +120,21 @@
         margin-bottom: 20px;
     }
 
+    .HomePage-profile {
+        padding-bottom: 6px;
+    }
+
     .HomePage-title {
-        font-size: 22px;
+        font-size: 20px;
         margin: 0 0 20px 0;
     }
 
     .HomePage-carousel {
-        max-width: 330px;
+        max-width: 300px;
     }
 
     .HomePage-carousel-img-wrapper {
-        max-height: 200px;
+        max-height: 180px;
     }
 
     .HomePage-desc-content {
