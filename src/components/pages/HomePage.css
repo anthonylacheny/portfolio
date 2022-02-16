@@ -135,6 +135,10 @@
         margin: 0;
     }
 
+    .HomePage-desc {
+        border-left: none;
+    }
+
     .HomePage-desc-content {
         padding-top: 0;
     }
