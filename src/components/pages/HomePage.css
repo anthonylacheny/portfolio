@@ -20,9 +20,10 @@
 
 .HomePage-title {
     margin: 0 0 20px 0;
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     color: #333;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .HomePage-carousel {
@@ -96,7 +97,7 @@
     font-size: 16px;
     text-align: justify;
     margin-bottom: 10px;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 .HomePage-desc-content > p:first-of-type {
