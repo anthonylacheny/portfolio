@@ -4,6 +4,9 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
+    margin: 0 0 10px;
+    padding: 20px 0;
 }
 
 .HomePage-section {
@@ -12,12 +15,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     border-radius: 8px;
 }
 
 .HomePage-title {
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
     font-size: 24px;
     text-align: center;
     color: #333;
@@ -27,7 +29,7 @@
     margin: 0 8px 20px 8px;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     align-self: center;
-    max-width: 420px;
+    max-width: 320px;
 }
 
 .HomePage-carousel-img-wrapper {
@@ -76,25 +78,29 @@
     padding: 20px;
 }
 
+.HomePage-desc {
+    border-left: 1px dashed #ccc;
+}
+
 .HomePage-desc-title {
     font-size: 24px;
     text-align: center;
 }
 
 .HomePage-desc-content {
-    padding-top: 10px;
+    padding-top: 4px;
 }
 
 .HomePage-desc-content > p {
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
-    margin-bottom: 10px;
-    line-height: 22px;
+    margin-bottom: 8px;
+    line-height: 18px;
 }
 
 .HomePage-desc-content > p:first-of-type {
-    font-size: 18px;
+    font-size: 16px;
     color: #999;
     font-weight: bold;
 }
@@ -125,16 +131,8 @@
     }
 
     .HomePage-title {
-        font-size: 20px;
-        margin: 0 0 20px 0;
-    }
-
-    .HomePage-carousel {
-        max-width: 300px;
-    }
-
-    .HomePage-carousel-img-wrapper {
-        max-height: 180px;
+        font-size: 18px;
+        margin: 0;
     }
 
     .HomePage-desc-content {

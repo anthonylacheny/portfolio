@@ -22,9 +22,9 @@ interface PropsType {
 const HomePage: React.FC<PropsType> = ({ translate }) => {
     return (
         <main className="HomePage">
+            <h1 className="HomePage-title">{translate('home.title')}</h1>
             <section className="HomePage-section">
                 <div className="HomePage-profile">
-                    <h1 className="HomePage-title">{translate('home.title')}</h1>
                     <img src={img} alt="profile" className="HomePage-profile-img" />
                     <span className="HomePage-profile-name">{process.env.REACT_APP_AUTHOR}</span>
                     <span className="HomePage-profile-title">
