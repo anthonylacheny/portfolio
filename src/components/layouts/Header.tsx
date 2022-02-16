@@ -10,9 +10,6 @@ import en from '../images/en.png';
 import fr from '../images/fr.png';
 import es from '../images/es.png';
 
-const img =
-    'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
-
 interface PropsType {
     translate: (key: string, config?: any) => string;
     changeLanguage(locale: Locale): void;

@@ -35,13 +35,17 @@ const HomePage: React.FC<PropsType> = ({ translate }) => {
                             emulateTouch={true}
                             infiniteLoop={true}>
                             <div className="HomePage-carousel-img-wrapper">
-                                <img src={fr} className="HomePage-carousel-img" />
+                                <img src={fr} className="HomePage-carousel-img" alt="carousel1" />
                             </div>
                             <div className="HomePage-carousel-img-wrapper">
-                                <img src={en} className="HomePage-carousel-img" />
+                                <img src={en} className="HomePage-carousel-img" alt="carousel2" />
                             </div>
                             <div className="HomePage-carousel-img-wrapper">
-                                <img src={devices} className="HomePage-carousel-img" />
+                                <img
+                                    src={devices}
+                                    className="HomePage-carousel-img"
+                                    alt="carousel3"
+                                />
                             </div>
                         </Carousel>
                     </div>
