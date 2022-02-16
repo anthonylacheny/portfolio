@@ -1,135 +1,135 @@
 .HomePage {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-}
-
-.HomePage-arrow {
-    background-color: #eee;
-    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    left: -50px;
-    top: -50px;
-    transform: rotate(-45deg);
+    justify-content: center;
+    margin: 5px;
 }
 
 .HomePage-section {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 10px 0 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
+    border-radius: 8px;
+    padding-top: 10px;
 }
 
 .HomePage-title {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+    background-color: #fff;
     text-align: center;
-    line-height: 24px;
-    margin: 10px 0 26px;
-    font-size: 34px;
 }
 
-.HomePage-who,
-.HomePage-projects {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.HomePage-carousel {
+    margin: 0 8px 30px 8px;
+    box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
+    align-self: center;
+    max-width: 550px;
 }
 
-.HomePage-img {
-    width: 80%;
-    max-width: 520px;
+.HomePage-carousel-img-wrapper {
+    height: 250px;
+}
+
+.HomePage-carousel-img {
+    height: 100%;
     object-fit: contain;
 }
 
-.HomePage-button {
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 22px;
+.HomePage-profile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
     font-weight: bold;
-    background-color: rgb(44, 0, 85);
-    padding: 2px 12px;
-    border-radius: 6px;
 }
 
-.HomePage-button:hover {
-    background-color: rgba(44, 0, 85, 0.8);
+.HomePage-profile-img {
+    border-radius: 101px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
 }
 
-.HomePage-who-content {
-    padding: 20px 40px;
-    font-size: 26px;
-    margin: 0 10px 10px 20px;
+.HomePage-profile-name {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.HomePage-profile-title {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.HomePage-profile,
+.HomePage-desc {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.HomePage-desc-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.HomePage-desc > p {
+    padding: 0 10px;
+    font-size: 16px;
     text-align: justify;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    line-height: 24px;
 }
 
-.HomePage-who-content > p {
-    margin-top: 14px;
-    line-height: 22px;
-}
-
-.HomePage-who-content > p:first-of-type {
-    margin-bottom: 16px;
+.HomePage-desc > p:first-of-type {
+    font-size: 18px;
     color: #999;
-    font-size: 32px;
     font-weight: bold;
 }
 
-.HomePage-who-content > p:last-of-type {
-    margin-top: 18px;
-    line-height: 22px;
+.HomePage-desc > p:last-of-type {
     font-weight: bold;
 }
 
-@media all and (max-width: 820px) {
-    .HomePage-arrow {
-        height: 70px;
-        width: 70px;
-        left: -35px;
-        top: -35px;
-    }
-
+@media all and (max-width: 760px) {
     .HomePage-section {
         flex-direction: column;
-        margin: 10px 0 20px;
+    }
+
+    .HomePage-profile-name,
+    .HomePage-profile-title {
+        font-size: 14px;
+    }
+
+    .HomePage-profile-img {
+        border-radius: 60px;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
     }
 
     .HomePage-title {
-        line-height: 20px;
-        margin: 10px 0 30px;
-        font-size: 28px;
-    }
-
-    .HomePage-who-content {
-        padding: 14px;
         font-size: 22px;
-        margin: 10px 10px 10px 10px;
-        text-align: justify;
+        margin: 0 0 20px 0;
     }
 
-    .HomePage-who-content > p {
-        margin-top: 10px;
-        line-height: 18px;
+    .HomePage-desc > p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 20px;
     }
 
-    .HomePage-who-content > p:first-of-type {
-        margin-bottom: 12px;
-        font-size: 26px;
-    }
-
-    .HomePage-who-content > p:last-of-type {
-        margin-top: 14px;
-        line-height: 18px;
-    }
-
-    .HomePage-img {
-        max-width: 320px;
+    .HomePage-desc > p:first-of-type {
+        font-size: 16px;
     }
 }

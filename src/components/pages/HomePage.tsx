@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
 
 import './HomePage.css';
-import devicesImg from '../images/devices.jpg';
+import devices from '../images/devices.jpg';
+import fr from '../images/fr.png';
+import en from '../images/en.png';
+
+const img =
+    'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
 
 interface PropsType {
     translate: (key: string, config?: any) => string;
@@ -11,28 +16,44 @@ interface PropsType {
 const HomePage: React.FC<PropsType> = ({ translate }) => {
     return (
         <main className="HomePage">
-            <div className="HomePage-arrow"></div>
-
             <section className="HomePage-section">
-                <div className="HomePage-who">
-                    <div className="HomePage-who-content">
-                        <h3 className="HomePage-title">{translate('home.title')}</h3>
-                        <p>
-                            {translate('home.who_am_i_0', {
-                                name: process.env.REACT_APP_AUTHOR_NAME,
-                            })}
-                        </p>
-                        <p>{translate('home.who_am_i_1')}</p>
-                        <p>{translate('home.who_am_i_2')}</p>
-                        <p>{translate('home.who_am_i_3')}</p>
-                        <p>{translate('home.who_am_i_4')}</p>
-                    </div>
+                <div className="HomePage-profile">
+                    <h1 className="HomePage-title">{translate('home.title')}</h1>
+                    <img src={img} alt="profile" className="HomePage-profile-img" />
+                    <span className="HomePage-profile-name">{process.env.REACT_APP_AUTHOR}</span>
+                    <span className="HomePage-profile-title">
+                        {translate('architect')}, {translate('developer')}
+                    </span>
                 </div>
-                <div className="HomePage-projects">
-                    <img src={devicesImg} alt="home" className="HomePage-img" />
-                    <Link to="/projects" className="HomePage-button">
-                        {translate('home.my_project')}
-                    </Link>
+                <div className="HomePage-desc">
+                    <div className="HomePage-carousel">
+                        <Carousel
+                            showThumbs={false}
+                            showStatus={false}
+                            autoPlay={true}
+                            swipeable={true}
+                            emulateTouch={true}
+                            infiniteLoop={true}>
+                            <div className="HomePage-carousel-img-wrapper">
+                                <img src={fr} className="HomePage-carousel-img" />
+                            </div>
+                            <div className="HomePage-carousel-img-wrapper">
+                                <img src={en} className="HomePage-carousel-img" />
+                            </div>
+                            <div className="HomePage-carousel-img-wrapper">
+                                <img src={devices} className="HomePage-carousel-img" />
+                            </div>
+                        </Carousel>
+                    </div>
+                    <p>
+                        {translate('home.who_am_i_0', {
+                            name: process.env.REACT_APP_AUTHOR_NAME,
+                        })}
+                    </p>
+                    <p>{translate('home.who_am_i_1')}</p>
+                    <p>{translate('home.who_am_i_2')}</p>
+                    <p>{translate('home.who_am_i_3')}</p>
+                    <p>{translate('home.who_am_i_4')}</p>
                 </div>
             </section>
         </main>

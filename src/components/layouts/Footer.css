@@ -1,10 +1,8 @@
 .Footer {
-    background-color: #2c0055;
-    color: #fff;
 }
 
 .Footer-social {
-    margin-top: 10px;
+    margin-top: 4px;
     text-align: center;
 }
 
@@ -15,20 +13,17 @@
 }
 
 .Footer-social-icon {
-    font-size: 26px;
-    margin-right: 10px;
+    font-size: 24px;
+    margin-right: 6px;
 }
 
 .Footer-social-icon:hover {
     color: #bbb;
-    font-size: 24px;
 }
 
 .Footer-copyright {
     font-weight: bold;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    line-height: 16px;
-    font-size: 18px;
+    margin: 4px 0;
+    font-size: 12px;
     text-align: center;
 }

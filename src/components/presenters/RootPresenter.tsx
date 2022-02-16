@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
-import { Route, Routes, useSearchParams } from 'react-router-dom';
+import { Route, Routes, useLocation, useSearchParams } from 'react-router-dom';
 import { Locale } from '../../types';
 import { getLocaleFromString } from '../../utils/lang';
 import Layout from '../layouts/Layout';

@@ -1,17 +1,6 @@
-@font-face {
-    font-family: DongleLight;
-    src: local('DongleLight'), url('./components/fonts/Dongle-Light.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: DongleBold;
-    src: local('DongleBold'), url('./components/fonts/Dongle-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
 body {
     margin: 0;
-    font-family: 'DongleLight', 'DongleBold';
+    font-family: Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;

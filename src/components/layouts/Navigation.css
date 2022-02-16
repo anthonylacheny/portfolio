@@ -14,32 +14,24 @@
 
 .Navigation-item {
     padding: 0 6px;
-    color: #fff;
 }
 
 .Navigation-link {
     font-weight: bold;
     text-decoration: none;
     color: inherit;
-
     cursor: pointer;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .Navigation-icon {
-    font-size: 14px;
-    margin-right: 4px;
+    font-size: 12px;
+    margin-right: 2px;
     color: inherit;
 }
 
 .Navigation-link:hover {
-    font-size: 16px;
-    padding: 4px 0;
     color: #aaa;
-}
-
-.Navigation-link:hover .Navigation-icon {
-    font-size: 10px;
 }
 
 @media all and (max-width: 781px) {
