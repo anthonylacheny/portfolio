@@ -10,29 +10,6 @@
     color: #fff;
 }
 
-.Header-profile-img {
-    border-radius: 24px;
-    width: 48px;
-    height: 48px;
-}
-
-.Header-profile-img,
-.Header-profile-info {
-    margin-right: 10px;
-}
-
-.Header-profile-info-name,
-.Header-profile-info-title {
-    font-weight: bold;
-    display: block;
-    padding: 1px 5px;
-}
-
-.Header-profile-info-name {
-    color: #aaa;
-    font-size: 14px;
-}
-
 .Header-profile-info-title {
     font-size: 12px;
 }
@@ -47,25 +24,14 @@
 
 @media all and (max-width: 781px) {
     .Header-navigation {
-        order: 1;
         margin-left: 0;
     }
 
     .Header-language {
-        order: 2;
-    }
-
-    .Header-profile-img {
-        border-radius: 20px;
-        width: 40px;
-        height: 40px;
-        margin-right: 2px;
+        margin-right: 0;
     }
 
     .Header-language {
-        align-self: center;
-        justify-self: end;
-        margin: 0 auto;
-        width: 100px;
+        margin: 0 10px 0 auto;
     }
 }
