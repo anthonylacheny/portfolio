@@ -6,9 +6,7 @@ import { getLocaleFromString } from '../utils/lang';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import AboutSection from './sections/AboutSection';
-import ContactSection from './sections/ContactSection';
 import HomeSection from './sections/HomeSection';
-import ProjectSection from './sections/ProjectSection';
 
 interface PropsType extends WithTranslation {}
 
