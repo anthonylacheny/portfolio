@@ -82,7 +82,7 @@
 
 @media all and (max-width: 820px) {
     .AboutSection {
-        padding: 10px;
+        padding: 4px;
     }
 
     .AboutSection-skills {
@@ -99,7 +99,7 @@
     }
 
     .AboutSection-skill-section {
-        padding: 0 10px;
+        padding: 10px 4px;
         margin: 4px;
     }
 
