@@ -8,6 +8,11 @@ import {
     faAngleDown,
     faAngleUp,
     faBars,
+    faServer,
+    faMobileAlt,
+    faDesktop,
+    faWrench,
+    faDatabase,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -21,4 +26,9 @@ library.add(
     faAngleDown,
     faAngleUp,
     faBars,
+    faServer,
+    faMobileAlt,
+    faDesktop,
+    faWrench,
+    faDatabase,
 );

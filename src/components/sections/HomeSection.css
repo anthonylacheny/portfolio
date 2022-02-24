@@ -1,47 +1,33 @@
-.HomePage {
+.HomeSection {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     margin: 0 0 10px;
-    padding: 20px 0;
-}
-
-.HomePage-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 0 0;
     width: 100%;
     border-radius: 8px;
 }
 
-.HomePage-title {
-    margin: 0 0 20px 0;
-    font-size: 24px;
-    text-align: center;
-    color: #333;
-}
-
-.HomePage-carousel {
+.HomeSection-carousel {
     margin: 0 8px 20px 8px;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     align-self: center;
-    max-width: 320px;
+    max-width: 420px;
 }
 
-.HomePage-carousel-img-wrapper {
-    height: 200px;
+.HomeSection-carousel-img-wrapper {
+    height: 220px;
 }
 
-.HomePage-carousel-img {
+.HomeSection-carousel-img {
     height: 100%;
     object-fit: contain;
 }
 
-.HomePage-profile {
+.HomeSection-profile {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -51,7 +37,15 @@
     font-weight: bold;
 }
 
-.HomePage-profile-img {
+.HomeSection-title {
+    padding: 0 0 30px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    max-width: 440px;
+}
+
+.HomeSection-profile-img {
     border-radius: 101px;
     width: 200px;
     height: 200px;
@@ -59,39 +53,39 @@
     border: 2px solid #ccc;
 }
 
-.HomePage-profile-name {
+.HomeSection-profile-name {
     color: #333;
     font-size: 16px;
     margin-bottom: 4px;
 }
 
-.HomePage-profile-title {
+.HomeSection-profile-title {
     font-size: 14px;
     color: #aaa;
 }
 
-.HomePage-profile,
-.HomePage-desc {
+.HomeSection-profile,
+.HomeSection-desc {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 20px;
 }
 
-.HomePage-desc {
+.HomeSection-desc {
     border-left: 1px dashed #ccc;
 }
 
-.HomePage-desc-title {
+.HomeSection-desc-title {
     font-size: 24px;
     text-align: center;
 }
 
-.HomePage-desc-content {
+.HomeSection-desc-content {
     padding-top: 12px;
 }
 
-.HomePage-desc-content > p {
+.HomeSection-desc-content > p {
     padding: 0 10px;
     font-size: 16px;
     text-align: justify;
@@ -99,58 +93,66 @@
     line-height: 22px;
 }
 
-.HomePage-desc-content > p:first-of-type {
+.HomeSection-desc-content > p:first-of-type {
     font-size: 18px;
     color: #999;
     font-weight: bold;
 }
 
-.HomePage-desc-content > p:last-of-type {
+.HomeSection-desc-content > p:last-of-type {
     font-weight: bold;
 }
 
 @media all and (max-width: 760px) {
-    .HomePage-section {
+    .HomeSection {
         flex-direction: column;
     }
 
-    .HomePage-profile-name,
-    .HomePage-profile-title {
+    .HomeSection-profile-name,
+    .HomeSection-profile-title {
         font-size: 14px;
     }
 
-    .HomePage-profile-img {
+    .HomeSection-profile-img {
         border-radius: 60px;
         width: 120px;
         height: 120px;
         margin-bottom: 20px;
     }
 
-    .HomePage-profile {
+    .HomeSection-profile {
         padding-bottom: 6px;
     }
 
-    .HomePage-title {
+    .HomeSection-title {
         font-size: 18px;
         margin: 0 20px 0 20px;
     }
 
-    .HomePage-desc {
+    .HomeSection-desc {
         border-left: none;
     }
 
-    .HomePage-desc-content {
+    .HomeSection-desc-content {
         padding-top: 0;
     }
 
-    .HomePage-desc-content > p {
+    .HomeSection-desc-content > p {
         font-size: 14px;
         margin-bottom: 10px;
         line-height: 20px;
     }
 
-    .HomePage-desc-content > p:first-of-type {
+    .HomeSection-desc-content > p:first-of-type {
         font-size: 16px;
         text-align: center;
+    }
+
+    .HomeSection-carousel {
+        max-width: 300px;
+    }
+
+    .HomeSection-carousel-img-wrapper {
+        height: 180px;
     }
 }

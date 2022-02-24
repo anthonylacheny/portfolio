@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 import './Navigation.css';
 
@@ -27,25 +27,49 @@ const Navigation: React.FC<PropsType> = ({ translate }) => {
             />
             <ul className="Navigation-list">
                 <li className="Navigation-item">
-                    <Link to="/" className="Navigation-link" onClick={onNavClick}>
+                    <Link
+                        to="Home"
+                        className="Navigation-link"
+                        onClick={onNavClick}
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         <FontAwesomeIcon icon="home" className="Navigation-icon" />
                         {translate('navigation.home')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/about" className="Navigation-link" onClick={onNavClick}>
+                    <Link
+                        to="About"
+                        className="Navigation-link"
+                        onClick={onNavClick}
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         <FontAwesomeIcon icon="address-card" className="Navigation-icon" />
                         {translate('navigation.about')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/projects" className="Navigation-link" onClick={onNavClick}>
+                    <Link
+                        to="Project"
+                        className="Navigation-link"
+                        onClick={onNavClick}
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         <FontAwesomeIcon icon="folder-open" className="Navigation-icon" />
                         {translate('navigation.projects')}
                     </Link>
                 </li>
                 <li className="Navigation-item">
-                    <Link to="/contact" className="Navigation-link" onClick={onNavClick}>
+                    <Link
+                        to="Contact"
+                        className="Navigation-link"
+                        onClick={onNavClick}
+                        spy={true}
+                        smooth={true}
+                        duration={500}>
                         <FontAwesomeIcon icon="envelope" className="Navigation-icon" />
                         {translate('navigation.contact')}
                     </Link>
