@@ -13,6 +13,8 @@ import {
     faDesktop,
     faWrench,
     faDatabase,
+    faAngleRight,
+    faCode,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -31,4 +33,6 @@ library.add(
     faDesktop,
     faWrench,
     faDatabase,
+    faAngleRight,
+    faCode,
 );

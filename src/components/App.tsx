@@ -28,7 +28,7 @@ const App: React.FC<PropsType> = (props) => {
         <div className="Layout">
             <Header translate={translate} changeLanguage={changeLanguage} locale={locale} />
             <HomeSection translate={translate} />
-            <AboutSection />
+            <AboutSection translate={translate} />
             {/* <ProjectSection />
             <ContactSection />*/}
 

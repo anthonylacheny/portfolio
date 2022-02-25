@@ -16,5 +16,12 @@
         "who_am_i_3": "¿Buscas un experto para diseñar un nuevo proyecto? ¿Quieres evolucionar un proyecto existente? ¿O tal vez solo quieres feedback/asesoramiento externo al proyecto?",
         "who_am_i_4": "¡Seguro que podemos colaborar! No dudes en escribirme, me pondré en contacto contigo lo antes posible.",
         "my_project": "Ver mis proyectos"
+    },
+    "about": {
+        "skills": "Habilidades",
+        "backend": "Back-end",
+        "frontend": "Front-end y Móvil",
+        "database": "Base de datos",
+        "wrench": "Otros"
     }
 }

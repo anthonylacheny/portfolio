@@ -26,21 +26,25 @@ import gitLogo from '../components/images/svg/git.svg';
 import kafkaLogo from '../components/images/svg/kafka.svg';
 import rabbitMQLogo from '../components/images/svg/rabbitmq.svg';
 
-export const skills: Array<{
+export type SkillCategoryType = 'B' | 'F' | 'D' | 'X';
+
+export interface SkillType {
     title: string;
     image: string;
-    categories: Array<'B' | 'F' | 'M' | 'D' | 'X'>;
-}> = [
+    categories: Array<SkillCategoryType>;
+}
+
+export const skills: Array<SkillType> = [
     { title: 'Node JS', image: nodeLogo, categories: ['B'] },
     { title: 'React', image: reactLogo, categories: ['F'] },
-    { title: 'React Native', image: reactNativeLogo, categories: ['M'] },
+    { title: 'React Native', image: reactNativeLogo, categories: ['F'] },
     { title: 'TypeScript', image: typescriptLogo, categories: ['B', 'F'] },
     { title: 'PHP', image: phpLogo, categories: ['B'] },
     { title: 'Symfony', image: symfonyLogo, categories: ['B'] },
     { title: 'Slim', image: slimLogo, categories: ['B'] },
     { title: 'Java', image: javaLogo, categories: ['B'] },
     { title: 'Spring Boot', image: springLogo, categories: ['B'] },
-    { title: 'Android', image: androidLogo, categories: ['M'] },
+    { title: 'Android', image: androidLogo, categories: ['F'] },
     { title: 'HTML', image: htmlLogo, categories: ['F'] },
     { title: 'CSS', image: cssLogo, categories: ['F'] },
     { title: 'Javascript', image: jsLogo, categories: ['F'] },
@@ -60,8 +64,6 @@ export const skills: Array<{
 ];
 
 export const backEndSkills = skills.filter((s) => s.categories.find((e) => e === 'B'));
-export const frontEndSkills = skills.filter((s) =>
-    s.categories.find((e) => e === 'F' || e === 'M'),
-);
+export const frontEndSkills = skills.filter((s) => s.categories.find((e) => e === 'F'));
 export const dbSkills = skills.filter((s) => s.categories.find((e) => e === 'D'));
 export const toolsSkills = skills.filter((s) => s.categories.find((e) => e === 'X'));
