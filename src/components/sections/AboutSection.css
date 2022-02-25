@@ -203,6 +203,7 @@
     .AboutSection-title {
         padding: 0 0 10px 0;
         font-size: 20px;
+        margin-bottom: 0;
     }
 
     .AboutSection-skills-selection {
@@ -234,11 +235,11 @@
 
     .AboutSection-skills-category {
         font-size: 10px;
-        width: 70px;
-        height: 90px;
+        width: 50px;
+        height: 70px;
         padding: 0 10px;
         border-radius: 10px;
-        margin: 10px;
+        margin: 6px;
     }
 
     .AboutSection-skills-category-icon {
@@ -251,9 +252,9 @@
 
     .AboutSection-skills-category:hover {
         font-size: 12px;
-        width: 80px;
-        height: 100px;
-        margin: 5px;
+        width: 56px;
+        height: 76px;
+        margin: 3px;
     }
 
     .AboutSection-skills-display {
