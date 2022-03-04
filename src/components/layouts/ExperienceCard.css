@@ -82,18 +82,17 @@
 
     .ExperienceCard-left {
         margin: 5px;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 70px;
     }
 
     .ExperienceCard-right {
-        margin: 5px 10px;
+        margin: 5px;
         height: 70px;
-        padding: 10px;
     }
 
     .ExperienceCard-icon {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .ExperienceCard-title {
