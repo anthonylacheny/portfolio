@@ -61,16 +61,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
 
     return (
         <section className="AboutSection" id="About">
-            <h2
-                style={{
-                    marginLeft: 20,
-                    marginRight: 20,
-                    fontSize: 28,
-                    paddingBottom: 16,
-                    borderBottom: '1px solid #ccc',
-                }}>
-                A propos
-            </h2>
+            <h2 className="AboutSection-main-title">{translate('navigation.about')}</h2>
 
             <h3 className="AboutSection-title">
                 <FontAwesomeIcon icon="code" /> {translate('about.skills')}

@@ -7,6 +7,14 @@
     padding: 10px 10px 0px;
 }
 
+.AboutSection-main-title {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
 .AboutSection-title {
     padding: 0 10px 0px 10px;
     font-size: 24px;
@@ -299,6 +307,13 @@
         padding: 0 0 10px 0;
         font-size: 20px;
         margin-bottom: 0;
+    }
+
+    .AboutSection-main-title {
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 22px;
+        padding-bottom: 16px;
     }
 
     .AboutSection-skills-selection {
