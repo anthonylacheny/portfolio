@@ -32,38 +32,159 @@ export interface SkillType {
     title: string;
     image: string;
     categories: Array<SkillCategoryType>;
+    link: string;
 }
 
 export const skills: Array<SkillType> = [
-    { title: 'Node JS', image: nodeLogo, categories: ['B'] },
-    { title: 'React', image: reactLogo, categories: ['F'] },
-    { title: 'React Native', image: reactNativeLogo, categories: ['F'] },
-    { title: 'TypeScript', image: typescriptLogo, categories: ['B', 'F'] },
-    { title: 'PHP', image: phpLogo, categories: ['B'] },
-    { title: 'Symfony', image: symfonyLogo, categories: ['B'] },
-    { title: 'Slim', image: slimLogo, categories: ['B'] },
-    { title: 'Java', image: javaLogo, categories: ['B'] },
-    { title: 'Spring Boot', image: springLogo, categories: ['B'] },
-    { title: 'Android', image: androidLogo, categories: ['F'] },
-    { title: 'HTML', image: htmlLogo, categories: ['F'] },
-    { title: 'CSS', image: cssLogo, categories: ['F'] },
-    { title: 'Javascript', image: jsLogo, categories: ['F'] },
-    { title: 'JQuery', image: jqueryLogo, categories: ['F'] },
-    { title: 'PostgreSQL', image: pgLogo, categories: ['D'] },
-    { title: 'Oracle', image: oracleLogo, categories: ['D'] },
-    { title: 'MySQL', image: mysqlLogo, categories: ['D'] },
-    { title: 'Redis', image: redisLogo, categories: ['D'] },
-    { title: 'Mongo DB', image: mongoLogo, categories: ['D'] },
-    { title: 'Cassandra', image: cassandraLogo, categories: ['D'] },
-    { title: 'Elastic Search', image: elasticSearchLogo, categories: ['D'] },
-    { title: 'Docker', image: dockerLogo, categories: ['X'] },
-    { title: 'Firebase', image: firebaseLogo, categories: ['X'] },
-    { title: 'Kafka', image: kafkaLogo, categories: ['X'] },
-    { title: 'Rabbit MQ', image: rabbitMQLogo, categories: ['X'] },
-    { title: 'Git', image: gitLogo, categories: ['X'] },
+    {
+        title: 'Node JS',
+        image: nodeLogo,
+        categories: ['B'],
+        link: 'https://nodejs.org/',
+    },
+    {
+        title: 'React',
+        image: reactLogo,
+        categories: ['F'],
+        link: 'https://reactjs.org//',
+    },
+    {
+        title: 'React Native',
+        image: reactNativeLogo,
+        categories: ['F'],
+        link: 'https://reactnative.dev/',
+    },
+    {
+        title: 'TypeScript',
+        image: typescriptLogo,
+        categories: ['B', 'F'],
+        link: 'https://www.typescriptlang.org/',
+    },
+    {
+        title: 'PHP',
+        image: phpLogo,
+        categories: ['B'],
+        link: 'https://www.php.net/',
+    },
+    {
+        title: 'Symfony',
+        image: symfonyLogo,
+        categories: ['B'],
+        link: 'https://symfony.com/',
+    },
+    {
+        title: 'Slim',
+        image: slimLogo,
+        categories: ['B'],
+        link: 'https://www.slimframework.com/',
+    },
+    {
+        title: 'Java',
+        image: javaLogo,
+        categories: ['B'],
+        link: 'https://www.java.com/',
+    },
+    {
+        title: 'Spring Boot',
+        image: springLogo,
+        categories: ['B'],
+        link: 'https://spring.io/projects/spring-boot',
+    },
+    {
+        title: 'Android',
+        image: androidLogo,
+        categories: ['F'],
+        link: 'https://www.android.com/',
+    },
+    {
+        title: 'HTML',
+        image: htmlLogo,
+        categories: ['F'],
+        link: 'https://developer.mozilla.org/docs/Web/HTML',
+    },
+    {
+        title: 'CSS',
+        image: cssLogo,
+        categories: ['F'],
+        link: 'https://developer.mozilla.org/docs/Web/CSS',
+    },
+    {
+        title: 'Javascript',
+        image: jsLogo,
+        categories: ['F'],
+        link: 'https://developer.mozilla.org/docs/Web/JavaScript',
+    },
+    {
+        title: 'JQuery',
+        image: jqueryLogo,
+        categories: ['F'],
+        link: 'https://jquery.com/',
+    },
+    { title: 'PostgreSQL', image: pgLogo, categories: ['D'], link: 'https://www.postgresql.org/' },
+    {
+        title: 'Oracle',
+        image: oracleLogo,
+        categories: ['D'],
+        link: 'https://www.oracle.com/database',
+    },
+    {
+        title: 'MySQL',
+        image: mysqlLogo,
+        categories: ['D'],
+        link: 'https://www.mysql.com/',
+    },
+    {
+        title: 'Redis',
+        image: redisLogo,
+        categories: ['D'],
+        link: 'https://redis.io/',
+    },
+    {
+        title: 'Mongo DB',
+        image: mongoLogo,
+        categories: ['D'],
+        link: 'https://www.mongodb.com/',
+    },
+    {
+        title: 'Cassandra',
+        image: cassandraLogo,
+        categories: ['D'],
+        link: 'https://cassandra.apache.org/_/index.html',
+    },
+    {
+        title: 'Elastic Search',
+        image: elasticSearchLogo,
+        categories: ['D'],
+        link: 'https://www.elastic.co/',
+    },
+    {
+        title: 'Docker',
+        image: dockerLogo,
+        categories: ['X'],
+        link: 'https://www.docker.com/',
+    },
+    {
+        title: 'Firebase',
+        image: firebaseLogo,
+        categories: ['X'],
+        link: 'https://firebase.google.com/',
+    },
+    {
+        title: 'Kafka',
+        image: kafkaLogo,
+        categories: ['X'],
+        link: 'https://kafka.apache.org/',
+    },
+    {
+        title: 'Rabbit MQ',
+        image: rabbitMQLogo,
+        categories: ['X'],
+        link: 'https://www.rabbitmq.com/',
+    },
+    {
+        title: 'Git',
+        image: gitLogo,
+        categories: ['X'],
+        link: 'https://git-scm.com/',
+    },
 ];
-
-export const backEndSkills = skills.filter((s) => s.categories.find((e) => e === 'B'));
-export const frontEndSkills = skills.filter((s) => s.categories.find((e) => e === 'F'));
-export const dbSkills = skills.filter((s) => s.categories.find((e) => e === 'D'));
-export const toolsSkills = skills.filter((s) => s.categories.find((e) => e === 'X'));

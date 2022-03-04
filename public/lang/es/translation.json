@@ -2,6 +2,20 @@
     "hello": "Hola",
     "developer": "Desarollador",
     "architect": "Arquitecto Software",
+    "months": {
+        "0": "Ene",
+        "1": "Feb",
+        "2": "Mar",
+        "3": "Abr",
+        "4": "May",
+        "5": "Jun",
+        "6": "Jul",
+        "7": "Ago",
+        "8": "Sep",
+        "9": "Oct",
+        "10": "Nov",
+        "11": "Dic"
+    },
     "navigation": {
         "home": "Inicio",
         "about": "Sobre mí",
@@ -22,6 +36,21 @@
         "backend": "Back-end",
         "frontend": "Front-end y Móvil",
         "database": "Base de datos",
-        "wrench": "Otros"
+        "wrench": "Otros",
+        "experience": "Experiencia profesional",
+        "formation": "Educación",
+        "present": "ahora"
+    },
+    "experiences": {
+        "degree": "Bachillerato Humanidades y Social",
+        "bts": "Grado Técnico Superior DAI",
+        "licence": "Licence (Diplomatura en desarrollo informático)",
+        "master": "Master I - Responsable de la investigación y el desarrollo del SI"
+    },
+    "jobs": {
+        "indra": "Programador (practicas de fin de grado superior)",
+        "gocad": "Arquitecto Software y Desarollador",
+        "gigigo": "Desarollador Backend senior",
+        "freelance": "Consultante Arquitecto Software y Desarollador Senior"
     }
 }

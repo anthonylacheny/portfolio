@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import './AboutSection.css';
 
 import { SkillCategoryType, SkillType, skills } from '../../providers/skills';
+import { experience, formations } from '../../providers/experience';
 import SkillCard from '../layouts/SkillCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import ExperienceCard from '../layouts/ExperienceCard';
 
 const getSkillsFromCategory = (category: SkillCategoryType) =>
     skills.filter((s) => s.categories.find((e) => e === category));
@@ -58,6 +61,17 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
 
     return (
         <section className="AboutSection" id="About">
+            <h2
+                style={{
+                    marginLeft: 20,
+                    marginRight: 20,
+                    fontSize: 28,
+                    paddingBottom: 16,
+                    borderBottom: '1px solid #ccc',
+                }}>
+                A propos
+            </h2>
+
             <h3 className="AboutSection-title">
                 <FontAwesomeIcon icon="code" /> {translate('about.skills')}
             </h3>
@@ -122,8 +136,84 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                                     source={s.image}
                                     title={s.title}
                                     categories={s.categories}
+                                    link={s.link}
                                 />
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="AboutSection-parts">
+                <div className="AboutSection-professional">
+                    <h3 className="AboutSection-title">
+                        <FontAwesomeIcon icon="briefcase" /> {translate('about.experience')}
+                    </h3>
+
+                    <div className="AboutSection-professional-container">
+                        <div className="AboutSection-professional-graphics">
+                            {experience.map((e) =>
+                                e.selected ? (
+                                    <div
+                                        key={Math.random()}
+                                        className="AboutSection-professional-graphic AboutSection-professional-graphic-filled"></div>
+                                ) : (
+                                    <div
+                                        key={Math.random()}
+                                        className="AboutSection-professional-graphic"></div>
+                                ),
+                            )}
+                        </div>
+                        <div className="AboutSection-professional-cards">
+                            {experience.map((e) => (
+                                <ExperienceCard
+                                    key={`E${Math.random()}`}
+                                    icon={e.icon}
+                                    source={e.image}
+                                    link={e.link}
+                                    company={e.company}
+                                    title={e.title}
+                                    start={e.start}
+                                    end={e.end}
+                                    location={e.location}
+                                    translate={translate}
+                                    roundable={e.roundable}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="AboutSection-formation">
+                    <div className="AboutSection-formation-part">
+                        <h3 className="AboutSection-title">
+                            <FontAwesomeIcon icon="book" /> {translate('about.formation')}
+                        </h3>
+                        <div className="AboutSection-formation-container">
+                            <div className="AboutSection-formation-graphics">
+                                {experience.map((e) => (
+                                    <div
+                                        key={Math.random()}
+                                        className="AboutSection-formation-graphic"></div>
+                                ))}
+                            </div>
+                            <div className="AboutSection-formation-cards">
+                                {formations.map((e) => (
+                                    <ExperienceCard
+                                        key={`F${Math.random()}`}
+                                        icon={e.icon}
+                                        source={e.image}
+                                        link={e.link}
+                                        company={e.company}
+                                        title={e.title}
+                                        start={e.start}
+                                        end={e.end}
+                                        location={e.location}
+                                        translate={translate}
+                                        roundable={e.roundable}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,112 @@
+.ExperienceCard {
+    height: 80px;
+    margin: 10px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.ExperienceCard:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ExperienceCard-left {
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ExperienceCard-right {
+    margin: 10px;
+    flex: 1;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+}
+
+.ExperienceCard-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.ExperienceCard-img-round {
+    border-radius: 40px;
+}
+
+.ExperienceCard-icon {
+    font-size: 30px;
+    color: #777;
+}
+
+.ExperienceCard-title {
+    font-size: 16px;
+    color: #888;
+    font-weight: bold;
+}
+
+.ExperienceCard-company {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.ExperienceCard-period {
+    font-size: 14px;
+    color: #333;
+    margin-top: 6px;
+}
+
+.ExperienceCard-right a {
+    display: flex;
+    text-decoration: none;
+}
+
+.ExperienceCard-right a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 820px) {
+    .ExperienceCard {
+        height: 70px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .ExperienceCard-left {
+        margin: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .ExperienceCard-right {
+        margin: 5px 10px;
+        height: 70px;
+        padding: 10px;
+    }
+
+    .ExperienceCard-icon {
+        font-size: 24px;
+    }
+
+    .ExperienceCard-title {
+        font-size: 13px;
+    }
+
+    .ExperienceCard-company {
+        font-size: 13px;
+        margin-top: 4px;
+    }
+
+    .ExperienceCard-period {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+}

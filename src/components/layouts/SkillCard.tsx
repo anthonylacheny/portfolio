@@ -10,6 +10,7 @@ interface PropsType {
     source: string;
     title: string;
     categories: Array<CategoryType>;
+    link: string;
 }
 
 const SkillCard: React.FC<PropsType> = (props) => {
@@ -17,27 +18,27 @@ const SkillCard: React.FC<PropsType> = (props) => {
         switch (category) {
             case 'B':
                 return (
-                    <span className="SkillCard-backend">
+                    <span className="SkillCard-backend" key="backend">
                         <FontAwesomeIcon icon="server" />
                     </span>
                 );
 
             case 'F':
                 return (
-                    <span className="SkillCard-frontend">
+                    <span className="SkillCard-frontend" key="desktop">
                         <FontAwesomeIcon icon="desktop" />
                     </span>
                 );
             case 'D':
                 return (
-                    <span className="SkillCard-database">
+                    <span className="SkillCard-database" key="database">
                         <FontAwesomeIcon icon="database" />
                     </span>
                 );
             case 'X':
             default:
                 return (
-                    <span className="SkillCard-wrench">
+                    <span className="SkillCard-wrench" key="wrench">
                         <FontAwesomeIcon icon="wrench" />
                     </span>
                 );
@@ -47,11 +48,13 @@ const SkillCard: React.FC<PropsType> = (props) => {
     return (
         <div className="SkillCard">
             <div className="SkillCard-content">
-                <img className="SkillCard-img" src={props.source} alt={props.title} />
-                <div className="SkillCard-categories">
-                    {props.categories.map((c) => getCategory(c))}
-                </div>
-                <div className="SkillCard-title">{props.title}</div>
+                <a href={props.link} target="_blank" rel="noreferrer">
+                    <img className="SkillCard-img" src={props.source} alt={props.title} />
+                    <div className="SkillCard-categories">
+                        {props.categories.map((c) => getCategory(c))}
+                    </div>
+                    <div className="SkillCard-title">{props.title}</div>
+                </a>
             </div>
         </div>
     );

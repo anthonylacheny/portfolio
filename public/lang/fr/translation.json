@@ -2,6 +2,20 @@
     "hello": "Bonjour",
     "developer": "Développeur",
     "architect": "Architecte fonctionnel",
+    "months": {
+        "0": "Jan",
+        "1": "Fév",
+        "2": "Mar",
+        "3": "Avr",
+        "4": "Mai",
+        "5": "Juin",
+        "6": "Juil",
+        "7": "Août",
+        "8": "Sep",
+        "9": "Oct",
+        "10": "Nov",
+        "11": "Déc"
+    },
     "navigation": {
         "home": "Accueil",
         "about": "A propos de moi",
@@ -22,6 +36,21 @@
         "backend": "Back-end",
         "frontend": "Front-end et Mobile",
         "database": "Base de données",
-        "wrench": "Divers"
+        "wrench": "Divers",
+        "experience": "Expérience professionnelle",
+        "formation": "Education",
+        "present": "actuellement"
+    },
+    "experiences": {
+        "degree": "Bac économique et social",
+        "bts": "BTS développement d'applications informatiques",
+        "licence": "Licence développement informatique (en alternance)",
+        "master": "Master I - Responsable en études et dévoloppement du SI (en alternance)"
+    },
+    "jobs": {
+        "indra": "Développeur et assistant réseau (stage de fin d'études)",
+        "gocad": "Développeur puis architecte fonctionnel du SI",
+        "gigigo": "Développeur back-end senior",
+        "freelance": "Consultant architecte fonctionnel et developpeur senior"
     }
 }

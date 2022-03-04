@@ -15,6 +15,12 @@ import {
     faDatabase,
     faAngleRight,
     faCode,
+    faBug,
+    faBriefcase,
+    faGraduationCap,
+    faKeyboard,
+    faCertificate,
+    faBook,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -35,4 +41,10 @@ library.add(
     faDatabase,
     faAngleRight,
     faCode,
+    faBug,
+    faBriefcase,
+    faGraduationCap,
+    faKeyboard,
+    faCertificate,
+    faBook,
 );

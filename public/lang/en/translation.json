@@ -2,6 +2,20 @@
     "hello": "Hello",
     "developer": "Developer",
     "architect": "IT Architect",
+    "months": {
+        "0": "jan",
+        "1": "feb",
+        "2": "mar",
+        "3": "apr",
+        "4": "may",
+        "5": "jun",
+        "6": "jul",
+        "7": "aug",
+        "8": "sep",
+        "9": "oct",
+        "10": "nov",
+        "11": "dec"
+    },
     "navigation": {
         "home": "Home",
         "about": "About",
@@ -22,6 +36,21 @@
         "backend": "Back-end",
         "frontend": "Front-end & Mobile",
         "database": "Database",
-        "wrench": "Other"
+        "wrench": "Other",
+        "experience": "Professional experience",
+        "formation": "Educacion",
+        "present": "present"
+    },
+    "experiences": {
+        "degree": "Spanish Baccalaureat in economics (A-level)",
+        "bts": "BTEC Higher National Diploma in development",
+        "licence": "Professional degree in development",
+        "master": "Master’s degree in development and project management"
+    },
+    "jobs": {
+        "indra": "Developer and Network Assistant (internship)",
+        "gocad": "Developer and IT Architect",
+        "gigigo": "Senior Back-end Developer",
+        "freelance": " IT Architect and Senior Developer"
     }
 }
