@@ -412,9 +412,9 @@
     .AboutSection-professional-graphic,
     .AboutSection-formation-graphic {
         margin-left: 7px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        height: 90px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        height: 85px;
     }
 
     .AboutSection-professional-graphic::after,
@@ -428,7 +428,7 @@
 
     .AboutSection-professional-graphic:first-of-type,
     .AboutSection-formation-graphic:first-of-type {
-        margin-top: 80px;
+        margin-top: 78px;
     }
 
     .AboutSection-formation-part {
