@@ -96,16 +96,16 @@
     }
 
     .ExperienceCard-title {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .ExperienceCard-company {
-        font-size: 13px;
+        font-size: 12px;
         margin-top: 4px;
     }
 
     .ExperienceCard-period {
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 4px;
     }
 }
