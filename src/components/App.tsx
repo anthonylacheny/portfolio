@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom';
 
 import { Locale } from '../types';
 import { getLocaleFromString } from '../utils/lang';
-import { storeMessage } from './adapters/database';
+//import { storeMessage } from './adapters/database';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import AboutSection from './sections/AboutSection';
@@ -19,7 +19,7 @@ const App: React.FC<PropsType> = (props) => {
 
     const translate = (key: string, config?: any) => props.t(key, config);
     const changeLanguage = (locale: Locale) => setSearchParams({ lng: locale });
-    const storeMsg = (data: { email: string; name: string; msg: string }) => storeMessage(data);
+    // const storeMsg = (data: { email: string; name: string; msg: string }) => storeMessage(data);
 
     const lang = searchParams.get('lng') || (props.i18n.language || '').split('-')[0];
     const locale = getLocaleFromString(lang);
