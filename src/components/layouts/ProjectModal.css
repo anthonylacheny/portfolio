@@ -4,7 +4,8 @@
     right: auto;
     bottom: auto;
     margin-right: -50%;
-
+    margin: 0;
+    padding: 0;
     background-color: #fff;
     z-index: 400;
     width: 100%;

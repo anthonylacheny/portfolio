@@ -56,7 +56,7 @@ const ProjectModal: React.FC<PropsType> = ({ isOpen, onRequestClose, translate }
                 </span>
             </div>
             <div style={{ padding: 10 }}>
-                <img src={dataCollect} style={{ width: '100%', objectFit: 'fill' }} alt="test" />
+                <img src={dataCollect} style={{ width: '100%', objectFit: 'contain' }} alt="test" />
             </div>
         </Modal>
     );
