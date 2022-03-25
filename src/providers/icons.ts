@@ -21,6 +21,9 @@ import {
     faKeyboard,
     faCertificate,
     faBook,
+    faUser,
+    faExclamationCircle,
+    faFilePdf,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -47,4 +50,7 @@ library.add(
     faKeyboard,
     faCertificate,
     faBook,
+    faUser,
+    faExclamationCircle,
+    faFilePdf,
 );
