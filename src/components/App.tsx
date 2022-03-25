@@ -8,7 +8,7 @@ import { storeMessage } from './adapters/database';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import AboutSection from './sections/AboutSection';
-import ContactSection from './sections/ContactSection';
+//import ContactSection from './sections/ContactSection';
 import HomeSection from './sections/HomeSection';
 import ProjectSection from './sections/ProjectSection';
 
@@ -35,7 +35,7 @@ const App: React.FC<PropsType> = (props) => {
             <HomeSection translate={translate} />
             <AboutSection translate={translate} />
             <ProjectSection translate={translate} />
-            <ContactSection translate={translate} storeMessage={storeMsg} />
+            {/*<ContactSection translate={translate} storeMessage={storeMsg} />*/}
             <Footer translate={translate} />
         </div>
     );
