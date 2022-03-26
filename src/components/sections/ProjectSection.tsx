@@ -40,7 +40,7 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
                 <div
                     style={{
                         width: 260,
-                        height: 340,
+                        height: 320,
                         display: 'flex',
                         flexDirection: 'column',
                         boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.35)',
@@ -48,7 +48,7 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
                     }}>
                     <div
                         style={{
-                            height: 160,
+                            height: 140,
                             position: 'relative',
                             backgroundColor: 'rgb(3, 146, 255)',
                             display: 'flex',
@@ -60,8 +60,8 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
                         <div
                             style={{
                                 margin: 10,
-                                width: 120,
-                                height: 120,
+                                width: 100,
+                                height: 100,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -79,7 +79,7 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
 
                         <div
                             style={{
-                                height: 50,
+                                height: 40,
 
                                 position: 'absolute',
                                 width: '100%',

@@ -24,6 +24,7 @@ import {
     faUser,
     faExclamationCircle,
     faFilePdf,
+    faTimes,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -53,4 +54,5 @@ library.add(
     faUser,
     faExclamationCircle,
     faFilePdf,
+    faTimes,
 );

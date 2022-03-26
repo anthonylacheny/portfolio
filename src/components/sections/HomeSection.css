@@ -22,7 +22,7 @@
 }
 
 .HomeSection-carousel-img {
-    height: 100%;
+    height: calc(220px - 50px);
     object-fit: contain;
 }
 
