@@ -10,7 +10,7 @@ import Header from './layouts/Header';
 import AboutSection from './sections/AboutSection';
 //import ContactSection from './sections/ContactSection';
 import HomeSection from './sections/HomeSection';
-import ProjectSection from './sections/ProjectSection';
+//import ProjectSection from './sections/ProjectSection';
 
 interface PropsType extends WithTranslation {}
 
@@ -34,7 +34,7 @@ const App: React.FC<PropsType> = (props) => {
             <Header translate={translate} changeLanguage={changeLanguage} locale={locale} />
             <HomeSection translate={translate} />
             <AboutSection translate={translate} />
-            <ProjectSection translate={translate} />
+            {/*<ProjectSection translate={translate} />*/}
             {/*<ContactSection translate={translate} storeMessage={storeMsg} />*/}
             <Footer translate={translate} />
         </div>
