@@ -167,23 +167,11 @@
         max-height: 500px;
     }
 
-    .ProjectModal-Title-Icon-Wrapper {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 20px;
-        height: 20px;
-    }
-
-    .ProjectModal-Title-Icon {
+    .ProjectModal-Title-Text {
         font-size: 14px;
     }
 
-    .ProjectModal-Title-Text {
-        font-size: 12px;
-    }
-
     .ProjectModal-Close-Icon {
-        margin-right: 5px;
         font-size: 14px;
     }
 
