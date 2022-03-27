@@ -54,18 +54,8 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
 
     return (
         <section className="ContactSection" id="Contact">
-            <h2 className="ContactSection-main-title">Me contacter</h2>
-            <div
-                style={{
-                    width: 500,
-                    alignSelf: 'center',
-                    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.4)',
-                    padding: '30px 20px',
-                    marginBottom: 30,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    backgroundColor: '#fff',
-                }}>
+            <h2 className="ContactSection-title">Me contacter</h2>
+            <div className="ContactSection-wrapper">
                 <div className="ContactSection-head">
                     <FontAwesomeIcon icon="user" className="ContactSection-head-icon" />
                 </div>
