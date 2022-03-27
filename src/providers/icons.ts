@@ -25,6 +25,10 @@ import {
     faExclamationCircle,
     faFilePdf,
     faTimes,
+    faPencilAlt,
+    faBoxOpen,
+    faPercent,
+    faFileInvoiceDollar,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -55,4 +59,8 @@ library.add(
     faExclamationCircle,
     faFilePdf,
     faTimes,
+    faPencilAlt,
+    faBoxOpen,
+    faPercent,
+    faFileInvoiceDollar,
 );

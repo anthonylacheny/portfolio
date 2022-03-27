@@ -1,14 +1,20 @@
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Modal from 'react-modal';
-
-import dataCollect from '../images/datacollect.jpg';
-import nodeJs from '../images/svg/nodejs.svg';
+import { ProjectType } from '../../providers/projects';
 
 import './ProjectModal.css';
 import SkillCard from './SkillCard';
 
+const titleClasses = {
+    A: 'ProjectModal-Title-A',
+    B: 'ProjectModal-Title-B',
+    C: 'ProjectModal-Title-C',
+};
+
 interface PropsType {
+    project: ProjectType;
     isOpen: boolean;
     onRequestClose: (
         event: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>,
@@ -16,18 +22,24 @@ interface PropsType {
     translate: (key: string, config?: any) => string;
 }
 
-const ProjectModal: React.FC<PropsType> = ({ isOpen, onRequestClose, translate }) => {
+const ProjectModal: React.FC<PropsType> = ({ project, isOpen, onRequestClose, translate }) => {
     return (
         <Modal
             isOpen={isOpen}
             onRequestClose={onRequestClose}
             overlayClassName="ProjectModal-Overlay"
             className="ProjectModal">
-            <div className="ProjectModal-Title">
+            <div
+                className={`ProjectModal-Title ${
+                    titleClasses[project.category] || titleClasses['A']
+                }`}>
                 <div className="ProjectModal-Title-Icon-Wrapper">
-                    <FontAwesomeIcon icon="file-pdf" className="ProjectModal-Title-Icon" />
+                    <FontAwesomeIcon
+                        icon={project.icon as IconName}
+                        className="ProjectModal-Title-Icon"
+                    />
                 </div>
-                <span className="ProjectModal-Title-Text">Voici le titre</span>
+                <span className="ProjectModal-Title-Text">{project.title}</span>
                 <FontAwesomeIcon
                     icon="times"
                     onClick={onRequestClose}
@@ -35,63 +47,53 @@ const ProjectModal: React.FC<PropsType> = ({ isOpen, onRequestClose, translate }
                 />
             </div>
             <div className="ProjectModal-Content">
-                <img src={dataCollect} className="ProjectModal-Content-Image" alt="test" />
+                <img src={project.image} className="ProjectModal-Content-Image" alt="test" />
 
-                <label className="ProjectModal-Content-Label">Description:</label>
-                <p className="ProjectModal-Content-Description">
-                    Mini-sites permettant la collecte de données pour diverses mutuelles. Ceux-ci
-                    vont permettre aux mutuelles de récupérer des documents pour des opérations
-                    internes comme une récupération de justificatifs de scolarités ou des feuilles
-                    de déclaration d’imposition annuelles. Les données qui transites étant sensibles
-                    toutes les informations utilisateurs ainsi que leurs documents sont encryptées.
-                </p>
+                <label className="ProjectModal-Content-Label">
+                    {translate('projects.description')}:
+                </label>
 
-                <label className="ProjectModal-Content-Label">Fonctionnement:</label>
+                <p className="ProjectModal-Content-Description">{project.description}</p>
+                <label className="ProjectModal-Content-Label">
+                    {translate('projects.working')}:
+                </label>
 
                 <ol className="ProjectModal-Content-List">
-                    <li className="ProjectModal-Content-List-Item">
-                        Un premier prestataire va envoyer les données clients au serveur applicatif.
-                        Celui-ci va enregistrer les données et créer les différents comptes
-                        utilisateurs afin que ceux-ci puissent accéder au portail via un navigateur
-                        web.
-                    </li>
-                    <li className="ProjectModal-Content-List-Item">
-                        Le serveur va solliciter un deuxième prestataire afin d’envoyer une campagne
-                        email aux différents clients afin que ceux-ci prennent connaissance de
-                        l’opération et qu’ils puissent se connecter au portail.
-                    </li>
-                    <li className="ProjectModal-Content-List-Item">
-                        Le prestataire ci-dessus route les emails.
-                    </li>
-                    <li className="ProjectModal-Content-List-Item">
-                        Les utilisateurs fournissent leurs documents sur le portail.
-                    </li>
-                    <li className="ProjectModal-Content-List-Item">
-                        Le document est renvoyé au premier prestaire qui a la fin de l’opération
-                        remontera tous les fichiers aux différentes mutuelles.
-                    </li>
+                    {project.steps.map((step, i) => (
+                        <li key={`step_${i}`} className="ProjectModal-Content-List-Item">
+                            {step}
+                        </li>
+                    ))}
                 </ol>
 
-                <label className="ProjectModal-Content-Label">Remarques:</label>
-                <ul className="ProjectModal-Content-Remark">
-                    <li className="ProjectModal-Content-Remark-Item">
-                        Les opérations ont une durée de vie Il existe un système de
-                        relance/information pour les utilisateurs qui ne sont pas connectés ou qui
-                        ont fournis des documents erronés.
-                    </li>
-                    <li className="ProjectModal-Content-Remark-Item">
-                        Il existe un système de relance/information pour les utilisateurs qui ne
-                        sont pas connectés ou qui ont fournis des documents erronés.
-                    </li>
-                </ul>
-                <label className="ProjectModal-Content-Label">Technologies:</label>
+                {project.remarks.length > 0 && (
+                    <>
+                        <label className="ProjectModal-Content-Label">Remarques:</label>
+                        <ul className="ProjectModal-Content-Remark">
+                            {project.remarks.map((remark, i) => (
+                                <li
+                                    key={`remark_${i}`}
+                                    className="ProjectModal-Content-Remark-Item">
+                                    {remark}
+                                </li>
+                            ))}
+                        </ul>
+                    </>
+                )}
+
+                <label className="ProjectModal-Content-Label">
+                    {translate('projects.technologies')}:
+                </label>
                 <div className="ProjectModal-Content-Tecnologies ">
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
-                    <SkillCard source={nodeJs} title={'Node JS'} categories={['B']} link={''} />
+                    {project.skills.map((skill, i) => (
+                        <SkillCard
+                            key={`projectskill_${i}`}
+                            source={skill.image}
+                            title={skill.title}
+                            categories={skill.categories}
+                            link={skill.link}
+                        />
+                    ))}
                 </div>
             </div>
         </Modal>

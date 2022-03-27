@@ -188,3 +188,6 @@ export const skills: Array<SkillType> = [
         link: 'https://git-scm.com/',
     },
 ];
+
+export const findSkills = (titles: Array<string>) =>
+    skills.filter((s) => titles.find((e) => s.title === e));

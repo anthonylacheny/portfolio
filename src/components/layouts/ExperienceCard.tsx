@@ -52,7 +52,7 @@ const ExperienceCard: React.FC<PropsType> = ({
                 )}
             </div>
             <div className="ExperienceCard-right">
-                <span className="ExperienceCard-title">{translate(title)}</span>
+                <span className="ExperienceCard-title">{title}</span>
                 {link ? (
                     <a href={link} target="_blank" rel="noreferrer">
                         <span className="ExperienceCard-company">{company}</span>

@@ -1,6 +1,7 @@
 import gocadLogo from '../components/images/logo_gocad.png';
 import gigigoLogo from '../components/images/logo_gigigo.png';
 import indraLogo from '../components/images/logo_indra.png';
+import { intl } from './intl';
 
 export interface ExperienceType {
     selected?: boolean;
@@ -15,18 +16,18 @@ export interface ExperienceType {
     roundable?: boolean;
 }
 
-export const experience: Array<ExperienceType> = [
+export const getExperience = (): Array<ExperienceType> => [
     {
         selected: true,
         icon: 'bug',
-        title: 'jobs.freelance',
+        title: intl.translate('jobs.freelance'),
         company: 'Freelance',
         start: new Date('2019-01-01'),
         location: 'Madrid, España',
     },
     {
         image: gigigoLogo,
-        title: 'jobs.gigigo',
+        title: intl.translate('jobs.gigigo'),
         company: 'Econocom Gigigo',
         start: new Date('2018-05-01'),
         end: new Date('2019-01-01'),
@@ -36,7 +37,7 @@ export const experience: Array<ExperienceType> = [
     },
     {
         image: gocadLogo,
-        title: 'jobs.gocad',
+        title: intl.translate('jobs.gocad'),
         company: 'Gocad Services',
         start: new Date('2012-07-01'),
         end: new Date('2017-12-01'),
@@ -45,7 +46,7 @@ export const experience: Array<ExperienceType> = [
     },
     {
         image: indraLogo,
-        title: 'jobs.indra',
+        title: intl.translate('jobs.indra'),
         company: 'Indra',
         start: new Date('2011-03-01'),
         end: new Date('2011-05-01'),
@@ -54,10 +55,10 @@ export const experience: Array<ExperienceType> = [
     },
 ];
 
-export const formations: Array<ExperienceType> = [
+export const getFormations = (): Array<ExperienceType> => [
     {
         icon: 'certificate',
-        title: 'experiences.master',
+        title: intl.translate('experiences.master'),
         company: 'Hitema',
         start: new Date('2014-09-01'),
         end: new Date('2015-07-02'),
@@ -66,7 +67,7 @@ export const formations: Array<ExperienceType> = [
     },
     {
         icon: 'certificate',
-        title: 'experiences.licence',
+        title: intl.translate('experiences.licence'),
         company: 'Hitema',
         start: new Date('2013-09-01'),
         end: new Date('2014-06-02'),
@@ -75,7 +76,7 @@ export const formations: Array<ExperienceType> = [
     },
     {
         icon: 'keyboard',
-        title: 'experiences.bts',
+        title: intl.translate('experiences.bts'),
         company: 'I.E.S. Clara del Rey',
         start: new Date('2009-09-01'),
         end: new Date('2011-06-01'),
@@ -84,7 +85,7 @@ export const formations: Array<ExperienceType> = [
     },
     {
         icon: 'graduation-cap',
-        title: 'experiences.degree',
+        title: intl.translate('experiences.degree'),
         company: 'I.E.S. Lázaro Carreter',
         end: new Date('2009-06-01'),
         location: 'Alcalá de Henares, España',

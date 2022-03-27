@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './AboutSection.css';
 
 import { SkillCategoryType, SkillType, skills } from '../../providers/skills';
-import { experience, formations } from '../../providers/experience';
+import { getExperience, getFormations } from '../../providers/experience';
 import SkillCard from '../layouts/SkillCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -17,6 +17,8 @@ interface PropsType {
 }
 
 const AboutSection: React.FC<PropsType> = ({ translate }) => {
+    const experience = getExperience();
+    const formations = getFormations();
     const [skillCategorySelected, setSkillCategorySelected] = useState<SkillCategoryType>('B');
     const [skillsSelected, setSkillsSelected] = useState<Array<SkillType>>(
         getSkillsFromCategory('B'),

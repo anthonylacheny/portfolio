@@ -25,7 +25,7 @@ export class ReactI18next implements Intl {
         await i18n.changeLanguage(locale);
     }
 
-    translate(key: string, config?: {}): string {
+    translate(key: string, config?: { returnObjects: boolean }): string | any {
         return i18n.t(key, config);
     }
 }
