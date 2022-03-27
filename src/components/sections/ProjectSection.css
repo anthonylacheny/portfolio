@@ -101,7 +101,7 @@
     margin: 14px 10px 5px;
     font-size: 12px;
     line-height: 16px;
-    text-align: center;
+    text-align: justify;
     color: #333;
     padding-bottom: 5px;
 }
@@ -170,24 +170,28 @@
         font-size: 14px;
     }
 
+    .ProjectSection-Cards {
+        margin: 0;
+    }
+
     .ProjectSection-Card {
-        width: 220px;
-        height: 290px;
+        width: 160px;
+        height: 320px;
         margin: 8px;
     }
 
     .ProjectSection-Card-Head {
-        height: 100px;
+        height: 110px;
     }
 
     .ProjectSection-Card-Head-Icon-Wrapper {
         margin: 10px;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .ProjectSection-Card-Head-Icon {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .ProjectSection-Card-Title-Wrapper {
@@ -196,14 +200,16 @@
     }
 
     .ProjectSection-Card-Title {
-        font-size: 12px;
+        font-size: 11px;
+        text-align: left;
     }
 
     .ProjectSection-Card-Description {
         text-align: justify;
-        margin: 10px 10px 10px;
-        font-size: 11px;
-        line-height: 14px;
+        margin: 10px 4px 0px;
+        font-size: 10px;
+        line-height: 16px;
+        height: 75px;
     }
 
     .ProjectSection-Card-Button {
