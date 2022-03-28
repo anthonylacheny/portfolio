@@ -5,8 +5,8 @@ import Modal from 'react-modal';
 import './providers/intl';
 import './providers/icons';
 
-import './index.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './index.css';
 import reportWebVitals from './utils/reportWebVitals';
 import App from './components/App';
 

@@ -3,11 +3,12 @@ import React from 'react';
 import './ProjectSection.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ProjectModal from '../layouts/ProjectModal';
-import { getProjects, ProjectType } from '../../providers/projects';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
+import { ProjectType } from '../../providers/projects';
 
 interface PropsType {
+    projects: Array<ProjectType>;
+    onOpenModal: (project: ProjectType) => void;
     translate: (key: string, config?: any) => string;
 }
 
@@ -17,22 +18,7 @@ const titleClasses = {
     C: 'ProjectSection-Card-Head-C',
 };
 
-const ProjectSection: React.FC<PropsType> = ({ translate }) => {
-    const [modalIsOpen, setIsOpen] = React.useState(false);
-    const [project, setProject] = React.useState<ProjectType | null>(null);
-
-    const projects = getProjects();
-
-    function openModal(project: ProjectType) {
-        setProject(project);
-        setIsOpen(true);
-    }
-
-    function closeModal() {
-        setProject(null);
-        setIsOpen(false);
-    }
-
+const ProjectSection: React.FC<PropsType> = ({ projects, translate, onOpenModal }) => {
     return (
         <section className="ProjectSection" id="Project">
             <h2 className="ProjectSection-title">{translate('navigation.projects')}</h2>
@@ -42,8 +28,8 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
             </div>
 
             <div className="ProjectSection-Cards">
-                {projects.map((project) => (
-                    <div className="ProjectSection-Card">
+                {projects.map((project, j) => (
+                    <div key={`project_card_${j}`} className="ProjectSection-Card">
                         <div
                             className={`ProjectSection-Card-Head ${
                                 titleClasses[project.category] || titleClasses['A']
@@ -75,7 +61,7 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
                         </div>
                         <div className="ProjectSection-Card-Button-Wrapper">
                             <button
-                                onClick={() => openModal(project)}
+                                onClick={() => onOpenModal(project)}
                                 className="ProjectSection-Card-Button">
                                 {translate('projects.more')}
                             </button>
@@ -83,15 +69,6 @@ const ProjectSection: React.FC<PropsType> = ({ translate }) => {
                     </div>
                 ))}
             </div>
-
-            {project && (
-                <ProjectModal
-                    isOpen={modalIsOpen}
-                    onRequestClose={closeModal}
-                    translate={translate}
-                    project={project}
-                />
-            )}
         </section>
     );
 };

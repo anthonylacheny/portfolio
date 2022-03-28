@@ -105,7 +105,7 @@
                 "Le serveur renvoi les informations d’expédition ainsi que les identifiants des Welcome Packs expédiés pour que le client puissent les insérés dans son ERP."
             ],
             "remarks": [
-                "Le micro-service est  celui décrit dans le projet « PDF  Composition Micro-service »."
+                "Le micro-service est celui décrit dans le projet « PDF  Composition Micro-service »."
             ]
         },
         "promotionTool": {
@@ -140,7 +140,9 @@
                 "Les factures et leurs documents annexes sont envoyés à des prestataires tiers afin d’être envoyés sous format de lettre ou email.",
                 "Le prestataire remonte les statuts des envois qui sont actualisés dans l’applicatif afin que les utilisateurs puissent monitorer l’état des envois."
             ],
-            "remarks": []
+            "remarks": [
+                "Le micro-service est celui décrit dans le projet « PDF  Composition Micro-service »."
+            ]
         }
     }
 }

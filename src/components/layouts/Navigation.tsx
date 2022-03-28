@@ -40,6 +40,7 @@ const Navigation: React.FC<PropsType> = ({ translate }) => {
                 </li>
                 <li className="Navigation-item">
                     <Link
+                        offset={-54}
                         to="About"
                         className="Navigation-link"
                         onClick={onNavClick}
@@ -52,6 +53,7 @@ const Navigation: React.FC<PropsType> = ({ translate }) => {
                 </li>
                 <li className="Navigation-item">
                     <Link
+                        offset={-54}
                         to="Project"
                         className="Navigation-link"
                         onClick={onNavClick}
@@ -64,6 +66,7 @@ const Navigation: React.FC<PropsType> = ({ translate }) => {
                 </li>
                 <li className="Navigation-item">
                     <Link
+                        offset={-54}
                         to="Contact"
                         className="Navigation-link"
                         onClick={onNavClick}

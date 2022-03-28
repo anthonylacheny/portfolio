@@ -8,6 +8,8 @@
     background-color: rgb(44, 0, 85);
     height: 56px;
     color: #fff;
+    position: sticky;
+    top: 0;
 }
 
 .Header-profile-info-title {

@@ -187,10 +187,6 @@
         font-size: 14px;
     }
 
-    .ProjectModal-Content {
-        overflow-y: scroll;
-    }
-
     .ProjectModal-Content-Label {
         font-size: 12px;
     }

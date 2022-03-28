@@ -5,7 +5,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #f9f9f9;
 }
 
 p {
@@ -31,4 +31,25 @@ code {
 .ReactModal__Overlay--before-close {
     opacity: 0;
     transform: translateY(300px);
+}
+
+.carousel .control-dots .dot {
+    opacity: 0.8;
+}
+
+.carousel.carousel-slider .control-arrow {
+    opacity: 0.8;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #333;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #333;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+    background-color: rgba(44, 0, 85, 0.3);
 }
