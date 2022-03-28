@@ -5,6 +5,7 @@ import './HomeSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ProjectType } from '../../providers/projects';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
+import { Link } from 'react-scroll';
 
 const img =
     'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
@@ -33,6 +34,21 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                 </span>
             </div>
             <div className="HomeSection-desc">
+                <div className="HomeSection-desc-content">
+                    <p>
+                        {translate('home.who_am_i_0', {
+                            name: process.env.REACT_APP_AUTHOR_NAME,
+                        })}
+                    </p>
+                    <p>{translate('home.who_am_i_1')}</p>
+                    <p>{translate('home.who_am_i_2')}</p>
+                    <p>{translate('home.who_am_i_3')}</p>
+                    <p>{translate('home.who_am_i_4')}</p>
+                </div>
+                <Link to="Project" className="HomeSection-project">
+                    <FontAwesomeIcon icon="folder-open" className="HomeSection-project-icon" />
+                    {translate('navigation.projects')}
+                </Link>
                 <div className="HomeSection-carousel">
                     <Carousel
                         showIndicators={true}
@@ -61,6 +77,7 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                                         {project.title}
                                     </span>
                                 </div>
+
                                 <div className="HomeSection-carousel-wrapper">
                                     <img
                                         src={project.image}
@@ -72,17 +89,6 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                             </div>
                         ))}
                     </Carousel>
-                </div>
-                <div className="HomeSection-desc-content">
-                    <p>
-                        {translate('home.who_am_i_0', {
-                            name: process.env.REACT_APP_AUTHOR_NAME,
-                        })}
-                    </p>
-                    <p>{translate('home.who_am_i_1')}</p>
-                    <p>{translate('home.who_am_i_2')}</p>
-                    <p>{translate('home.who_am_i_3')}</p>
-                    <p>{translate('home.who_am_i_4')}</p>
                 </div>
             </div>
         </section>
