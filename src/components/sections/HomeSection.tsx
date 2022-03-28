@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import './HomeSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ProjectType } from '../../providers/projects';
+import { IconName } from '@fortawesome/fontawesome-svg-core';
 
 const img =
     'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
@@ -52,7 +53,7 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                                     }`}>
                                     <div className="HomeSection-carousel-icon-wrapper">
                                         <FontAwesomeIcon
-                                            icon="file-pdf"
+                                            icon={project.icon as IconName}
                                             className="HomeSection-carousel-icon"
                                         />
                                     </div>
