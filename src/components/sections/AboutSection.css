@@ -4,18 +4,25 @@
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     margin: 0 6px 12px 6px;
-    padding: 10px 10px 0px;
+    padding: 0 20px 0px;
 }
 
 .AboutSection-main-title {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 14px;
     font-size: 28px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.AboutSection-icon {
+    font-size: 22px;
+    margin-right: 10px;
 }
 
 .AboutSection-title {
+    margin-top: 10px;
     padding: 0 10px 0px 10px;
     font-size: 24px;
     text-align: left;
@@ -332,7 +339,12 @@
     .AboutSection-title {
         padding: 0 0 10px 0;
         font-size: 20px;
-        margin-bottom: 0;
+        margin-top: 6px;
+    }
+
+    .AboutSection-icon {
+        font-size: 18px;
+        margin-right: 4px;
     }
 
     .AboutSection-main-title {

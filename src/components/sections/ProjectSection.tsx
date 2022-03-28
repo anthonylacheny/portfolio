@@ -21,7 +21,10 @@ const titleClasses = {
 const ProjectSection: React.FC<PropsType> = ({ projects, translate, onOpenModal }) => {
     return (
         <section className="ProjectSection" id="Project">
-            <h2 className="ProjectSection-title">{translate('navigation.projects')}</h2>
+            <h2 className="ProjectSection-title">
+                <FontAwesomeIcon icon="folder-open" className="ProjectSection-icon" />
+                {translate('navigation.projects')}
+            </h2>
             <div className="ProjectSection-desc">
                 Les projets ci-dessous sont volontairement simplifiés, ce serait trop long et
                 complexe de les détailler

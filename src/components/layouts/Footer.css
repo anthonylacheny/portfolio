@@ -1,4 +1,8 @@
 .Footer {
+    margin: 0 6px 0 6px;
+    padding: 10px;
+    z-index: 300;
+    background-color: #fff;
 }
 
 .Footer-social {

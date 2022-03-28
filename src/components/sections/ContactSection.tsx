@@ -54,7 +54,10 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
 
     return (
         <section className="ContactSection" id="Contact">
-            <h2 className="ContactSection-title">Me contacter</h2>
+            <h2 className="ContactSection-title">
+                <FontAwesomeIcon icon="envelope" className="ContactSection-icon" />
+                Me contacter
+            </h2>
             <div className="ContactSection-wrapper">
                 <div className="ContactSection-head">
                     <FontAwesomeIcon icon="user" className="ContactSection-head-icon" />

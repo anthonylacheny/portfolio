@@ -28,6 +28,7 @@ const Navigation: React.FC<PropsType> = ({ translate }) => {
             <ul className="Navigation-list">
                 <li className="Navigation-item">
                     <Link
+                        offset={-54}
                         to="Home"
                         className="Navigation-link"
                         onClick={onNavClick}

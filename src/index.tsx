@@ -9,12 +9,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './index.css';
 import reportWebVitals from './utils/reportWebVitals';
 import App from './components/App';
+import Loader from './components/layouts/Loader';
 
 Modal.setAppElement('#root');
 
 ReactDOM.render(
     <React.StrictMode>
-        <React.Suspense fallback="Loading...">
+        <React.Suspense fallback={<Loader />}>
             <BrowserRouter>
                 <App />
             </BrowserRouter>
