@@ -45,7 +45,13 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                     <p>{translate('home.who_am_i_3')}</p>
                     <p>{translate('home.who_am_i_4')}</p>
                 </div>
-                <Link to="Project" className="HomeSection-project">
+                <Link
+                    to="Project"
+                    className="HomeSection-project"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-54}>
                     <FontAwesomeIcon icon="folder-open" className="HomeSection-project-icon" />
                     {translate('navigation.projects')}
                 </Link>
