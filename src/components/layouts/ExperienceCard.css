@@ -73,7 +73,7 @@
     text-decoration: underline;
 }
 
-@media all and (max-width: 820px) {
+@media all and (max-width: 990px) {
     .ExperienceCard {
         height: 90px;
         margin: 10px 5px;
@@ -96,16 +96,16 @@
     }
 
     .ExperienceCard-title {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .ExperienceCard-company {
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 4px;
     }
 
     .ExperienceCard-period {
-        font-size: 11px;
+        font-size: 13px;
         margin-top: 4px;
     }
 }

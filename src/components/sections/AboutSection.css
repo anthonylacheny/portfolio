@@ -326,7 +326,7 @@
     margin-left: 15px;
 }
 
-@media all and (max-width: 820px) {
+@media all and (max-width: 990px) {
     .AboutSection {
         padding: 4px 10px;
     }
