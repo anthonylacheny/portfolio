@@ -68,7 +68,9 @@ const ProjectModal: React.FC<PropsType> = ({ project, isOpen, onRequestClose, tr
 
                 {project.remarks.length > 0 && (
                     <>
-                        <label className="ProjectModal-Content-Label">Remarques:</label>
+                        <label className="ProjectModal-Content-Label">
+                            {translate('projects.remarks')}
+                        </label>
                         <ul className="ProjectModal-Content-Remark">
                             {project.remarks.map((remark, i) => (
                                 <li
