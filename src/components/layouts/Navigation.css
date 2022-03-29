@@ -13,7 +13,7 @@
 }
 
 .Navigation-item {
-    padding: 0 6px;
+    padding: 18px 12px;
 }
 
 .Navigation-link {
@@ -26,12 +26,13 @@
 
 .Navigation-icon {
     font-size: 12px;
-    margin-right: 2px;
+    margin-right: 6px;
     color: inherit;
 }
 
-.Navigation-link:hover {
-    color: #aaa;
+.Navigation-link:hover,
+.Navigation-link:hover .Navigation-icon {
+    font-size: 15px;
 }
 
 @media all and (max-width: 781px) {

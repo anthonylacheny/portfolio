@@ -10,6 +10,9 @@ import en from '../images/en.png';
 import fr from '../images/fr.png';
 import es from '../images/es.png';
 
+import avatar from '../images/avatar.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 interface PropsType {
     translate: (key: string, config?: any) => string;
     changeLanguage(locale: Locale): void;
@@ -42,8 +45,29 @@ const Header: React.FC<PropsType> = (props) => {
 
     return (
         <header className="Header">
+            <div className="Header-avatar">
+                <img src={avatar} alt="avatar" height={34} width={34} />
+                <span className="Header-name">{process.env.REACT_APP_AUTHOR}</span>
+            </div>
             <div className="Header-navigation">
                 <Navigation {...props} />
+            </div>
+            <div className="Header-social">
+                <a
+                    href={process.env.REACT_APP_LINKED_IN_LINK}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="Header-social-link">
+                    <FontAwesomeIcon icon={['fab', 'linkedin']} className="Header-social-icon" />
+                </a>
+
+                <a
+                    href={process.env.REACT_APP_GITHUB_LINK}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="Header-social-link">
+                    <FontAwesomeIcon icon={['fab', 'github']} className="Header-social-icon" />
+                </a>
             </div>
             <div className="Header-language">
                 <DropDown

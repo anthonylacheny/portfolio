@@ -38,6 +38,7 @@ export const getProjects = (): Array<ProjectType> => [
             'CSS',
             'Javascript',
             'JQuery',
+            'Docker',
             'Git',
         ]),
     },
@@ -50,7 +51,7 @@ export const getProjects = (): Array<ProjectType> => [
         steps: intl.translate('projects.compoService.steps', { returnObjects: true }),
         remarks: intl.translate('projects.compoService.remarks', { returnObjects: true }),
         image: compoService,
-        skills: findSkills(['Java', 'Spring Boot', 'PostgreSQL', 'Git']),
+        skills: findSkills(['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'Git']),
     },
     {
         category: 'C',
@@ -72,7 +73,15 @@ export const getProjects = (): Array<ProjectType> => [
         steps: intl.translate('projects.promotionTool.steps', { returnObjects: true }),
         remarks: intl.translate('projects.promotionTool.remarks', { returnObjects: true }),
         image: promotiontool,
-        skills: findSkills(['Node JS', 'PostgreSQL', 'Redis', 'Elastic Search', 'Firebase', 'Git']),
+        skills: findSkills([
+            'Node JS',
+            'PostgreSQL',
+            'Redis',
+            'Elastic Search',
+            'Firebase',
+            'Docker',
+            'Git',
+        ]),
     },
     {
         category: 'B',
