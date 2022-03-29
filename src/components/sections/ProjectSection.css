@@ -185,8 +185,8 @@
     }
 
     .ProjectSection-Card {
-        width: 240px;
-        height: 300px;
+        width: 250px;
+        height: 310px;
         margin: 12px 8px;
     }
 
@@ -210,14 +210,14 @@
     }
 
     .ProjectSection-Card-Title {
-        font-size: 11px;
+        font-size: 12px;
         text-align: left;
     }
 
     .ProjectSection-Card-Description {
         text-align: justify;
         margin: 10px 4px 10px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 16px;
     }
 
