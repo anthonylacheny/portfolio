@@ -91,24 +91,10 @@
 
     .Header-social {
         order: 3;
-        width: 55px;
     }
 
     .Header-language {
         order: 4;
         margin-right: 0;
-    }
-
-    .Header-social-link {
-        padding-top: 2px;
-        width: 24px;
-    }
-
-    .Header-social-icon {
-        font-size: 21px;
-    }
-
-    .Header-social-icon:hover {
-        font-size: 23px;
     }
 }
