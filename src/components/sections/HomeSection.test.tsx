@@ -1,6 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import '../../providers/intl';
+import '../../providers/icons';
 import HomeSection from './HomeSection';
+
 import { BrowserRouter } from 'react-router-dom';
 import { ProjectType } from '../../providers/projects';
 
