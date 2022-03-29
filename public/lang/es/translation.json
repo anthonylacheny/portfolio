@@ -52,5 +52,22 @@
         "gocad": "Arquitecto Software y Desarollador",
         "gigigo": "Desarollador Backend senior",
         "freelance": "Consultante Arquitecto Software y Desarollador Senior"
+    },
+    "contact": {
+        "desc": "Indique sus datos de contacto y su mensaje, en breve me pondré en contacto con usted",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "sending": "Enviando...",
+        "confirm": "Mensaje enviado con éxito",
+        "reload": "Recargar el formulario",
+        "errors": {
+            "email": "Indica un email valido",
+            "name": "Indica un nombre valido",
+            "message": "Indica un mensaje valido",
+            "message_large": "El mensaje es demasiado largo",
+            "other": "Se ha producido un error"
+        }
     }
 }

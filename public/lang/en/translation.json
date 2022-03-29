@@ -52,5 +52,22 @@
         "gocad": "Developer and IT Architect",
         "gigigo": "Senior Back-end Developer",
         "freelance": " IT Architect and Senior Developer"
+    },
+    "contact": {
+        "desc": "Specify your contact details and your message, I will contact you shortly",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "sending": "Sending...",
+        "confirm": "Message sent successfully",
+        "reload": "Reload the form",
+        "errors": {
+            "email": "Please enter a valid email",
+            "name": "Please enter a valid name",
+            "message": "Please enter your message",
+            "message_large": "Your message contains too many characters",
+            "other": "An error has occurred"
+        }
     }
 }

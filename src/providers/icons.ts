@@ -29,6 +29,7 @@ import {
     faBoxOpen,
     faPercent,
     faFileInvoiceDollar,
+    faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -63,4 +64,5 @@ library.add(
     faBoxOpen,
     faPercent,
     faFileInvoiceDollar,
+    faCheck,
 );

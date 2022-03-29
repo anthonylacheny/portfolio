@@ -22,10 +22,11 @@
 }
 
 .ContactSection-wrapper {
-    max-width: 500px;
+    width: 500px;
+
     align-self: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-    padding: 30px 20px;
+    padding: 30px 10px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -108,6 +109,14 @@
     border-radius: 5px;
 }
 
+.ContactForm-textarea-counter {
+    margin-top: 4px;
+    margin-right: 2px;
+    align-self: flex-end;
+    font-size: 11px;
+    color: #777;
+}
+
 .ContactForm-text {
     height: 36px;
     padding: 0 10px;
@@ -131,6 +140,41 @@
     margin: 10px;
 }
 
+.ContactSection-loading,
+.ContactSection-confirm {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 70px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactSection-loading span,
+.ContactSection-confirm span {
+    color: #333;
+    font-size: 14px;
+}
+
+.ContactSection-confirm button {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgb(44, 0, 85);
+    border: none;
+    font-size: 14px;
+    margin: 20px 10px 10px;
+}
+
+.ContactSection-confirm-icon {
+    font-size: 28px;
+    margin-top: 10px;
+    color: #28a745;
+}
+
 @media all and (max-width: 820px) {
     .ContactSection {
         padding: 4px 10px;
@@ -148,8 +192,9 @@
     }
 
     .ContactSection-wrapper {
-        padding: 30px 20px;
-        margin: 20px 0;
+        padding: 20px 10px;
+        margin: 10px 0 0;
+        max-width: 300px;
     }
 
     .ContactSection-head {
@@ -197,12 +242,34 @@
     }
 
     .ContactForm-text {
-        height: 30px;
+        height: 26px;
         padding: 0 6px;
     }
 
     .ContactForm-textarea {
         height: 80px;
         padding: 6px;
+    }
+
+    .ContactForm-submit {
+        padding: 10px 20px 10px;
+        border-radius: 30px;
+
+        font-size: 12px;
+        width: 100px;
+        margin: 10px 10px 0;
+    }
+
+    .ContactSection-loading,
+    .ContactSection-confirm {
+        padding: 20px 40px;
+        margin-top: 20px;
+    }
+
+    .ContactSection-confirm button {
+        padding: 10px 20px 10px;
+        border-radius: 30px;
+        font-size: 12px;
+        margin: 30px 10px 10px;
     }
 }

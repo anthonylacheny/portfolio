@@ -9,6 +9,7 @@ export class Firestore implements Database {
             await addDoc(ref, Object.assign(object, { created_at: serverTimestamp() }));
         } catch (err) {
             console.error(err);
+            throw err;
         }
     }
 }

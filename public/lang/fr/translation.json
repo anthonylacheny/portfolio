@@ -53,6 +53,23 @@
         "gigigo": "Développeur back-end senior",
         "freelance": "Consultant architecte fonctionnel et developpeur senior"
     },
+    "contact": {
+        "desc": "Indiquer vos coordonnées et votre message, je vous contacterai prochainement",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer",
+        "sending": "Envoi en cours...",
+        "confirm": "Message envoyé avec succès",
+        "reload": "Recharger le formulaire",
+        "errors": {
+            "email": "Veuiller renseigner un email valide",
+            "name": "Veuiller renseigner votre nom valide",
+            "message": "Veuiller renseigner votre message",
+            "message_large": "Votre message est trop long",
+            "other": "Une erreur est survenue"
+        }
+    },
     "projects": {
         "description": "Description",
         "working": "Fonctionnement",

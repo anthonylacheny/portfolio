@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './ContactSection.css';
+import { translate } from '../adapters/intl';
+
+const TEXT_AREA_LIMIT = 500;
 
 interface PropsType {
     storeMessage: (data: { email: string; name: string; msg: string }) => Promise<void>;
@@ -15,6 +18,7 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState('');
+    const [counter, setCounter] = useState(0);
 
     const handleSubmit = async () => {
         setSuccess(false);
@@ -22,29 +26,41 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
         setLoading(true);
 
         if (email.length < 5) {
-            setError('merci de renseigner votre email');
+            setError(translate('contact.errors.email'));
             setLoading(false);
             return;
         }
 
-        if (name.length < 3) {
-            setError('merci de renseigner votre nom');
+        if (email.length > 150) {
+            setError(translate('contact.errors.email'));
+            setLoading(false);
+            return;
+        }
+
+        if (name.length > 150) {
+            setError(translate('contact.errors.name'));
+            setLoading(false);
+            return;
+        }
+
+        if (message.length < 10) {
+            setError(translate('contact.errors.message'));
             setLoading(false);
             return;
         }
 
         try {
-            storeMessage({ email, name, msg: message });
+            await storeMessage({ email, name, msg: message });
             setSuccess(true);
         } catch (err) {
-            console.error(err);
-            setError('une erreur est survenue');
+            setError(translate('contact.errors.other'));
         } finally {
             setLoading(false);
         }
     };
 
     const reset = () => {
+        setCounter(0);
         setEmail('');
         setName('');
         setMessage('');
@@ -52,11 +68,16 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
         setSuccess(false);
     };
 
+    const onMessageChange = (message: string) => {
+        setCounter(message.length);
+        setMessage(message);
+    };
+
     return (
         <section className="ContactSection" id="Contact">
             <h2 className="ContactSection-title">
                 <FontAwesomeIcon icon="envelope" className="ContactSection-icon" />
-                Me contacter
+                {translate('navigation.contact')}
             </h2>
             <div className="ContactSection-wrapper">
                 <div className="ContactSection-head">
@@ -64,21 +85,25 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
                 </div>
 
                 {loading ? (
-                    <div>Loading</div>
+                    <div className="ContactSection-loading">
+                        <span>{translate('contact.sending')}</span>
+                    </div>
                 ) : success ? (
-                    <div>
-                        Success
-                        <button onClick={reset}>Recharger le formulaire</button>
+                    <div className="ContactSection-confirm">
+                        <span>{translate('contact.confirm')}</span>
+                        <FontAwesomeIcon icon="check" className="ContactSection-confirm-icon" />
+                        <button onClick={reset}>{translate('contact.reload')}</button>
                     </div>
                 ) : (
                     <ContactForm
+                        counter={counter}
                         name={name}
                         email={email}
                         message={message}
                         error={error}
                         onNameChange={setName}
                         onEmailChange={setEmail}
-                        onMessageChange={setMessage}
+                        onMessageChange={onMessageChange}
                         onSubmit={handleSubmit}
                         translate={translate}
                     />
@@ -89,6 +114,7 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
 };
 
 interface ContactFormProps {
+    counter: number;
     name: string;
     email: string;
     message: string;
@@ -101,6 +127,7 @@ interface ContactFormProps {
 }
 
 const ContactForm: React.FC<ContactFormProps> = ({
+    counter,
     name,
     email,
     message,
@@ -117,9 +144,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
 
     return (
         <form onSubmit={handleSubmit} className="ContactForm">
-            <div className="ContactForm-desc">
-                Indiquer vos coordonnées et votre message, je vous contacterai prochainement
-            </div>
+            <div className="ContactForm-desc">{translate('contact.desc')}</div>
 
             {error.length > 0 && (
                 <div className="ContactForm-error">
@@ -129,7 +154,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             )}
 
             <div className="ContactForm-group">
-                <label className="ContactForm-label">Name</label>
+                <label className="ContactForm-label">{translate('contact.name')}</label>
                 <input
                     className="ContactForm-text"
                     type="text"
@@ -139,7 +164,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </div>
 
             <div className="ContactForm-group">
-                <label className="ContactForm-label">Email</label>
+                <label className="ContactForm-label">{translate('contact.email')}</label>
                 <input
                     type="email"
                     className="ContactForm-text"
@@ -149,16 +174,20 @@ const ContactForm: React.FC<ContactFormProps> = ({
             </div>
 
             <div className="ContactForm-group">
-                <label className="ContactForm-label">Message</label>
+                <label className="ContactForm-label">{translate('contact.message')}</label>
                 <textarea
+                    maxLength={TEXT_AREA_LIMIT}
                     className="ContactForm-textarea"
                     value={message}
                     onChange={(e) => onMessageChange(e.target.value)}
                 />
+                <label className="ContactForm-textarea-counter">
+                    {counter}/{TEXT_AREA_LIMIT}
+                </label>
             </div>
 
             <button type="submit" className="ContactForm-submit">
-                Envoyer
+                {translate('contact.send')}
             </button>
         </form>
     );
