@@ -14,6 +14,10 @@ import ContactSection from './sections/ContactSection';
 import HomeSection from './sections/HomeSection';
 import ProjectSection from './sections/ProjectSection';
 
+import en from './images/en.png';
+import fr from './images/fr.png';
+import es from './images/es.png';
+
 interface PropsType extends WithTranslation {}
 
 const App: React.FC<PropsType> = (props) => {
@@ -29,6 +33,12 @@ const App: React.FC<PropsType> = (props) => {
     const lang = searchParams.get('lng') || (props.i18n.language || '').split('-')[0];
     const locale = getLocaleFromString(lang);
     const i18nChangeLang = props.i18n.changeLanguage;
+
+    const langs = [
+        { locale: Locale.en, image: en },
+        { locale: Locale.es, image: es },
+        { locale: Locale.fr, image: fr },
+    ];
 
     const openProject = (project: ProjectType) => {
         setProject(project);
@@ -46,7 +56,12 @@ const App: React.FC<PropsType> = (props) => {
 
     return (
         <div className="Layout">
-            <Header translate={translate} changeLanguage={changeLanguage} locale={locale} />
+            <Header
+                translate={translate}
+                changeLanguage={changeLanguage}
+                locale={locale}
+                langs={langs}
+            />
             <HomeSection translate={translate} projects={projects} onOpenModal={openProject} />
             <AboutSection translate={translate} />
             <ProjectSection translate={translate} projects={projects} onOpenModal={openProject} />

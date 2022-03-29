@@ -6,41 +6,26 @@ import { Locale } from '../../types';
 import { getLocaleFromString } from '../../utils/lang';
 import DropDown from '../views/DropDown';
 
-import en from '../images/en.png';
-import fr from '../images/fr.png';
-import es from '../images/es.png';
-
 import avatar from '../images/avatar.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface PropsType {
+    langs: Array<{ locale: Locale; image: string }>;
     translate: (key: string, config?: any) => string;
     changeLanguage(locale: Locale): void;
     locale: Locale;
 }
 
-const Header: React.FC<PropsType> = (props) => {
-    const langs = [
-        {
-            id: Locale.en,
-            title: <img src={en} alt="en" width="16" height="16" />,
-            selected: props.locale === Locale.en,
-        },
-        {
-            id: Locale.es,
-            title: <img src={es} alt="es" width="16" height="16" />,
-            selected: props.locale === Locale.es,
-        },
-        {
-            id: Locale.fr,
-            title: <img src={fr} alt="fr" width="16" height="16" />,
-            selected: props.locale === Locale.fr,
-        },
-    ];
+const Header: React.FC<PropsType> = ({ langs, locale, translate, changeLanguage }) => {
+    const list = langs.map((lang) => ({
+        id: lang.locale,
+        title: <img src={lang.image} alt={lang.locale} width="16" height="16" />,
+        selected: locale === lang.locale,
+    }));
 
     const onSelectLanguage = (lang: string) => {
         const locale = getLocaleFromString(lang);
-        props.changeLanguage(locale);
+        changeLanguage(locale);
     };
 
     return (
@@ -50,7 +35,7 @@ const Header: React.FC<PropsType> = (props) => {
                 <span className="Header-name">{process.env.REACT_APP_AUTHOR}</span>
             </div>
             <div className="Header-navigation">
-                <Navigation {...props} />
+                <Navigation {...{ langs, locale, translate, changeLanguage }} />
             </div>
             <div className="Header-social">
                 <a
@@ -71,7 +56,7 @@ const Header: React.FC<PropsType> = (props) => {
             </div>
             <div className="Header-language">
                 <DropDown
-                    list={langs}
+                    list={list}
                     title="Language"
                     onSelectItem={(item) => onSelectLanguage(item.id as string)}
                 />

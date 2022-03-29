@@ -7,9 +7,6 @@ import { ProjectType } from '../../providers/projects';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { Link } from 'react-scroll';
 
-const img =
-    'https://media-exp1.licdn.com/dms/image/C4E03AQGh45joE_XUcw/profile-displayphoto-shrink_800_800/0/1642350830909?e=1650499200&v=beta&t=AmYhOLrtt-yPtVNeVwE6VbBPgAn5Qlw56JnpCW50AuM';
-
 const titleClasses = {
     A: 'HomeSection-carousel-title-A',
     B: 'HomeSection-carousel-title-B',
@@ -27,7 +24,11 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
         <section className="HomeSection" id="Home">
             <div className="HomeSection-profile">
                 <h1 className="HomeSection-title">{translate('home.title')}</h1>
-                <img src={img} alt="profile" className="HomeSection-profile-img" />
+                <img
+                    src={process.env.REACT_APP_PROFILE_LINK}
+                    alt="profile"
+                    className="HomeSection-profile-img"
+                />
                 <span className="HomeSection-profile-name">{process.env.REACT_APP_AUTHOR}</span>
                 <span className="HomeSection-profile-title">
                     {translate('architect')}, {translate('developer')}

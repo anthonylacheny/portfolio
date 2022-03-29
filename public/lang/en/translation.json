@@ -71,6 +71,7 @@
         }
     },
     "projects": {
+        "maindesc": "Les projets ci-dessous sont volontairement simplifiés, ce serait trop long et complexe de les détailler.",
         "description": "Description",
         "working": "Working",
         "remarks": "Remarks",

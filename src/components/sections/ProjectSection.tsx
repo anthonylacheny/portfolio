@@ -25,10 +25,7 @@ const ProjectSection: React.FC<PropsType> = ({ projects, translate, onOpenModal 
                 <FontAwesomeIcon icon="folder-open" className="ProjectSection-icon" />
                 {translate('navigation.projects')}
             </h2>
-            <div className="ProjectSection-desc">
-                Les projets ci-dessous sont volontairement simplifiés, ce serait trop long et
-                complexe de les détailler
-            </div>
+            <div className="ProjectSection-desc">{translate('projects.maindesc')}</div>
 
             <div className="ProjectSection-Cards">
                 {projects.map((project, j) => (

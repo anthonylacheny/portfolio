@@ -183,6 +183,18 @@
     background-color: rgba(44, 0, 85, 0.8);
 }
 
+@media all and (max-width: 900px) {
+    .HomeSection-desc-content > p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+
+    .HomeSection-desc-content > p:first-of-type {
+        font-size: 16px;
+    }
+}
+
 @media all and (max-width: 760px) {
     .HomeSection {
         flex-direction: column;
