@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import Modal from 'react-modal';
 import './providers/intl';
@@ -11,17 +11,24 @@ import reportWebVitals from './utils/reportWebVitals';
 import App from './components/App';
 import Loader from './components/layouts/Loader';
 
+const rootElement = document.getElementById('root');
+
 Modal.setAppElement('#root');
 
-ReactDOM.render(
+const element = (
     <React.StrictMode>
         <React.Suspense fallback={<Loader />}>
             <BrowserRouter>
                 <App />
             </BrowserRouter>
         </React.Suspense>
-    </React.StrictMode>,
-    document.getElementById('root'),
+    </React.StrictMode>
 );
+
+if (rootElement && rootElement.hasChildNodes()) {
+    hydrate(element, rootElement);
+} else {
+    render(element, rootElement);
+}
 
 reportWebVitals();
