@@ -47,7 +47,11 @@ const ProjectModal: React.FC<PropsType> = ({ project, isOpen, onRequestClose, tr
                 />
             </div>
             <div className="ProjectModal-Content">
-                <img src={project.image} className="ProjectModal-Content-Image" alt="test" />
+                <img
+                    src={project.image}
+                    className="ProjectModal-Content-Image"
+                    alt={project.title}
+                />
 
                 <label className="ProjectModal-Content-Label">
                     {translate('projects.description')}:

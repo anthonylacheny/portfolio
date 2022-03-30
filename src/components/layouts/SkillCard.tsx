@@ -47,15 +47,13 @@ const SkillCard: React.FC<PropsType> = (props) => {
 
     return (
         <div className="SkillCard">
-            <div className="SkillCard-content">
-                <a href={props.link} target="_blank" rel="noreferrer">
-                    <img className="SkillCard-img" src={props.source} alt={props.title} />
-                    <div className="SkillCard-categories">
-                        {props.categories.map((c) => getCategory(c))}
-                    </div>
-                    <div className="SkillCard-title">{props.title}</div>
-                </a>
-            </div>
+            <a href={props.link} target="_blank" rel="noreferrer">
+                <img className="SkillCard-img" src={props.source} alt={props.title} />
+                <div className="SkillCard-categories">
+                    {props.categories.map((c) => getCategory(c))}
+                </div>
+                <div className="SkillCard-title">{props.title}</div>
+            </a>
         </div>
     );
 };

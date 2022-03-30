@@ -1,22 +1,19 @@
 .SkillCard {
-    width: 140px;
-    height: 100px;
+    width: 92px;
+    height: 70px;
     margin: 10px 5px;
     color: #333;
     box-shadow: 0 4px 8px 0 rgba(44, 0, 85, 0.2);
     border-radius: 6px;
     background-color: #fff;
+    position: relative;
+    padding: 15px 24px;
 }
 
 .SkillCard:hover {
     box-shadow: 0 4px 8px 0 rgba(3, 146, 255, 0.4);
     background-color: rgba(3, 146, 255, 0.05);
     cursor: pointer;
-}
-
-.SkillCard-content {
-    padding: 15px 24px;
-    position: relative;
 }
 
 .SkillCard-img {
@@ -82,7 +79,7 @@
     text-align: center;
     padding: 6px 0;
     left: 0;
-    bottom: 3px;
+    bottom: 0;
     font-size: 10px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -90,12 +87,9 @@
 
 @media all and (max-width: 820px) {
     .SkillCard {
-        width: 100px;
-        height: 70px;
+        width: 52px;
+        height: 50px;
         margin: 5px;
-    }
-
-    .SkillCard-content {
         padding: 10px 24px;
     }
 
@@ -107,7 +101,7 @@
     .SkillCard-title {
         padding: 4px 0;
         left: 0;
-        bottom: 3px;
+        bottom: 0;
     }
 
     .SkillCard-categories {

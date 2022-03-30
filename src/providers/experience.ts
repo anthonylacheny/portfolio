@@ -63,7 +63,6 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2014-09-01'),
         end: new Date('2015-07-02'),
         location: 'Issy-les-moulineaux, France',
-        link: 'https://www.h3hitema.fr/',
     },
     {
         icon: 'certificate',
@@ -72,7 +71,6 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2013-09-01'),
         end: new Date('2014-06-02'),
         location: 'Issy-les-moulineaux, France',
-        link: 'https://www.h3hitema.fr/',
     },
     {
         icon: 'keyboard',
@@ -81,7 +79,6 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2009-09-01'),
         end: new Date('2011-06-01'),
         location: 'Madrid, España',
-        link: 'https://iesclaradelrey.es/',
     },
     {
         icon: 'graduation-cap',
@@ -89,6 +86,5 @@ export const getFormations = (): Array<ExperienceType> => [
         company: 'I.E.S. Lázaro Carreter',
         end: new Date('2009-06-01'),
         location: 'Alcalá de Henares, España',
-        link: 'https://www.educa2.madrid.org/web/centro.ies.lazarocarreter.alcala',
     },
 ];

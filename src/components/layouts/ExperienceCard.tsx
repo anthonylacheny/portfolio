@@ -53,14 +53,7 @@ const ExperienceCard: React.FC<PropsType> = ({
             </div>
             <div className="ExperienceCard-right">
                 <span className="ExperienceCard-title">{title}</span>
-                {link ? (
-                    <a href={link} target="_blank" rel="noreferrer">
-                        <span className="ExperienceCard-company">{company}</span>
-                    </a>
-                ) : (
-                    <span className="ExperienceCard-company">{company}</span>
-                )}
-
+                <span className="ExperienceCard-company">{company}</span>
                 <span className="ExperienceCard-period">
                     {start
                         ? translate(`months.${start.getMonth()}`) +
