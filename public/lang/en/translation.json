@@ -71,95 +71,94 @@
         }
     },
     "projects": {
-        "maindesc": "Les projets ci-dessous sont volontairement simplifiés, ce serait trop long et complexe de les détailler.",
+        "maindesc": "The projects below are deliberately simplified, it would be too long and complex to detail them.",
         "description": "Description",
         "working": "Working",
         "remarks": "Remarks",
         "technologies": "Technologies",
         "more": "Learn more",
         "dataMutuals": {
-            "title": "Collecte de données pour mutuelles",
-            "preview": "Mini-sites permettant la collecte de données pour diverses mutuelles...",
-            "description": "Mini-sites permettant la collecte de données pour diverses mutuelles. Ceux-ci vont permettre aux mutuelles de récupérer des documents pour des opérations internes comme une récupération de justificatifs de scolarités ou des feuilles de déclaration d’imposition annuelles. Les données qui transites étant sensibles toutes les informations utilisateurs ainsi que leurs documents sont encryptées.",
+            "title": "Data collection for mutuals",
+            "preview": "Mini-sites allowing the collection of data for various mutuals.",
+            "description": "Mini-sites allowing the collection of data for various mutuals. These will allow mutuals to recover documents for internal operations such as the recovery of proof of schooling or annual tax declaration sheets. The data in transit being sensitive, all user information and their documents are encrypted.",
             "steps": [
-                "Un premier prestataire va envoyer les données clients au serveur applicatif. Celui-ci va enregistrer les données et créer les différents comptes utilisateurs afin que ceux-ci puissent accéder au portail via un navigateur web.",
-                "Le serveur va solliciter un deuxième prestataire afin d’envoyer une campagne email aux différents clients afin que ceux-ci prennent connaissance de l’opération et qu’ils puissent se connecter au portail.",
-                "Le prestataire ci-dessus route les emails.",
-                "Les utilisateurs fournissent leurs documents sur le portail.",
-                "Le document est renvoyé au premier prestataire qui a la fin de l’opération remontera tous les fichiers aux différentes mutuelles."
+                "A first service provider will send customer data to the application server. This will save the data and create the different user accounts so that they can access the portal via a web browser.",
+                "The server will solicit a second service provider to send an email campaign to the various customers so that they are aware of the operation and can connect to the portal.",
+                "The service provider above routes the emails.",
+                "Users provide their documents on the portal.",
+                "The document is returned to the first service provider who, at the end of the operation, will send all the files to the various mutual insurance companies."
             ],
             "remarks": [
-                "Les opérations ont une durée de vie.",
-                "Il existe un système de relance/information pour les utilisateurs qui ne sont pas connectés ou qui ont fournis des documents erronés."
+                "Operations have a lifetime.",
+                "There is a reminder/information system for users who are not logged in or who have provided incorrect documents."
             ]
         },
         "compoService": {
-            "title": "Microservice de compositions PDF",
-            "preview": "Micro-service de composition de fichiers PDF...",
-            "description": "Micro-service de composition de fichiers PDF. Basé sur la librairie Apache FOP ce serveur permet la composition de documents PDF unitaires ou en masse. Ce service est appelable depuis d’autres applications et permet de générer des documents simple comme des devis ou des factures mais aussi des flux de productions complets pour des projets avec des imprimeurs.",
+            "title": "PDF composition micro-service",
+            "preview": "Micro-service for composing PDF files...",
+            "description": "Micro-service for composing PDF files. Based on the Apache FOP library, this server allows the composition of individual or mass PDF documents. This service can be called from other applications and allows you to generate simple documents such as quotes or invoices, but also complete production flows for projects with printers.",
             "steps": [
-                "L’application cliente fournie des ressources que le serveur enregistre afin de pouvoir générer les documents plus tard, ces ressources inclus : un model pour définir la mise en page, des polices, des images, des profils de couleurs…",
-                "L’application cliente sollicite le serveur en lui indiquant le model à utiliser ainsi que les différentes variables nécessaires pour la génération du document.",
-                "Le serveur va générer le document et le renvoyé au client quand la composition sera terminée."
+                "The client application provides resources that the server saves in order to be able to generate the documents later, these resources include: a model to define the layout, fonts, images, color profiles…",
+                "The client application requests the server by indicating the model to use as well as the different variables necessary for the generation of the document.",
+                "The server will generate the document and send it back to the client when composition is complete."
             ],
             "remarks": [
-                "Les compositions peuvent se faire de façon synchrone ou asynchrone. Quand une composition synchrone est trop lente celle-ci est rebasculée en asynchrone.",
-                "Dans le cas asynchrone le client peut récupérer le document soit en interrogeant le serveur, soit en spécifiant une URL de rappel."
+                "Compositions can be done synchronously or asynchronously. When a synchronous composition is too slow, it is switched back to asynchronous.",
+                "In the asynchronous case the client can retrieve the document either by querying the server or by specifying a callback URL."
             ]
         },
         "welcomePack": {
-            "title": "Production de Welcome Packs",
-            "preview": "Projet web de gestion et production de Welcome Pack.",
-            "description": "Projet web de gestion et production de Welcome Pack. Le site permet au client de gérer sa production, ses stocks et ses expéditions de Welcome Pack. Le site est utilisé par le client lui-même mais également par le prestataire qui s’occupe de la prestation physique sur la partie production. Un Welcome Pack est composé d’une lettre et une carte personnalisées  ainsi que de plusieurs types de composants variables, chaque Welcome Pack a un identifiant unique.",
+            "title": "Production of Welcome Packs",
+            "preview": "Web project to manage and produce Welcome Packs...",
+            "description": "Web project to manage and produce Welcome Packs. The site allows the customer to manage their production, stocks and shipments of Welcome Packs. The site is used by the customer himself but also by the service provider who takes care of the physical service on the production part. A Welcome Pack is composed of a personalized letter and card as well as several types of variable components, each Welcome Pack has a unique identifier.",
             "steps": [
-                "Le client transmet les différents ordres de fabrication au serveur applicatif. Le serveur enregistre et prépare les différents lots de productions.",
-                "Le serveur renvoi un BAT au client que celui-ci peut valider ou refuser.",
-                "Le serveur sollicite un micro-service de composition afin de générer les flux de production pour la fabrication des Welcomes Packs.",
-                "Le micro-service renvoi au serveur les différents flux.",
-                "Le serveur envoi les différents flux au prestataire. Celui-ci va imprimer les flux, assembler les lots et les mettre en stock physiquement sur site ainsi que sur le site web.",
-                "Le client envoi des bons de livraison pour ses différents clients. Le serveur prépare les commandes.",
-                "Le serveur envoi les différentes commandes au prestataire qui va expédier physiquement les Welcome Packs spécifiés.",
-                "Le prestataire envoi les informations des expédition au serveur. Celui-ci va les enregistrer et permettre de les tracker.",
-                "Le serveur renvoi les informations d’expédition ainsi que les identifiants des Welcome Packs expédiés pour que le client puissent les insérés dans son ERP."
+                "The client transmits the various manufacturing orders to the application server. The server registers and prepares the different batches of productions.",
+                "The server returns a BAT to the client that the latter can validate or refuse.",
+                "The server requests a composition micro-service in order to generate the production flows for the manufacture of the Welcomes Packs.",
+                "The micro-service sends the different streams back to the server.",
+                "The server sends the different streams to the service provider. This will print the flows, assemble the batches and put them in stock physically on site as well as on the website.",
+                "The customer sends delivery slips for his various customers. The server prepares the orders.",
+                "The server sends the various orders to the service provider who will physically ship the specified Welcome Packs.",
+                "The service provider sends the shipping information to the server. This will save them and allow them to be tracked.",
+                "The server returns the shipping information as well as the identifiers of the Welcome Packs shipped so that the customer can insert them into his ERP."
             ],
             "remarks": [
-                "Le micro-service est celui décrit dans le projet « PDF  Composition Micro-service »."
+                "The micro-service is the one described in the “PDF Composition Micro-service” project."
             ]
         },
         "promotionTool": {
-            "title": "Gestion de promotions",
-            "preview": "Serveurs applicatifs permettant la customisation et la création de promotions fonctionnant en API REST.",
-            "description": "Serveurs applicatifs permettant la customisation et la création de promotions fonctionnant en API REST. Les serveurs sont appelés soit par une application Front-End, soit par des applications mobiles.",
+            "title": "Promotion management",
+            "preview": "Application servers allowing the customization and creation of promotions operating in REST API.",
+            "description": "Application servers allowing the customization and creation of promotions operating in REST API. The servers are called either by a Front-End application or by mobile applications.",
             "steps": [
-                "Le client crée une promotion. Le serveur va enregistrer et communiquer aux services extérieurs les données de la nouvelle promotion.",
-                "Le serveur va envoyer la promotion aux différents sur divers medias (SMS, Email, Qrcodes…) . ",
-                "Le client envoie son code promo aux serveur. Le serveur enregistre les données du client et stocke différentes stats.",
-                "Le serveur envoi les données de la promotion et de l’utilisateur au client qui a créé la promotion.",
-                "Les statistiques sont déversés dans BigQuery pour que le client puisse consulter les différentes statistiques sous forme de graphiques dédiés."
+                "The customer creates a promotion. The server will record and communicate to external services the data of the new promotion.",
+                "The server will send the promotion to the different on various media (SMS, Email, QRcodes…).",
+                "The customer sends his promo code to the server. The server logs client data and stores various stats.",
+                "The server sends the promotion and user data to the client that created the promotion.",
+                "The statistics are poured into BigQuery so that the client can consult the various statistics in the form of dedicated graphs."
             ],
             "remarks": [
-                "L’architecture de ce projet est plus avancée que les autres projets.",
-                "Dans le cas asynchrone le client peut récupérer le document soit en interrogeant le serveur, soit en spécifiant une URL de rappel.",
-                "En réalité il n’y a pas qu’un seul serveur applicatif, il y en a deux. Ceux-ci communiquent leurs données via un « subscriber » Redis.",
-                "Ce projet étant beaucoup solliciter il utilise également Redis pour catcher certains résultats et répondre plus rapidement."
+                "The architecture of this project is more advanced than the other projects.",
+                "In reality there is not just one application server, there are two. They communicate their data via a Redis subscriber.",
+                "This project being very busy, it also uses Redis to catch certain results and respond more quickly."
             ]
         },
         "customERP": {
-            "title": "ERP personnalisé",
-            "preview": "« ERP » sur mesure permettant donc la gestion de ressources mais surtout la gestion interne des dossiers de l’entreprise.",
-            "description": "« ERP » sur mesure permettant donc la gestion de ressources mais surtout la gestion interne des dossiers de l’entreprise. L’applicatition est disponible sur internet et accessible via navigateur web.",
+            "title": "Custom ERP",
+            "preview": "Tailor-made “ERP” therefore allowing the management of resources but above all the internal management of the company's folders.",
+            "description": "Tailor-made “ERP” therefore allowing the management of resources but above all the internal management of the company's folders. The application is available on the internet and accessible via web browser.",
             "steps": [
-                "L’entreprise enregistre ses employés sur l’applicatif. Ceux-ci ont le droit de créer / modifier / lire des clients, des fournisseurs, des dossiers, des projets, des commandes, des devis, des factures mais aussi gérer des plannings et leurs feuilles de temps.Le serveur est connecté avec plusieurs prestataires notamment sur la partie facturation.",
-                "Un premier prestataire (ERP principal) envoie les données des clients et fournisseurs. Ces données sont mises à jour continuellement, elles sont enregistrées dans l’applicatif, il est ensuite possible de rajouter des informations additionnelles.",
-                "Une application cliente (autre applicatif appartenant à l’entreprise) déverse des ordres de facturation avec le détails des commandes passées. L’applicatif crée les factures et les enregistre.",
-                "Le serveur génère les factures physiques grâce à un service de composition et envoie le document à un prestataire tiers afin de certifié le document.",
-                "Le prestataire renvoi le document certifié. L’applicatif prépare l’envoi des factures en les regroupant et en rajoutant des documents annexes dépendant la situation du client concerné.",
-                "Les détails des articles facturés sont renvoyées à l’ERP principal.",
-                "Les factures et leurs documents annexes sont envoyés à des prestataires tiers afin d’être envoyés sous format de lettre ou email.",
-                "Le prestataire remonte les statuts des envois qui sont actualisés dans l’applicatif afin que les utilisateurs puissent monitorer l’état des envois."
+                "The company registers its employees on the application. They have the right to create / modify / read customers, suppliers, files, projects, orders, quotes, invoices but also manage schedules and their time sheets. The server is connected with several service providers especially on the invoicing part.",
+                "A first service provider (main ERP) sends customer and supplier data. These data are continuously updated, they are saved in the application, it is then possible to add additional information.",
+                "A client application (another application belonging to the company) dumps billing orders with the details of the orders placed. The application creates invoices and saves them.",
+                "The server generates physical invoices using a composition service and sends the document to a third-party service provider to certify the document.",
+                "The service provider returns the certified document. The application prepares the sending of invoices by grouping them together and adding additional documents depending on the situation of the customer concerned.",
+                "The details of invoiced items are sent back to the main ERP.",
+                "Invoices and their accompanying documents are sent to third-party service providers in order to be sent in letter or email format.",
+                "The service provider reports the status of shipments which are updated in the application so that users can monitor the status of shipments."
             ],
             "remarks": [
-                "Le micro-service est celui décrit dans le projet « PDF  Composition Micro-service »."
+                "The micro-service is the one described in the “PDF Composition Micro-service” project."
             ]
         }
     }
