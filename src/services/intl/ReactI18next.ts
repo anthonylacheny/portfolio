@@ -14,7 +14,9 @@ export class ReactI18next implements Intl {
             .init({
                 nonExplicitSupportedLngs: true,
                 interpolation: { escapeValue: false },
-                backend: { loadPath: `${process.env.PUBLIC_URL}/lang/{{lng}}/{{ns}}.json?v=2.3` },
+                backend: {
+                    loadPath: `${process.env.PUBLIC_URL}/lang/{{lng}}/{{ns}}.json?v=${process.env.REACT_APP_VERSION}`,
+                },
                 supportedLngs: [Locale.en, Locale.fr, Locale.es],
                 fallbackLng: Locale.en,
                 react: { useSuspense: true },
