@@ -75,7 +75,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
             <div className="AboutSection-skills">
                 <div className="AboutSection-skills-selection">
                     <span
-                        className={`AboutSection-skills-arrow AboutSection-skills-category-${skillCategory.classSufix}`}>
+                        className={`AboutSection-skills-arrow AboutSection-skills-arrow-${skillCategory.classSufix}`}>
                         <FontAwesomeIcon icon="angle-right" className="AboutSection-desktop" />
                         <FontAwesomeIcon icon="angle-down" className="AboutSection-mobile" />
                     </span>

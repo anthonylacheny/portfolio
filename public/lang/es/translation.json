@@ -78,15 +78,15 @@
         "technologies": "Tecnología",
         "more": "Más información",
         "dataMutuals": {
-            "title": "Recopilación de datos para mutuas",
-            "preview": "Paginas que permiten la recopilación de datos para varias mutuas.",
-            "description": "Paginas que permiten la recopilación de datos para varias mutuas. Estos permitirán a las mutuas recuperar documentos para operaciones internas como la recuperación de comprobantes de escolaridad o hojas de declaración anual de impuestos. Los datos en tránsito son sensibles, toda la información del usuario y sus documentos están encriptados.",
+            "title": "Recopilación de datos para seguros",
+            "preview": "Paginas que permiten recopilar datos para varios seguros...",
+            "description": "Paginas que permiten recopilar datos para varios seguros. Estas permitirán a los seguros recuperar documentos para operaciones internas como la recuperación de comprobantes de escolaridad o hojas de declaración anual de impuestos. Los datos que transitan son sensibles, toda la información del usuario y sus documentos están encriptados.",
             "steps": [
-                "Un primer proveedor de servicios enviará los datos del cliente al servidor de aplicaciones. Esto guardará los datos y creará las diferentes cuentas de usuario para que puedan acceder al portal a través de un navegador web.",
-                "El servidor solicitará a un segundo proveedor de servicios que envíe una campaña de correo electrónico a los distintos clientes para que estén al tanto de la operación y puedan conectarse al portal.",
-                "El proveedor de servicios anterior envia los correos electrónicos.",
-                "Los usuarios proporcionan sus documentos en el portal.",
-                "El documento se devuelve al primer prestador de servicios que, al final de la operación, enviará todos los expedientes a las distintas mutuas."
+                "Un primer proveedor enviará los datos del cliente al servidor de aplicaciones. Esto guardará los datos y creará las diferentes cuentas de usuario para que puedan acceder al portal a través de un navegador web.",
+                "El servidor solicitará a un segundo proveedor para que envíe una campaña de correo electrónico a los distintos clientes para informarles la existencia de la operación y que puedan conectarse al portal.",
+                "El proveedor citado anteriormente envia los correos electrónicos.",
+                "Los usuarios facilitan sus documentos en el portal.",
+                "El documento se devuelve al primer proveedor que, al final de la operación, enviará todos los archivos a los distintos seguros."
             ],
             "remarks": [
                 "Las operaciones tienen una duración de vida limitada.",
@@ -94,71 +94,71 @@
             ]
         },
         "compoService": {
-            "title": "Microservicio de composición de PDF",
-            "preview": "Microservicio para componer archivos PDF...",
-            "description": "Microservicio para componer archivos PDF. Basado en la librería Apache FOP, este servidor permite la composición de documentos PDF individuales o masivos. Este servicio se puede llamar desde otras aplicaciones y le permite generar documentos simples como cotizaciones o facturas, pero también flujos de producción completos para proyectos con impresoras.",
+            "title": "Microservicio de composición de archivos PDF",
+            "preview": "Microservicio para generar archivos PDF unitarios o de grande volumen...",
+            "description": "Microservicio para generar archivos PDF unitarios o de grande volumen. Basado en la biblioteca Apache FOP, este servicio se puede solicitar desde otras aplicaciones y permite la generación de documentos simples como presupuestos o facturas, pero también flujos de producción completos para proyectos con impresores.",
             "steps": [
                 "La aplicación cliente proporciona recursos que el servidor guarda para poder generar los documentos posteriormente, estos recursos incluyen: un modelo para definir el diseño, fuentes, imágenes, perfiles de color…",
                 "La aplicación cliente solicita al servidor indicando el modelo a utilizar así como las diferentes variables necesarias para la generación del documento.",
-                "El servidor generará el documento y lo enviará de regreso al cliente cuando se complete la composición."
+                "El servidor generará el documento y lo enviará de regreso al cliente cuando se finalize la composición."
             ],
             "remarks": [
-                "Las composiciones se pueden realizar de forma síncrona o asíncrona. Cuando una composición síncrona es demasiado lenta, se vuelve a cambiar a asíncrona.",
-                "En el caso asíncrono, el cliente puede recuperar el documento consultando al servidor o especificando una URL de devolución de llamada."
+                "Las composiciones se pueden realizar de forma síncrona o asíncrona. Cuando una composición síncrona es demasiado lenta, se cambiara automáticamente a asíncrona.",
+                "En el caso asíncrono, el cliente puede recuperar el documento consultando al servidor o especificando una URL de callback."
             ]
         },
         "welcomePack": {
-            "title": "Producción de Welcome Pack",
-            "preview": "Proyectos web de gestión y elaboración de Welcome Packs...",
-            "description": "Proyectos web de gestión y elaboración de Welcome Packs. La applicación permite al cliente gestionar su producción, stocks y envíos de Welcome Packs. El sitio es utilizado por el propio cliente pero también por el proveedor de servicios que se encarga del servicio físico en la parte de producción. Un Welcome Pack está compuesto por una carta y una tarjeta personalizadas así como varios tipos de componentes variables, cada Welcome Pack tiene un identificador único.",
+            "title": "Producción de Welcome Packs",
+            "preview": "Proyecto web de gestión, elaboración y entrega de Welcome Packs...",
+            "description": "Proyecto web de gestión, elaboración y entrega de Welcome Packs. La applicación permite al cliente gestionar su fabricación, stocks y envíos de Welcome Packs, esta utilizada por el propio cliente pero también por el proveedor que se encarga de la producción física. Un Welcome Pack está compuesto por una carta y una tarjeta personalizadas así como varios tipos de componentes variables, cada Welcome Pack tiene un identificador único.",
             "steps": [
                 "El cliente transmite las distintas órdenes de fabricación al servidor de aplicaciones. El servidor registra y prepara los diferentes lotes de producciones.",
-                "El servidor devuelve un BAT al cliente que éste puede validar o rechazar.",
+                "El servidor devuelve una orden de impresión al cliente que éste puede validar o rechazar.",
                 "El servidor solicita un microservicio de composición para generar los flujos de producción para la fabricación de los Welcome Packs.",
                 "El microservicio envía los diferentes flujos de vuelta al servidor.",
-                "El servidor envía los diferentes flujos al proveedor de servicios. Esto imprimirá los flujos, ensamblará los lotes y los almacenará físicamente en en sitio y en la pagina web.",
+                "El servidor envía los diferentes flujos al proveedor. Aquel imprimirá los flujos, ensamblará los lotes y los almacenará físicamente en el almacén y en la pagina web.",
                 "El cliente envía albaranes de entrega para sus distintos clientes. El servidor prepara los pedidos.",
-                "El servidor envía los diversos pedidos al proveedor de servicios que enviará físicamente los paquetes de bienvenida especificados.",
-                "El proveedor de servicios envía la información de envío al servidor. Esto los salvará y permitirá que sean rastreados.",
+                "El servidor envía los diversos pedidos al proveedor que enviará físicamente los Welcome Packs indicados.",
+                "El proveedor transmite la información de los envíos al servidor. El servidor guarda la información y permite que sean rastreados.",
                 "El servidor devuelve la información de envío así como los identificadores de los Welcome Packs enviados para que el cliente los inserte en su ERP."
             ],
             "remarks": [
-                "El microservicio es el descrito en el proyecto “Microservicio de Composición PDF”."
+                "El microservicio es aquel descrito en el proyecto “Microservicio de composición de archivos PDF”."
             ]
         },
         "promotionTool": {
             "title": "Gestión de promociones",
-            "preview": "Servidores de aplicaciones que permiten la personalización y creación de promociones operando en REST API.",
-            "description": "Servidores de aplicaciones que permiten la personalización y creación de promociones operando en REST API. Los servidores son llamados por una aplicación Front-End o por aplicaciones móviles.",
+            "preview": "Servidores de aplicaciones que permiten la personalización y creación de promociones operando en REST API...",
+            "description": "Servidores de aplicaciones que permiten la personalización y creación de promociones operando en REST API. Las APIs están consumidas por una aplicación Front-End o por aplicaciones móviles.",
             "steps": [
-                "El cliente crea una promoción. El servidor registrará y comunicará a servicios externos los datos de la nueva promoción.",
-                "El servidor enviará la promoción a los diferentes por varios medios (SMS, Email, QRcodes…).",
-                "El cliente envía su código de promoción al servidor. El servidor registra los datos del cliente y almacena varias estadísticas.",
+                "El cliente crea una promoción. El servidor registra y comunica a servicios externos los datos de la nueva promoción.",
+                "El servidor envia la promoción a los usuarios por varios medios (SMS, Email, QRcodes…).",
+                "El usuario final envía su código de promoción al servidor. El servidor registra los datos del cliente y almacena varias estadísticas.",
                 "El servidor envía la promoción y los datos del usuario al cliente que creó la promoción.",
                 "Las estadísticas se vierten en BigQuery para que el cliente pueda consultar las distintas estadísticas en forma de gráficos dedicados."
             ],
             "remarks": [
                 "La arquitectura de este proyecto es más avanzada que la de los otros proyectos.",
                 "En realidad no hay un solo servidor de aplicaciones, hay dos. Comunican sus datos a través de un “suscriptor” de Redis",
-                "Dado que este proyecto está muy ocupado, también usa Redis para capturar ciertos resultados y responder más rápidamente."
+                "Dado que este proyecto está muy solicitado, también usa Redis para cachear ciertos resultados y contestar más rápido."
             ]
         },
         "customERP": {
             "title": "ERP personalizado",
-            "preview": "“ERP” a medida que permite la gestión de los recursos pero sobre todo la gestión interna de los expedientes de la empresa.",
+            "preview": "“ERP” a medida que permite la gestión de los recursos y sobre todo la gestión interna de los expedientes de la empresa...",
             "description": "“ERP” a medida que permite la gestión de los recursos pero sobre todo la gestión interna de los expedientes de la empresa. La aplicación está disponible en Internet y se puede acceder a ella mediante un navegador web.",
             "steps": [
-                "La empresa registra a sus empleados en la aplicación. Tienen derecho a crear/modificar/leer clientes, proveedores, archivos, proyectos, pedidos, cotizaciones, facturas, pero también administrar horarios y sus hojas de tiempo.El servidor está conectado con varios proveedores de servicios, especialmente en la parte de facturación.",
-                "Un primer proveedor de servicios (ERP principal) envía los datos de clientes y proveedores. Estos datos se actualizan continuamente, se guardan en la aplicación, luego es posible agregar información adicional.",
-                "Una aplicación cliente (otra aplicación perteneciente a la empresa) volca las órdenes de facturación con el detalle de las órdenes realizadas. La aplicación crea facturas y las guarda.",
-                "El servidor genera facturas físicas utilizando un servicio de composición y envía el documento a un proveedor de servicios externo para certificar el documento.",
-                "El proveedor de servicios devuelve el documento certificado. La aplicación prepara el envío de facturas agrupándolas y añadiendo documentos adicionales en función de la situación del cliente en cuestión.",
+                "La empresa registra a sus empleados en la aplicación. Tienen derecho a crear/modificar/leer clientes, proveedores, expendientes, proyectos, pedidos, presupuestos, facturas, pero también administrar sus hojas de tiempo.El servidor está conectado con varios proveedores, especialmente en la parte de facturación.",
+                "Un primer proveedor (ERP principal) envía los datos de clientes y proveedores. Estos datos se actualizan continuamente, se guardan en la aplicación, posteriomente es posible agregar información adicional.",
+                "Una aplicación cliente (otra aplicación perteneciente a la empresa) manda las órdenes de facturación con el detalle de las órdenes realizadas. La aplicación crea facturas y las guarda.",
+                "El servidor genera facturas físicas utilizando un servicio de composición y envía el documento a un proveedor externo para certificar el documento.",
+                "El proveedor devuelve el documento certificado. La aplicación prepara el envío de facturas agrupándolas y añadiendo documentos adicionales en función de la situación del cliente en cuestión.",
                 "Los detalles de los artículos facturados se envían de vuelta al ERP principal.",
-                "Las facturas y los documentos que las acompañan se envían a proveedores de servicios externos para que se envíen en formato de carta o correo electrónico.",
-                "El proveedor de servicios informa el estado de los envíos que se actualizan en la aplicación para que los usuarios puedan monitorear el estado de los envíos."
+                "Las facturas y los documentos que las acompañan se envían a proveedores externos para que se envíen en formato papel o correo electrónico.",
+                "El proveedor informa del estado de los envíos que se actualizan en la aplicación para que los usuarios puedan monitorear el estado de los envíos."
             ],
             "remarks": [
-                "El microservicio es el descrito en el proyecto “Microservicio de Composición PDF”."
+                "El microservicio es aquel descrito en el proyecto “Microservicio de composición de archivos PDF”."
             ]
         }
     }

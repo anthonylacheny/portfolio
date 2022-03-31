@@ -79,8 +79,8 @@
         "more": "En savoir plus",
         "dataMutuals": {
             "title": "Collecte de données pour mutuelles",
-            "preview": "Mini-sites permettant la collecte de données pour diverses mutuelles.",
-            "description": "Mini-sites permettant la collecte de données pour diverses mutuelles. Ceux-ci vont permettre aux mutuelles de récupérer des documents pour des opérations internes comme une récupération de justificatifs de scolarités ou des feuilles de déclaration d’imposition annuelles. Les données qui transites étant sensibles toutes les informations utilisateurs ainsi que leurs documents sont encryptées.",
+            "preview": "Sites permettant la collecte de données pour diverses mutuelles...",
+            "description": "Sites permettant la collecte de données pour diverses mutuelles. Ceux-ci vont permettre aux mutuelles de récupérer des documents pour des opérations internes comme une récupération de justificatifs de scolarités ou des feuilles de déclaration d’imposition annuelles. Les données qui transites étant sensibles toutes les informations utilisateurs ainsi que leurs documents sont encryptées.",
             "steps": [
                 "Un premier prestataire va envoyer les données clients au serveur applicatif. Celui-ci va enregistrer les données et créer les différents comptes utilisateurs afin que ceux-ci puissent accéder au portail via un navigateur web.",
                 "Le serveur va soliciter un deuxième prestataire afin d’envoyer une campagne email aux différents clients afin que ceux-ci prennent connaissance de l’opération et qu’ils puissent se connecter au portail.",
@@ -94,9 +94,9 @@
             ]
         },
         "compoService": {
-            "title": "Micro-service de compositions PDF",
-            "preview": "Micro-service de composition de fichiers PDF...",
-            "description": "Micro-service de composition de fichiers PDF. Basé sur la librairie Apache FOP ce serveur permet la composition de documents PDF unitaires ou en masse. Ce service est appelable depuis d’autres applications et permet de générer des documents simple comme des devis ou des factures mais aussi des flux de productions complets pour des projets avec des imprimeurs.",
+            "title": "Micro-service de composition de documents PDF",
+            "preview": "Micro-service de composition de documents PDF unitaires ou en masse...",
+            "description": "Micro-service de composition de documents PDF unitaires ou en masse. Basé sur la librairie Apache FOP ce service est appelable depuis d’autres applications et permet de générer des documents simples comme des devis ou des factures mais aussi des flux de productions complets pour des projets avec des imprimeurs.",
             "steps": [
                 "L’application cliente fournie des ressources que le serveur enregistre afin de pouvoir générer les documents plus tard, ces ressources inclus : un model pour définir la mise en page, des polices, des images, des profils de couleurs…",
                 "L’application cliente sollicite le serveur en lui indiquant le model à utiliser ainsi que les différentes variables nécessaires pour la génération du document.",
@@ -109,8 +109,8 @@
         },
         "welcomePack": {
             "title": "Production de Welcome Packs",
-            "preview": "Projet web de gestion et production de Welcome Packs...",
-            "description": "Projet web de gestion et production de Welcome Packs. Le site permet au client de gérer sa production, ses stocks et ses expéditions de Welcome Pack. Le site est utilisé par le client lui-même mais également par le prestataire qui s’occupe de la prestation physique sur la partie production. Un Welcome Pack est composé d’une lettre et une carte personnalisées  ainsi que de plusieurs types de composants variables, chaque Welcome Pack a un identifiant unique.",
+            "preview": "Projet web de gestion, fabrication et livraison de Welcome Packs...",
+            "description": "Projet web de gestion, fabrication et livraison de Welcome Packs. Le site permet au client de gérer sa production, ses stocks et ses expéditions de Welcome Pack. Le site est utilisé par le client lui-même mais également par le prestataire qui s’occupe de la prestation physique sur la partie production. Un Welcome Pack est composé d’une lettre et une carte personnalisées  ainsi que de plusieurs types de composants variables, chaque Welcome Pack a un identifiant unique.",
             "steps": [
                 "Le client transmet les différents ordres de fabrication au serveur applicatif. Le serveur enregistre et prépare les différents lots de productions.",
                 "Le serveur renvoi un BAT au client que celui-ci peut valider ou refuser.",
@@ -128,13 +128,13 @@
         },
         "promotionTool": {
             "title": "Gestion de promotions",
-            "preview": "Serveurs applicatifs permettant la customisation et la création de promotions fonctionnant en API REST.",
+            "preview": "Serveurs applicatifs permettant la customisation et la création de promotions fonctionnant en API REST...",
             "description": "Serveurs applicatifs permettant la customisation et la création de promotions fonctionnant en API REST. Les serveurs sont appelés soit par une application Front-End, soit par des applications mobiles.",
             "steps": [
                 "Le client crée une promotion. Le serveur va enregistrer et communiquer aux services extérieurs les données de la nouvelle promotion.",
-                "Le serveur va envoyer la promotion aux différents sur divers medias (SMS, Email, Qrcodes…).",
-                "Le client envoie son code promo aux serveur. Le serveur enregistre les données du client et stocke différentes stats.",
-                "Le serveur envoi les données de la promotion et de l’utilisateur au client qui a créé la promotion.",
+                "Le serveur va envoyer la promotion aux utilisateurs sur divers medias (SMS, Email, Qrcodes…).",
+                "L'utilisateur final envoie son code promo aux serveur. Le serveur enregistre les données du client et stocke différentes stats.",
+                "Le serveur envoie les données de la promotion et de l’utilisateur au client qui a créé la promotion.",
                 "Les statistiques sont déversées dans BigQuery pour que le client puisse consulter les différentes statistiques sous forme de graphiques dédiés."
             ],
             "remarks": [
@@ -145,7 +145,7 @@
         },
         "customERP": {
             "title": "ERP personnalisé",
-            "preview": "« ERP » sur mesure permettant donc la gestion de ressources mais surtout la gestion interne des dossiers de l’entreprise.",
+            "preview": "« ERP » sur mesure permettant donc la gestion de ressources mais surtout la gestion interne des dossiers de l’entreprise...",
             "description": "« ERP » sur mesure permettant donc la gestion de ressources mais surtout la gestion interne des dossiers de l’entreprise. L’applicatition est disponible sur internet et accessible via navigateur web.",
             "steps": [
                 "L’entreprise enregistre ses employés sur l’application. Ceux-ci ont le droit de créer / modifier / lire des clients, des fournisseurs, des dossiers, des projets, des commandes, des devis, des factures mais aussi gérer des plannings et leurs feuilles de temps.Le serveur est connecté avec plusieurs prestataires notamment sur la partie facturation.",

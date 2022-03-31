@@ -46,15 +46,32 @@
 
 .AboutSection-skills-arrow {
     position: absolute;
-    right: -20px;
+    right: -21px;
     height: 40px;
     width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    background-color: #fff;
     font-size: 28px;
-    border-radius: 20px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.AboutSection-skills-arrow-backend {
+    color: rgb(44, 0, 85);
+}
+
+.AboutSection-skills-arrow-frontend {
+    color: rgb(199, 0, 57);
+}
+
+.AboutSection-skills-arrow-database {
+    color: rgb(3, 146, 255);
+}
+
+.AboutSection-skills-arrow-tools {
+    color: rgb(255, 195, 0);
 }
 
 .AboutSection-desktop {

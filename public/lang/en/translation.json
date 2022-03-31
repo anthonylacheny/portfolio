@@ -79,8 +79,8 @@
         "more": "Learn more",
         "dataMutuals": {
             "title": "Data collection for mutuals",
-            "preview": "Mini-sites allowing the collection of data for various mutuals.",
-            "description": "Mini-sites allowing the collection of data for various mutuals. These will allow mutuals to recover documents for internal operations such as the recovery of proof of schooling or annual tax declaration sheets. The data in transit being sensitive, all user information and their documents are encrypted.",
+            "preview": "Sites allowing the collection of data for various mutuals.",
+            "description": "Sites allowing the collection of data for various mutuals. These will allow mutuals to recover documents for internal operations such as the recovery of proof of schooling or annual tax declaration sheets. The data in transit being sensitive, all user information and their documents are encrypted.",
             "steps": [
                 "A first service provider will send customer data to the application server. This will save the data and create the different user accounts so that they can access the portal via a web browser.",
                 "The server will solicit a second service provider to send an email campaign to the various customers so that they are aware of the operation and can connect to the portal.",
