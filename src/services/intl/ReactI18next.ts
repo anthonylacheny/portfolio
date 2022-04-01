@@ -18,7 +18,7 @@ export class ReactI18next implements Intl {
                     loadPath: `${process.env.PUBLIC_URL}/lang/{{lng}}/{{ns}}.json?v=${process.env.REACT_APP_VERSION}`,
                 },
                 supportedLngs: [Locale.en, Locale.fr, Locale.es],
-                fallbackLng: Locale.en,
+                fallbackLng: Locale.fr,
                 react: { useSuspense: true },
             });
     }
