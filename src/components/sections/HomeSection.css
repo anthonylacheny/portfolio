@@ -13,7 +13,7 @@
     margin: 20px 8px 0 8px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
     align-self: center;
-    max-width: 340px;
+    max-width: 400px;
 }
 
 .HomeSection-carousel-wrapper {
@@ -246,5 +246,9 @@
 
     .HomeSection-carousel-wrapper {
         height: 200px;
+    }
+
+    .HomeSection-carousel-title-text {
+        font-size: 10px;
     }
 }

@@ -25,10 +25,10 @@
     "home": {
         "title": "IT Architect, Developer & Bugs Hunter",
         "who_am_i_0": "Hey, I'm {{name}}",
-        "who_am_i_1": "I'm a freelance web developer and IT architect based in Madrid. I am highly motivated and constantly learning new technologies.",
+        "who_am_i_1": "I'm a freelance web developer and IT architect based in Madrid. I am highly motivated and constantly learning new technologies, performance improvements and the development prospects they bring to companies.",
         "who_am_i_2": "Although I have a lot of experience with back-end technologies, I am also open to front-end and mobile technologies.",
         "who_am_i_3": "Are you looking for an expert for a new project? Do you want to develop and improve an existing project? Or do you just want to hear a third-party opinion?",
-        "who_am_i_4": "In any case, I would be happy to work with you. Do not hesitate to contact me. I will get back to you as soon as possible.",
+        "who_am_i_4": "In any case, I would be happy to work with you. Contact me, discussing together will make us progress.",
         "my_project": "See my projects"
     },
     "about": {
@@ -80,10 +80,10 @@
         "more": "Learn more",
         "dataMutuals": {
             "title": "Data collection and data processing for mutual companies",
-            "preview": "Websites that allow data collection for multiple mutuals...",
-            "description": "Websites that allow data collection for multiple mutuals. These allow mutuals to collect documents for internal operations, such as proof of schooling or annual tax returns. Since the data transferred is sensitive information, users’ data and their documents are encrypted.",
+            "preview": "Creation and organization of transactional data management websites for multiple mutuals...",
+            "description": "Creation and organization of transactional data management websites for multiple mutuals. These allow mutuals to collect documents for internal operations, such as proof of schooling or annual tax returns. Since the data transferred is sensitive information, users’ data and their documents are encrypted.",
             "steps": [
-                "An initial provider sends the client’s data to the application server. These stores the data and creates different user accounts so that they can access the portal through a web browser.",
+                "An initial provider sends the client’s data to the application server. These stores the data and creates different user accounts so that they can access the portal through a web or mobile browser.",
                 "The server instructs a second provider to send an email campaign to the various customers so that they are aware of the process and can connect to the portal.",
                 "The aforementioned provider sends the e-mails.",
                 "The users post their documents on the portal.",
@@ -91,7 +91,7 @@
             ],
             "remarks": [
                 "The operations have a limited duration.",
-                "There is a reminder/information system for users who are not logged in or who have submitted the wrong documents."
+                "The process is completed by a reminder/information system for users who are not logged in or who have submitted the wrong documents."
             ]
         },
         "compoService": {
@@ -111,13 +111,13 @@
         "welcomePack": {
             "title": "Production of Welcome Packs",
             "preview": "Web project management, production and delivery of Welcome Packs...",
-            "description": "Web project management, production and delivery of Welcome Packs. The application allows the client to manage their production, inventory and deliveries of welcome packs. The website is used both by the customer itself and by the vendor who provides the physical service for the production. A welcome pack consists of a personalized letter and card, as well as several variable components.  Each welcome pack has a unique identifier.",
+            "description": "Web project management, production and delivery of Welcome Packs applied to the insurance business. The application allows the client to manage their production, inventory and deliveries of welcome packs. The website is used both by the customer itself and by the vendor who provides the physical service for the production. A welcome pack consists of a personalized letter and card, as well as several variable components.  Each welcome pack has a unique identifier.",
             "steps": [
                 "The client transmits the different production orders to the application server. The server registers the different production batches and prepares them.",
                 "The server sends a print job to the client, which the client can confirm or reject.",
                 "The server requests the composition microservice to create the production flows for making the Welcome Packs.",
                 "The microservice sends the various flows back to the server",
-                "The server sends the various flows to the service provider. The latter prints the flows, assembles the batches and physically stores them on site and on the website.",
+                "The server sends the various flows to the service provider. The latter prints the flows, assembles the batches and physically stores them on site and on his website with web or mobile browser.",
                 "The customer sends delivery bills for his various customers. The server prepares the orders.",
                 "The server sends the various orders to the vendor who physically ships the specified Welcome Packs.",
                 "The vendor sends the shipping information to the server. The server stores the data and enables tracking of the shipments.",
@@ -145,9 +145,9 @@
             ]
         },
         "customERP": {
-            "title": "Custom ERP",
-            "preview": "Customised “ERP” that allows the management of resources and, above all, the internal management of company files...",
-            "description": "Customised “ERP” that allows the management of resources and, above all, the internal management of company files. The application is available via the Internet and accessible through a web browser.",
+            "title": "Management application called « ERP »",
+            "preview": "Customised “ERP”, collaborative, that allows the management of resources and, above all, the internal management of company files...",
+            "description": "Customised “ERP” that allows the management of resources and, above all, the internal management of company operational folders. The application is available via the Internet and accessible through a web or mobile browser. It knows how to communicate with the other ERPs of the other subsidiaries in place.",
             "steps": [
                 "The company registers its employees in the application. They have the right to create / modify / read profiles of the clients, vendors, folders, projects, orders, requests, invoices, but also to manage schedules and their timesheets. The server is in connection with several service providers, especially in the area of invoicing.",
                 "A first service provider (main ERP) sends the data from customers and suppliers. This data is continuously updated and stored in the application; later additional information can be added.",
@@ -155,7 +155,7 @@
                 "The server creates physical invoices using a composition service and sends the document to a third-party provider who certifies it.",
                 "The provider sends back the certified document. The application prepares to send the invoices by grouping them and adding additional documents depending on the customer in question.",
                 "The details of the invoiced items are sent back to the main ERP.",
-                "Invoices and their accompanying documents are sent to the third-party service providers to be sent by letter or email.",
+                "Invoices and their accompanying documents are sent to the third-party service providers to be sent by paper (postal mail) or email.",
                 "The service provider reports the status of the shipments updated in the application so that the users can monitor the status of the shipments."
             ],
             "remarks": [

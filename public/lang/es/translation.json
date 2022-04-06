@@ -25,10 +25,10 @@
     "home": {
         "title": "Arquitecto Software, Desarollador y Cazador de bugs",
         "who_am_i_0": "Hola, soy {{name}}",
-        "who_am_i_1": "Soy desarrollador web y arquitecto software freelance establecido en Madrid. Soy un apasionado de las nuevas tecnologías y del aprendizaje constante, por lo que estoy en continuo crecimiento. ",
+        "who_am_i_1": "Soy desarrollador web y arquitecto software freelance establecido en Madrid. Soy un apasionado de las nuevas tecnologías y del aprendizaje constante, las mejoras de rendimiento y las perspectivas de desarrollo que aportan a las empresas.",
         "who_am_i_2": "Mis conocimientos se centran en las tecnologías e infraestructuras de back-end. No obstante, estoy también abierto a trabajos front-end y mobile.",
         "who_am_i_3": "¿Busca un experto para diseñar un nuevo proyecto? ¿Quiere desarrollar y mejorar un proyecto ya existente? ¿O tal vez solo quiere asesoramiento externo sobre su proyecto?",
-        "who_am_i_4": "¡Seguro que podemos colaborar! No dude en escribirme. Me pondré en contacto lo antes posible.",
+        "who_am_i_4": "¡Seguro que podemos colaborar! Contáctame, conversar juntos nos hará mejorar.",
         "my_project": "Ver mis proyectos"
     },
     "about": {
@@ -80,18 +80,18 @@
         "more": "Más información",
         "dataMutuals": {
             "title": "Recopilación y tratamiente de datos para seguros",
-            "preview": "Páginas que permiten recopilar datos para varios seguros...",
-            "description": "Páginas que permiten recopilar datos para varios seguros. Estas permitirán a los seguros recuperar documentos para operaciones internas como la recuperación de comprobantes de escolaridad u hojas de declaración anual de impuestos. Los datos que transitan son sensibles, por lo que toda la información del usuario y sus documentos están encriptados.",
+            "preview": "Creación y organización de sitios de gestión de datos transaccionales para varios seguros...",
+            "description": "Creación y organización de sitios de gestión de datos transaccionales para varios seguros. Estas permitirán a los seguros recuperar documentos para operaciones internas como la recuperación de comprobantes de escolaridad u hojas de declaración anual de impuestos. Los datos que transitan son sensibles, por lo que toda la información del usuario y sus documentos están encriptados.",
             "steps": [
-                "Un primer proveedor enviará los datos del cliente al servidor de aplicaciones. Esto guardará los datos y creará las diferentes cuentas de usuario para que puedan acceder al portal a través de un navegador web.",
-                "El servidor solicitará a un segundo proveedor para que envíe una campaña de correo electrónico a los distintos clientes para informarles la existencia de la operación y que puedan conectarse al portal.",
+                "Un primer proveedor envia los datos del cliente al servidor de aplicaciones. Esto guarda los datos y crea las diferentes cuentas de usuario para que puedan acceder al portal a través de un navegador web o móvil.",
+                "El servidor solicita a un segundo proveedor para que envíe una campaña de correo electrónico a los distintos clientes para informarles la existencia de la operación y que puedan conectarse al portal.",
                 "El proveedor citado anteriormente envía los correos electrónicos.",
                 "Los usuarios facilitan sus documentos en el portal.",
-                "El documento se devuelve al primer proveedor que, al final de la operación, enviará todos los archivos a los distintos seguros."
+                "El documento se devuelve al primer proveedor que, al final de la operación, envia todos los archivos a los distintos seguros."
             ],
             "remarks": [
                 "Las operaciones tienen una duración de vida limitada.",
-                "Existe un sistema de recordatorio/información para los usuarios que no están registrados o que han proporcionado documentos incorrectos."
+                "El proceso se completa con un sistema de recordatorio/información para los usuarios que no están registrados o que han proporcionado documentos incorrectos."
             ]
         },
         "compoService": {
@@ -101,7 +101,7 @@
             "steps": [
                 "La aplicación cliente proporciona recursos que el servidor guarda para poder generar los documentos posteriormente. Estos recursos incluyen: un modelo para definir el diseño, fuentes, imágenes, perfiles de color…",
                 "La aplicación cliente solicita al servidor indicando el modelo a utilizar, así como las diferentes variables necesarias para la generación del documento.",
-                "El servidor generará el documento y lo enviará de regreso al cliente cuando se finalice la composición."
+                "El servidor genera el documento y lo envia de regreso al cliente cuando se finalice la composición."
             ],
             "remarks": [
                 "Las composiciones se pueden realizar de forma síncrona o asíncrona. Cuando una composición síncrona es demasiado lenta, se cambiará automáticamente a asíncrona.",
@@ -111,17 +111,17 @@
         "welcomePack": {
             "title": "Producción de Paquetes de Bienvenida",
             "preview": "Proyecto web de gestión, elaboración y entrega de Paquetes de Bienvenida...",
-            "description": "Proyecto web de gestión, elaboración y entrega de Paquetes de Bienvenida. La aplicación permite al cliente gestionar su fabricación, inventario y envíos de Paquetes de Bienvenida. Es utilizada por el propio cliente, pero también por el proveedor que se encarga de la producción física. Un Paquete de Bienvenida está compuesto por una carta y una tarjeta personalizadas, así como varios tipos de componentes variables. Cada Paquete de Bienvenida tiene un identificador único.",
+            "description": "Proyecto web de gestión, elaboración y entrega de Paquetes de Bienvenida aplicado al negocio de seguros. La aplicación permite al cliente gestionar su fabricación, inventario y envíos de Paquetes de Bienvenida. Es utilizada por el propio cliente, pero también por el proveedor que se encarga de la producción física. Un Paquete de Bienvenida está compuesto por una carta y una tarjeta personalizadas, así como varios tipos de componentes variables. Cada Paquete de Bienvenida tiene un identificador único.",
             "steps": [
                 "El cliente transmite las distintas órdenes de fabricación al servidor de aplicaciones. El servidor registra y prepara los diferentes lotes de producciones.",
                 "El servidor devuelve una orden de impresión al cliente que este puede validar o rechazar.",
                 "El servidor solicita un microservicio de composición para generar los flujos de producción para la fabricación de los Paquetes de Bienvenida.",
                 "El microservicio envía los diferentes flujos de vuelta al servidor.",
-                "El servidor envía los diferentes flujos al proveedor. Aquel imprimirá los flujos, ensamblará los lotes y los almacenará físicamente en el almacén y en la página web.",
+                "El servidor envía los diferentes flujos al proveedor. Aquel imprimirá los flujos, ensamblará los lotes y los almacenará físicamente en el almacén y en su página web vía navegador web o móvil.",
                 "El cliente envía albaranes de entrega para sus distintos clientes. El servidor prepara los pedidos.",
                 "El servidor envía los diversos pedidos al proveedor que enviará físicamente los Paquetes de Bienvenida indicados.",
                 "El proveedor transmite la información de los envíos al servidor. El servidor guarda la información y permite que los envíos sean rastreados.",
-                "El servidor devuelve la información de envío, así como los identificadores de los Paquetes de Bienvenida enviados para que el cliente los inserte en su ERP."
+                "El servidor devuelve la información de envío, así como los identificadores de los Paquetes de Bienvenida enviados para que el cliente los importe en su ERP."
             ],
             "remarks": [
                 "El microservicio es aquel descrito en el proyecto “Microservicio de composición de archivos PDF”."
@@ -145,9 +145,9 @@
             ]
         },
         "customERP": {
-            "title": "ERP personalizado",
+            "title": "Aplicación de gestión denominada “ERP”",
             "preview": "“ERP” a medida que permite la gestión de los recursos, pero sobre todo la gestión interna de los expedientes de la empresa...",
-            "description": "“ERP” a medida que permite la gestión de los recursos, pero sobre todo la gestión interna de los expedientes de la empresa. La aplicación está disponible en Internet y se puede acceder a ella mediante un navegador web.",
+            "description": "“ERP” a medida, colaborativo, que permite la gestión de los recursos, pero sobre todo la gestión interna de los expedientes operacionales de la empresa. La aplicación está disponible en Internet y se puede acceder a ella mediante un navegador web o móvil. Sabe comunicarse con los demás ERPs de las demás filiales existentes.",
             "steps": [
                 "La empresa registra a sus empleados en la aplicación. Tienen derecho a crear/modificar/leer los perfiles de los clientes, proveedores, expedientes, proyectos, pedidos, presupuestos, facturas, pero también administrar sus hojas de tiempo. El servidor está conectado con varios proveedores, especialmente en la parte de facturación.",
                 "Un primer proveedor (ERP principal) envía los datos de clientes y proveedores. Estos datos se actualizan continuamente, se guardan en la aplicación, posteriormente es posible agregar información adicional.",
@@ -155,7 +155,7 @@
                 "El servidor genera facturas físicas utilizando un servicio de composición y envía el documento a un proveedor externo para certificar el documento.",
                 "El proveedor devuelve el documento certificado. La aplicación prepara el envío de facturas agrupándolas y añadiendo documentos adicionales en función de la situación del cliente en cuestión.",
                 "Los detalles de los artículos facturados se envían de vuelta al ERP principal.",
-                "Las facturas y los documentos que las acompañan se envían a proveedores externos para que se envíen en formato papel o correo electrónico.",
+                "Las facturas y los documentos que las acompañan se envían a proveedores externos para que se envíen en formato papel (correo postal) o correo electrónico.",
                 "El proveedor informa del estado de los envíos que se actualizan en la aplicación para que los usuarios puedan monitorear el estado de los envíos."
             ],
             "remarks": [

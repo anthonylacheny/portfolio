@@ -83,7 +83,7 @@
             "preview": "Création et organisation de sites de gestion de données transactionnelles pour diverses mutuelles...",
             "description": "Création et organisation de sites de gestion de données transactionnelles pour diverses mutuelles. Ceux-ci vont permettre aux mutuelles de collecter des documents pour des opérations internes telles que la récupération de justificatifs de scolarité ou des feuilles de déclaration d’imposition annuelle. Les données qui transitent étant sensibles,  toutes les informations utilisateurs ainsi que leurs documents sont encryptées.",
             "steps": [
-                "Un premier prestataire envoie les données clients au serveur applicatif. Celui-ci enregistre les données et crée les différents comptes utilisateurs afin que ceux-ci puissent accéder au portail via un navigateur web.",
+                "Un premier prestataire envoie les données clients au serveur applicatif. Celui-ci enregistre les données et crée les différents comptes utilisateurs afin que ceux-ci puissent accéder au portail via un navigateur web ou mobile.",
                 "Le serveur sollicite un deuxième prestataire afin d’envoyer une campagne email aux différents clients afin que ceux-ci prennent connaissance de l’opération et qu’ils puissent se connecter au portail.",
                 "Ce second prestataire route les emails.",
                 "Les utilisateurs chargent leurs documents sur le portail.",

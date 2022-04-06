@@ -53,3 +53,7 @@ code {
 .carousel .control-dots .dot:hover {
     background-color: rgba(44, 0, 85, 0.3);
 }
+
+.carousel .slide {
+    text-align: left;
+}
