@@ -79,7 +79,7 @@
         "technologies": "Tecnología",
         "more": "Más información",
         "dataMutuals": {
-            "title": "Recopilación y tratamiente de datos para seguros",
+            "title": "Recopilación y tratamiento de datos para seguros",
             "preview": "Creación y organización de sitios de gestión de datos transaccionales para varios seguros...",
             "description": "Creación y organización de sitios de gestión de datos transaccionales para varios seguros. Estas permitirán a los seguros recuperar documentos para operaciones internas como la recuperación de comprobantes de escolaridad u hojas de declaración anual de impuestos. Los datos que transitan son sensibles, por lo que toda la información del usuario y sus documentos están encriptados.",
             "steps": [
