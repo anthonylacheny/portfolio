@@ -343,6 +343,41 @@
     margin-left: 15px;
 }
 
+.AboutSection-skills-levels {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.AboutSection-skills-levels-title {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.AboutSection-skills-level-icon {
+    font-size: 12px;
+    color: rgb(255, 195, 0);
+    margin-right: 2px;
+}
+
+.AboutSection-skills-level-value {
+    color: #555;
+    font-size: 12px;
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+.AboutSection-skills-levels-legends {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutSection-skills-levels-legend {
+    margin: 10px;
+}
+
 @media all and (max-width: 990px) {
     .AboutSection {
         padding: 4px 10px;
@@ -498,5 +533,9 @@
 
     .AboutSection-formation-part {
         margin-left: 0;
+    }
+
+    .AboutSection-skills-levels {
+        margin-bottom: 0;
     }
 }

@@ -20,7 +20,7 @@
         "home": "Home",
         "about": "About",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact me"
     },
     "home": {
         "title": "IT Architect, Developer & Bugs Hunter",
@@ -39,7 +39,8 @@
         "wrench": "Other",
         "experience": "Professional experience",
         "formation": "Educacion",
-        "present": "present"
+        "present": "Since",
+        "levels": "Skill levels"
     },
     "experiences": {
         "degree": "Spanish Baccalaureat in economics (A-level)",
@@ -71,14 +72,14 @@
         }
     },
     "projects": {
-        "maindesc": "The projects below are deliberately simplified, it would be too long and complex to detail them.",
+        "maindesc": "The examples of projects below are deliberately simplified and I am at your disposal to present them to you in detail. Feel free to ",
         "description": "Description",
         "working": "Mode of operation",
         "remarks": "Notes",
         "technologies": "Technologies",
         "more": "Learn more",
         "dataMutuals": {
-            "title": "Data collection for mutual companies",
+            "title": "Data collection and data processing for mutual companies",
             "preview": "Websites that allow data collection for multiple mutuals...",
             "description": "Websites that allow data collection for multiple mutuals. These allow mutuals to collect documents for internal operations, such as proof of schooling or annual tax returns. Since the data transferred is sensitive information, users’ data and their documents are encrypted.",
             "steps": [

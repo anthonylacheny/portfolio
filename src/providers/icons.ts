@@ -30,8 +30,10 @@ import {
     faPercent,
     faFileInvoiceDollar,
     faCheck,
+    faStar,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faStar as farStar, faStarHalfAlt } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
     faHome,
@@ -65,4 +67,7 @@ library.add(
     faPercent,
     faFileInvoiceDollar,
     faCheck,
+    faStar,
+    farStar,
+    faStarHalfAlt,
 );

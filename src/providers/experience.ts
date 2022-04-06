@@ -14,6 +14,7 @@ export interface ExperienceType {
     start?: Date;
     end?: Date;
     roundable?: boolean;
+    displayMonth?: boolean;
 }
 
 export const getExperience = (): Array<ExperienceType> => [
@@ -48,7 +49,6 @@ export const getExperience = (): Array<ExperienceType> => [
         image: indraLogo,
         title: intl.translate('jobs.indra'),
         company: 'Indra',
-        start: new Date('2011-03-01'),
         end: new Date('2011-05-01'),
         location: 'Madrid, España',
         link: 'https://www.indracompany.com/',
@@ -63,6 +63,7 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2014-09-01'),
         end: new Date('2015-07-02'),
         location: 'Issy-les-moulineaux, France',
+        displayMonth: true,
     },
     {
         icon: 'certificate',
@@ -71,6 +72,7 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2013-09-01'),
         end: new Date('2014-06-02'),
         location: 'Issy-les-moulineaux, France',
+        displayMonth: true,
     },
     {
         icon: 'keyboard',
@@ -79,6 +81,7 @@ export const getFormations = (): Array<ExperienceType> => [
         start: new Date('2009-09-01'),
         end: new Date('2011-06-01'),
         location: 'Madrid, España',
+        displayMonth: true,
     },
     {
         icon: 'graduation-cap',
@@ -86,5 +89,6 @@ export const getFormations = (): Array<ExperienceType> => [
         company: 'I.E.S. Lázaro Carreter',
         end: new Date('2009-06-01'),
         location: 'Alcalá de Henares, España',
+        displayMonth: true,
     },
 ];

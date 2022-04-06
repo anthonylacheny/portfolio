@@ -98,6 +98,7 @@ const ProjectModal: React.FC<PropsType> = ({ project, isOpen, onRequestClose, tr
                             title={skill.title}
                             categories={skill.categories}
                             link={skill.link}
+                            level={skill.level}
                         />
                     ))}
                 </div>

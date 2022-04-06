@@ -5,6 +5,7 @@ import './ProjectSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName } from '@fortawesome/fontawesome-svg-core';
 import { ProjectType } from '../../providers/projects';
+import { Link } from 'react-scroll';
 
 interface PropsType {
     projects: Array<ProjectType>;
@@ -25,7 +26,18 @@ const ProjectSection: React.FC<PropsType> = ({ projects, translate, onOpenModal 
                 <FontAwesomeIcon icon="folder-open" className="ProjectSection-icon" />
                 {translate('navigation.projects')}
             </h2>
-            <div className="ProjectSection-desc">{translate('projects.maindesc')}</div>
+            <div className="ProjectSection-desc">
+                {translate('projects.maindesc')}
+                <Link
+                    to="Contact"
+                    className="ProjectSection-contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-54}>
+                    {translate('navigation.contact').toLowerCase()}.
+                </Link>
+            </div>
 
             <div className="ProjectSection-Cards">
                 {projects.map((project, j) => (

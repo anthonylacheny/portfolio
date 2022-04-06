@@ -25,6 +25,7 @@
     margin: 0 10px 10px;
     font-size: 16px;
     color: #333;
+    text-align: justify;
 }
 
 .ProjectSection-Cards {
@@ -156,6 +157,12 @@
 
 .ProjectSection-Card-Button:hover {
     background-color: rgba(44, 0, 85, 0.85);
+}
+
+.ProjectSection-contact {
+    color: rgb(44, 0, 85);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 @media all and (max-width: 820px) {

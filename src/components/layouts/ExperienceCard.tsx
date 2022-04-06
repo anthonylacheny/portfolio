@@ -16,6 +16,7 @@ interface PropsType {
     icon?: string;
     source?: string;
     roundable?: boolean;
+    displayMonth?: boolean;
 }
 
 const ExperienceCard: React.FC<PropsType> = ({
@@ -29,6 +30,7 @@ const ExperienceCard: React.FC<PropsType> = ({
     roundable,
     translate,
     link,
+    displayMonth,
 }) => {
     const Img = source ? (
         <img
@@ -39,6 +41,18 @@ const ExperienceCard: React.FC<PropsType> = ({
     ) : (
         <FontAwesomeIcon icon={icon as IconName} className="ExperienceCard-icon" />
     );
+
+    const startDate = start
+        ? displayMonth
+            ? translate(`months.${start.getMonth()}`) + ' ' + start.getFullYear()
+            : start.getFullYear()
+        : null;
+
+    const endDate = end
+        ? displayMonth
+            ? translate(`months.${end.getMonth()}`) + ' ' + end.getFullYear()
+            : end.getFullYear()
+        : null;
 
     return (
         <div className="ExperienceCard">
@@ -55,16 +69,9 @@ const ExperienceCard: React.FC<PropsType> = ({
                 <span className="ExperienceCard-title">{title}</span>
                 <span className="ExperienceCard-company">{company}</span>
                 <span className="ExperienceCard-period">
-                    {start
-                        ? translate(`months.${start.getMonth()}`) +
-                          ' ' +
-                          start.getFullYear() +
-                          ' – '
-                        : ''}
-                    {end
-                        ? translate(`months.${end.getMonth()}`) + ' ' + end.getFullYear()
-                        : translate('about.present')}
-                    , {location}
+                    {endDate ? '' : translate('about.present') + ' '}
+                    {startDate ? startDate : ''}
+                    {endDate ? (startDate ? ' – ' : '') + endDate : ''}, {location}
                 </span>
             </div>
         </div>

@@ -133,8 +133,68 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                                     title={s.title}
                                     categories={s.categories}
                                     link={s.link}
+                                    level={s.level}
                                 />
                             ))}
+                        </div>
+
+                        <div className="AboutSection-skills-levels">
+                            <h6 className="AboutSection-skills-levels-title">
+                                {translate('about.levels')}:
+                            </h6>
+
+                            <div className="AboutSection-skills-levels-legends">
+                                <div className="AboutSection-skills-levels-legend">
+                                    <span>
+                                        <FontAwesomeIcon
+                                            icon={['far', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['far', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['far', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['far', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['far', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                    </span>
+                                    <span className="AboutSection-skills-level-value">0%</span>
+                                </div>
+                                <div className="AboutSection-skills-levels-legend">
+                                    <span>
+                                        <FontAwesomeIcon
+                                            icon={['fas', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['fas', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['fas', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['fas', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                        <FontAwesomeIcon
+                                            icon={['fas', 'star']}
+                                            className="AboutSection-skills-level-icon"
+                                        />
+                                    </span>
+                                    <span className="AboutSection-skills-level-value">100%</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,6 +234,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                                     location={e.location}
                                     translate={translate}
                                     roundable={e.roundable}
+                                    displayMonth={e.displayMonth}
                                 />
                             ))}
                         </div>
@@ -207,6 +268,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                                         location={e.location}
                                         translate={translate}
                                         roundable={e.roundable}
+                                        displayMonth={e.displayMonth}
                                     />
                                 ))}
                             </div>
