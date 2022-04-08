@@ -31,6 +31,12 @@ import {
     faFileInvoiceDollar,
     faCheck,
     faStar,
+    faBuilding,
+    faPaperPlane,
+    faArchive,
+    faClock,
+    faShieldAlt,
+    faLayerGroup,
 } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faStar as farStar, faStarHalfAlt } from '@fortawesome/free-regular-svg-icons';
@@ -70,4 +76,10 @@ library.add(
     faStar,
     farStar,
     faStarHalfAlt,
+    faBuilding,
+    faPaperPlane,
+    faArchive,
+    faClock,
+    faShieldAlt,
+    faLayerGroup,
 );

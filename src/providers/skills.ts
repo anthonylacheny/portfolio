@@ -223,3 +223,6 @@ export const skills: Array<SkillType> = [
 
 export const findSkills = (titles: Array<string>) =>
     skills.filter((s) => titles.find((e) => s.title === e));
+
+export const findSkillsFromCategory = (category: SkillCategoryType) =>
+    skills.filter((s) => s.categories.find((e) => e === category));

@@ -40,7 +40,8 @@
         "experience": "Experiencia profesional",
         "formation": "Educación",
         "present": "Desde",
-        "levels": "Niveles de habilidad"
+        "levels": "Niveles de habilidad",
+        "knowledge": "Conocimiento del negocio"
     },
     "experiences": {
         "degree": "Bachillerato Humanidades y Social",
@@ -53,6 +54,38 @@
         "gocad": "Arquitecto Software y Desarollador",
         "gigigo": "Desarollador Backend senior",
         "freelance": "Consultante Arquitecto Software y Desarollador Senior"
+    },
+    "knowledges": {
+        "company": {
+            "title": "Gestión de una empresa de servicios",
+            "list": ["Tiempo", "Planning", "Gestión comercial y administración de ventas."]
+        },
+        "print": {
+            "title": "Impresión y enrutamiento",
+            "list": [
+                "Composición de ficheros (PDF, AFP)",
+                "Archivar",
+                "Gestión del inventario",
+                "Optimización de envolvente"
+            ]
+        },
+        "events": {
+            "title": "Eventos",
+            "list": ["Gestión de eventos como ferias de vinos"]
+        },
+        "security": {
+            "title": "Seguridad de datos",
+            "list": ["GDPR", "Cifrado", "Anonimización"]
+        },
+        "development": {
+            "title": "Desarrollo",
+            "list": [
+                "Método ágil (Scrum)",
+                "Optimizaciones y rendimiento",
+                "Geolocalización",
+                "Tipografía (TTF, OTF)"
+            ]
+        }
     },
     "contact": {
         "desc": "Indique sus datos de contacto y su mensaje, en breve me pondré en contacto con usted",

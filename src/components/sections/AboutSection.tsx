@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './AboutSection.css';
 
-import { SkillCategoryType, SkillType, skills } from '../../providers/skills';
-import { getExperience, getFormations } from '../../providers/experience';
+import { SkillCategoryType, SkillType } from '../../providers/skills';
+import { ExperienceType } from '../../providers/experience';
+import { KnowledgeType } from '../../providers/knowledges';
 import SkillCard from '../layouts/SkillCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ExperienceCard from '../layouts/ExperienceCard';
 
-const getSkillsFromCategory = (category: SkillCategoryType) =>
-    skills.filter((s) => s.categories.find((e) => e === category));
-
 interface PropsType {
+    experiences: Array<ExperienceType>;
+    formations: Array<ExperienceType>;
+    knowledges: Array<KnowledgeType>;
+    skills: Array<SkillType>;
+    category: SkillCategoryType;
+    changeCategory: (category: SkillCategoryType) => void;
     translate: (key: string, config?: any) => string;
 }
 
-const AboutSection: React.FC<PropsType> = ({ translate }) => {
-    const experience = getExperience();
-    const formations = getFormations();
-    const [skillCategorySelected, setSkillCategorySelected] = useState<SkillCategoryType>('B');
-    const [skillsSelected, setSkillsSelected] = useState<Array<SkillType>>(
-        getSkillsFromCategory('B'),
-    );
-
-    const changeSkills = (category: SkillCategoryType) => {
-        setSkillCategorySelected(category);
-        setSkillsSelected(getSkillsFromCategory(category));
-    };
-
+const AboutSection: React.FC<PropsType> = ({
+    experiences,
+    formations,
+    knowledges,
+    category,
+    skills,
+    changeCategory,
+    translate,
+}) => {
     const getSkillCategory = (category: SkillCategoryType) => {
         switch (category) {
             case 'B':
@@ -59,7 +59,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
         }
     };
 
-    const skillCategory = getSkillCategory(skillCategorySelected);
+    const skillCategory = getSkillCategory(category);
 
     return (
         <section className="AboutSection" id="About">
@@ -82,7 +82,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                     <div className="AboutSection-skills-categories">
                         <div
                             className="AboutSection-skills-category AboutSection-skills-category-backend"
-                            onClick={() => changeSkills('B')}>
+                            onClick={() => changeCategory('B')}>
                             <span className="AboutSection-skills-category-icon">
                                 <FontAwesomeIcon icon="server" />
                             </span>
@@ -90,7 +90,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                         </div>
                         <div
                             className="AboutSection-skills-category AboutSection-skills-category-frontend"
-                            onClick={() => changeSkills('F')}>
+                            onClick={() => changeCategory('F')}>
                             <span className="AboutSection-skills-category-icon">
                                 <FontAwesomeIcon icon="desktop" />
                             </span>
@@ -99,7 +99,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                         <div className="AboutSection-skills-category-break"></div>
                         <div
                             className="AboutSection-skills-category AboutSection-skills-category-database"
-                            onClick={() => changeSkills('D')}>
+                            onClick={() => changeCategory('D')}>
                             <span className="AboutSection-skills-category-icon">
                                 <FontAwesomeIcon icon="database" />
                             </span>
@@ -108,7 +108,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
 
                         <div
                             className="AboutSection-skills-category AboutSection-skills-category-tools"
-                            onClick={() => changeSkills('X')}>
+                            onClick={() => changeCategory('X')}>
                             <span className="AboutSection-skills-category-icon">
                                 <FontAwesomeIcon icon="wrench" />
                             </span>
@@ -126,7 +126,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                             {skillCategory.title}
                         </h4>
                         <div className="AboutSection-skills-cards">
-                            {skillsSelected.map((s, i) => (
+                            {skills.map((s, i) => (
                                 <SkillCard
                                     key={`skill_${i}`}
                                     source={s.image}
@@ -200,6 +200,35 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                 </div>
             </div>
 
+            <h3 className="AboutSection-title">
+                <FontAwesomeIcon icon="archive" /> {translate('about.knowledge')}
+            </h3>
+
+            <div className="AboutSection-knowledges">
+                {knowledges.map((know, i) => (
+                    <div key={`know_${i}`} className="AboutSection-knowledge">
+                        <FontAwesomeIcon icon={know.icon} className="AboutSection-knowledge-icon" />
+                        <div className="AboutSection-knowledge-content">
+                            <div className="AboutSection-knowledge-title">
+                                <span className="AboutSection-knowledge-title-text">
+                                    {know.title}
+                                </span>
+                            </div>
+
+                            <ul className="AboutSection-knowledge-list">
+                                {know.items.map((item, j) => (
+                                    <li
+                                        key={`know_${i}_${j}`}
+                                        className="AboutSection-knowledge-item">
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
             <div className="AboutSection-parts">
                 <div className="AboutSection-professional">
                     <h3 className="AboutSection-title">
@@ -208,7 +237,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
 
                     <div className="AboutSection-professional-container">
                         <div className="AboutSection-professional-graphics">
-                            {experience.map((e) =>
+                            {experiences.map((e) =>
                                 e.selected ? (
                                     <div
                                         key={Math.random()}
@@ -221,7 +250,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                             )}
                         </div>
                         <div className="AboutSection-professional-cards">
-                            {experience.map((e) => (
+                            {experiences.map((e) => (
                                 <ExperienceCard
                                     key={`E${Math.random()}`}
                                     icon={e.icon}
@@ -248,7 +277,7 @@ const AboutSection: React.FC<PropsType> = ({ translate }) => {
                         </h3>
                         <div className="AboutSection-formation-container">
                             <div className="AboutSection-formation-graphics">
-                                {experience.map((e) => (
+                                {experiences.map(() => (
                                     <div
                                         key={Math.random()}
                                         className="AboutSection-formation-graphic"></div>

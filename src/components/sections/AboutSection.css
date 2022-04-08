@@ -378,6 +378,61 @@
     margin: 10px;
 }
 
+.AboutSection-knowledges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.AboutSection-knowledge {
+    width: 210px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    border-radius: 18px;
+    background-color: #f1f9ff;
+    margin: 10px;
+    border: 1px dashed #bbb;
+}
+
+.AboutSection-knowledge-icon {
+    font-size: 40px;
+    color: #a9c1f7;
+}
+
+.AboutSection-knowledge-content {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.AboutSection-knowledge-title {
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AboutSection-knowledge-title-text {
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.AboutSection-knowledge-list {
+    list-style: none;
+    font-size: 13px;
+    color: #444;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+}
+
+.AboutSection-knowledge-item {
+    margin: 15px 0;
+}
+
 @media all and (max-width: 990px) {
     .AboutSection {
         padding: 4px 10px;
@@ -537,5 +592,39 @@
 
     .AboutSection-skills-levels {
         margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .AboutSection-knowledge {
+        width: 180px;
+        height: 190px;
+        padding: 15px;
+        margin: 6px;
+    }
+
+    .AboutSection-knowledge-icon {
+        font-size: 30px;
+    }
+
+    .AboutSection-knowledge-content {
+        margin: 14px 0;
+    }
+
+    .AboutSection-knowledge-title {
+        height: 32px;
+    }
+
+    .AboutSection-knowledge-title-text {
+        font-size: 13px;
+    }
+
+    .AboutSection-knowledge-list {
+        font-size: 11px;
+        margin: 6px;
+    }
+
+    .AboutSection-knowledge-item {
+        margin: 12px 0;
     }
 }

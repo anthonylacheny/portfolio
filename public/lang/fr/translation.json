@@ -40,7 +40,8 @@
         "experience": "Expérience professionnelle",
         "formation": "Formation",
         "present": "Depuis",
-        "levels": "Niveaux de compétence"
+        "levels": "Niveaux de compétence",
+        "knowledge": "Connaissance métier"
     },
     "experiences": {
         "degree": "Bac économique et social",
@@ -53,6 +54,38 @@
         "gocad": "Développeur puis architecte fonctionnel du SI",
         "gigigo": "Développeur back-end senior",
         "freelance": "Consultant architecte fonctionnel et developpeur senior"
+    },
+    "knowledges": {
+        "company": {
+            "title": "Gestion d’une société de services",
+            "list": ["Temps", "Planning", "Gestion commerciale et administration des ventes"]
+        },
+        "print": {
+            "title": "Impression et routage",
+            "list": [
+                "Composition documentaire (PDF, AFP)",
+                "Archivage",
+                "Gestion des stocks",
+                "Optimisation de la mise sous pli"
+            ]
+        },
+        "events": {
+            "title": "Événementiel",
+            "list": ["Pilotage d'animation d'évènements de type foire au vin"]
+        },
+        "security": {
+            "title": "Sécurisation des données",
+            "list": ["RGPD", "Encryptage", "Anonymisation"]
+        },
+        "development": {
+            "title": "Développement",
+            "list": [
+                "Méthode Agile (Scrum)",
+                "Optimisations et performances",
+                "Géolocalisation",
+                "Typographie (TTF, OTF)"
+            ]
+        }
     },
     "contact": {
         "desc": "Indiquer vos coordonnées et votre message, je vous contacterai prochainement",

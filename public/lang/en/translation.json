@@ -40,7 +40,8 @@
         "experience": "Professional experience",
         "formation": "Educacion",
         "present": "Since",
-        "levels": "Skill levels"
+        "levels": "Skill levels",
+        "knowledge": "Business knowledge"
     },
     "experiences": {
         "degree": "Spanish Baccalaureat in economics (A-level)",
@@ -53,6 +54,38 @@
         "gocad": "Developer and IT Architect",
         "gigigo": "Senior Back-end Developer",
         "freelance": " IT Architect and Senior Developer"
+    },
+    "knowledges": {
+        "company": {
+            "title": "Management of a service company",
+            "list": ["Time", "Planning", "Commercial management and sales administration"]
+        },
+        "print": {
+            "title": "Printing and Routing",
+            "list": [
+                "File composition (PDF, AFP)",
+                "Archiving",
+                "Inventory management",
+                "Enveloping optimization"
+            ]
+        },
+        "events": {
+            "title": "Events",
+            "list": ["Management of events such as wine fairs"]
+        },
+        "security": {
+            "title": "Data security",
+            "list": ["GDPR", "Encryption", "Anonymization"]
+        },
+        "development": {
+            "title": "Development",
+            "list": [
+                "Agile method (Scrum)",
+                "Optimizations and performance",
+                "Geolocation",
+                "Typography (TTF, OTF)"
+            ]
+        }
     },
     "contact": {
         "desc": "Specify your contact details and your message, I will contact you shortly",
