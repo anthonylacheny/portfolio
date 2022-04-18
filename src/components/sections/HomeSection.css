@@ -6,7 +6,7 @@
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     margin: 0 6px 12px 6px;
-    padding: 20px 0 20px;
+    padding: 0px 0 20px;
 }
 
 .HomeSection-carousel {
@@ -91,7 +91,6 @@
     align-items: center;
     justify-content: center;
     padding: 20px 10px;
-    font-weight: bold;
 }
 
 .HomeSection-title {
@@ -100,12 +99,13 @@
     text-align: center;
     color: #333;
     max-width: 440px;
+    font-weight: bold;
 }
 
 .HomeSection-profile-img {
     border-radius: 101px;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     margin-bottom: 20px;
     border: 2px solid #ccc;
 }
@@ -134,12 +134,13 @@
 }
 
 .HomeSection-desc-title {
-    font-size: 24px;
-    text-align: center;
-}
-
-.HomeSection-desc-content {
     padding-top: 12px;
+    font-size: 18px;
+    color: #999;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 22px;
 }
 
 .HomeSection-desc-content > p {
@@ -148,12 +149,6 @@
     text-align: justify;
     margin-bottom: 10px;
     line-height: 22px;
-}
-
-.HomeSection-desc-content > p:first-of-type {
-    font-size: 18px;
-    color: #999;
-    font-weight: bold;
 }
 
 .HomeSection-desc-content > p:last-of-type {
@@ -183,6 +178,10 @@
     background-color: rgba(44, 0, 85, 0.8);
 }
 
+.HomeSection-separator {
+    margin-top: 20px;
+}
+
 @media all and (max-width: 900px) {
     .HomeSection-desc-content > p {
         font-size: 14px;
@@ -190,7 +189,7 @@
         line-height: 20px;
     }
 
-    .HomeSection-desc-content > p:first-of-type {
+    .HomeSection-desc-title {
         font-size: 16px;
     }
 }
@@ -212,8 +211,9 @@
         margin-bottom: 20px;
     }
 
-    .HomeSection-profile {
-        padding-bottom: 6px;
+    .HomeSection-profile,
+    .HomeSection-desc {
+        padding: 10px;
     }
 
     .HomeSection-title {
@@ -229,15 +229,15 @@
         padding-top: 0;
     }
 
+    .HomeSection-desc-title {
+        font-size: 16px;
+        text-align: center;
+    }
+
     .HomeSection-desc-content > p {
         font-size: 14px;
         margin-bottom: 10px;
         line-height: 20px;
-    }
-
-    .HomeSection-desc-content > p:first-of-type {
-        font-size: 16px;
-        text-align: center;
     }
 
     .HomeSection-carousel {

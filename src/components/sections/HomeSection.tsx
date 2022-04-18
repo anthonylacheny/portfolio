@@ -29,19 +29,23 @@ const HomeSection: React.FC<PropsType> = ({ projects, onOpenModal, translate }) 
                     alt="profile"
                     className="HomeSection-profile-img"
                 />
-                <span className="HomeSection-profile-name">{process.env.REACT_APP_AUTHOR}</span>
-                <span className="HomeSection-profile-title">
-                    {translate('architect')}, {translate('developer')}
-                </span>
-            </div>
-            <div className="HomeSection-desc">
-                <div className="HomeSection-desc-content">
-                    <p>
+
+                <div>
+                    <p className="HomeSection-desc-title">
                         {translate('home.who_am_i_0', {
                             name: process.env.REACT_APP_AUTHOR_NAME,
                         })}
                     </p>
-                    <p>{translate('home.who_am_i_1')}</p>
+                    <div className="HomeSection-desc-content">
+                        <p>{translate('home.who_am_i_1')}</p>
+                        <p>{translate('home.who_am_i_1_1')}</p>
+                        <p>{translate('home.who_am_i_1_2')}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="HomeSection-desc">
+                <div className="HomeSection-desc-content">
+                    <p>{translate('home.who_am_i_1_3')}</p>
                     <p>{translate('home.who_am_i_2')}</p>
                     <p>{translate('home.who_am_i_3')}</p>
                     <p>{translate('home.who_am_i_4')}</p>
