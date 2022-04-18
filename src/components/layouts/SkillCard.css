@@ -74,8 +74,8 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     left: 0;
     bottom: 0;
     border-bottom-left-radius: 6px;
@@ -97,14 +97,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .SkillCard-star-icon {
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 10px;
     margin-right: 2px;
     color: rgb(255, 195, 0);
 }
@@ -147,7 +147,7 @@
     }
 
     .SkillCard-star-icon {
-        font-size: 10px;
+        font-size: 8px;
         margin-right: 2px;
     }
 }
