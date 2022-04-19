@@ -9,7 +9,7 @@
 
 .AboutSection-main-title {
     margin-top: 14px;
-    font-size: 28px;
+    font-size: 24px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ccc;
     display: flex;
@@ -17,14 +17,14 @@
 }
 
 .AboutSection-icon {
-    font-size: 22px;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .AboutSection-title {
     margin-top: 10px;
     padding: 0 10px 0px 10px;
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
     color: #333;
 }
@@ -445,19 +445,19 @@
 
     .AboutSection-title {
         padding: 0 0 10px 0;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 6px;
     }
 
     .AboutSection-icon {
-        font-size: 18px;
+        font-size: 16px;
         margin-right: 4px;
     }
 
     .AboutSection-main-title {
         margin-left: 0px;
         margin-right: 0px;
-        font-size: 22px;
+        font-size: 20px;
         padding-bottom: 16px;
     }
 
