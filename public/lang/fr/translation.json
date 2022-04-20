@@ -25,10 +25,10 @@
     "home": {
         "title": "Architecte Fonctionnel, Développeur et Chasseur de bugs",
         "who_am_i_0": "Salut, moi c'est {{name}}, ",
-        "who_am_i_1": "Je suis développeur web et architecte fonctionnel indépendant installé à Madrid. En veille constante, je suis passionné par les nouvelles technologies,  les améliorations de performance et les perspectives de développement qu’elles apportent aux entreprises.",
-        "who_am_i_1_1": "Mon experience professionnel en tant que développeur débute en 2010 en effectuant mon premier stage en entreprise. J'apprends très rapidement que je ne sais rien et je commets beaucoup d'erreurs. Suite à ce stage je me remets en question et commence à me former en autodidacte. A partir de ce moment je deviens rigoureux et par conséquent je change ma manière de travailler que ce soit seul ou en équipe, je ne cesse de vouloir m'améliorer et de continuer à apprendre.",
+        "who_am_i_1": "Je suis développeur web et architecte fonctionnel indépendant installé à Madrid. Je suis passionné par les nouvelles technologies, les améliorations de performance et les perspectives de développement qu’elles apportent aux entreprises.",
+        "who_am_i_1_1": "Mon experience professionnelle en tant que développeur débute en 2010 en effectuant mon premier stage en entreprise. J'apprends très rapidement que je ne sais rien et je commets beaucoup d'erreurs. Suite à ce stage je me remets en question et commence à me former en autodidacte. A partir de ce moment je deviens rigoureux et par conséquent je change ma manière de travailler que ce soit seul ou en équipe, je ne cesse de vouloir m'améliorer et de continuer à apprendre.",
         "who_am_i_1_2": "Leçon apprise! de nos erreurs nous apprenons!",
-        "who_am_i_1_3": "Autonome et curieux de nature, je reste en veille permanente à la recherche de ce petit « quelque chose »  qui va révolutionner mes méthodes de travail et me rendre encore plus productif (merci Docker :D). Je suis passionné par les nouvelles technologies, les améliorations de performance et les perspectives de développement qu’elles apportent aux entreprises.",
+        "who_am_i_1_3": "Autonome et curieux de nature, je reste en veille permanente à la recherche de ce petit « quelque chose » qui va révolutionner mes méthodes de travail et me rendre encore plus productif (merci Docker :D). Ma motivation : impliquer vos équipes, transmettre et les aider à progresser.",
         "who_am_i_2": "Mon expertise est plutôt orientée back-end, néanmoins je suis ouvert aux technologies front-end et mobile.",
         "who_am_i_3": "Vous cherchez un expert pour la conception et la mise en œuvre de votre nouveau projet? Vous voulez faire évoluer un produit déjà existant? ou peut-être vous voulez seulement l'opinion ou le conseil d'un tiers?",
         "who_am_i_4": "Nous pouvons sûrement collaborer! Contactez-moi, échanger ensemble nous fera progresser.",
@@ -74,7 +74,7 @@
         },
         "events": {
             "title": "Événementiel",
-            "list": ["Pilotage d'animation d'évènements de type foire au vin"]
+            "list": ["Pilotage d'animation d'évènements de type foire aux vins"]
         },
         "security": {
             "title": "Sécurisation des données",
@@ -101,7 +101,7 @@
         "reload": "Recharger le formulaire",
         "errors": {
             "email": "Veuiller renseigner un email valide",
-            "name": "Veuiller renseigner votre nom valide",
+            "name": "Veuiller renseigner votre nom",
             "message": "Veuiller renseigner votre message",
             "message_large": "Votre message est trop long",
             "other": "Une erreur est survenue"

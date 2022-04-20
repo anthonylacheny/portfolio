@@ -31,26 +31,32 @@ const ContactSection: React.FC<PropsType> = ({ translate, storeMessage }) => {
             return;
         }
 
-        if (email.length > 150) {
+        if (email.trim().length > 150) {
             setError(translate('contact.errors.email'));
             setLoading(false);
             return;
         }
 
-        if (name.length > 150) {
+        if (name.trim().length < 3) {
             setError(translate('contact.errors.name'));
             setLoading(false);
             return;
         }
 
-        if (message.length < 10) {
+        if (name.trim().length > 150) {
+            setError(translate('contact.errors.name'));
+            setLoading(false);
+            return;
+        }
+
+        if (message.trim().length < 10) {
             setError(translate('contact.errors.message'));
             setLoading(false);
             return;
         }
 
         try {
-            await storeMessage({ email, name, msg: message });
+            await storeMessage({ email: email.trim(), name: name.trim(), msg: message.trim() });
             setSuccess(true);
         } catch (err) {
             setError(translate('contact.errors.other'));
