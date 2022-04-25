@@ -25,13 +25,13 @@
     "home": {
         "title": "IT Architect, Developer & Bugs Hunter",
         "who_am_i_0": "Hey, I'm {{name}}",
-        "who_am_i_1": "I'm a freelance web developer and IT architect based in Madrid. I am highly motivated and constantly learning new technologies, performance improvements and the development prospects they bring to companies.",
-        "who_am_i_1_1": "My professional experience as a developer began in 2010 by doing my first internship in a company. I learn very quickly that I don't know anything and I make a lot of mistakes. Following this internship I question myself and begin to train myself as an autodidact. From this moment I become rigorous and therefore I change my way of working whether alone or in a team, I never stop wanting to improve and continue to learn.",
-        "who_am_i_1_2": "Lesson learned! From our mistakes we learn!",
-        "who_am_i_1_3": "Autonomous and curious by nature, I remain on permanent watch searching that little « something »  that will revolutionize my working methods and make me even more productive (thanks Docker :D). My motivation: involve your teams, communicate and help them progress.",
-        "who_am_i_2": "Although I have a lot of experience with back-end technologies, I am also open to front-end and mobile technologies.",
+        "who_am_i_1": "I'm a freelance web developer and IT architect based in Madrid. I am keen on discovering and learning new technologies, and highly motivated by the performance improvements and the development perspectives they bring to companies.",
+        "who_am_i_1_1": "My professional experience as a developer started in 2010 with my first internship in a start-up company. I learn very quickly that I know few things and make a lot of mistakes. After this internship, I understand and try the challenge, enter in a self continuous training. From this moment I become rigorous and therefore I change my way of working whether alone or in a team, I never stop wanting to improve and continue to learn.",
+        "who_am_i_1_2": "We learn from our mistakes which lead us to knowledge and success!",
+        "who_am_i_1_3": "Independant, professional and curious by nature, I remain constantly on the lookout for this little « something » that will enhance my working methods and make me even more productive (thanks Docker :D). My motivation: give you the best solution, involve your teams, coach and help them to progress.",
+        "who_am_i_2": "Although I have a great experience with back-end technologies, I am also open to front-end and mobile technologies.",
         "who_am_i_3": "Are you looking for an expert for a new project? Do you want to develop and improve an existing project? Or do you just want to hear a third-party opinion?",
-        "who_am_i_4": "In any case, I would be happy to work with you. Contact me, discussing together will make us progress.",
+        "who_am_i_4": "In any case, I’d be happy to work with you. Contact me, discussing together will make us progress.",
         "my_project": "See my projects"
     },
     "about": {
